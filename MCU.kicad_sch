@@ -1,0 +1,6599 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b3a5e572-0620-5b71-943a-b78f0b375d5d")
+	(paper "A1")
+	(title_block
+		(title "nRF52840 MCU / BLE receiver, debug, UI")
+		(date "2026-11-02")
+		(rev "A")
+		(company "BEACON - Northeastern University Senior Capstone")
+		(comment 1 "Translated from Altium BeaconPhoneModule.pdf and completed")
+		(comment 2 "HW: M. Marsicano, J. Oshinsky, N. McKillips, I. Hong")
+		(comment 3 "Advisor: Prof. Bahram Shafai"))
+	(lib_symbols
+		(symbol "MCU_Nordic:nRF52840"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "nRF52840"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" "Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm"
+				(at 0 -73.66 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" "http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52/dita/nrf52/chips/nrf52840.html"
+				(at -16.51 48.26 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Multiprotocol BLE/ANT/2.4 GHz/802.15.4 Cortex-M4F SoC, AQFN-73"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "MCU ARM BLE ANT 2.4GHz 802.15.4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Nordic*AQFN*1EP*7x7mm*P0.5mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "nRF52840_0_1"
+				(rectangle
+					(start -27.94 66.04)
+					(end 27.94 -66.04)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "nRF52840_1_1"
+				(pin bidirectional line
+					(at 33.02 -12.7 180)
+					(length 5.08)
+					(name "AIN7/P0.31"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -7.62 180)
+					(length 5.08)
+					(name "AIN5/P0.29"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A10"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 58.42 180)
+					(length 5.08)
+					(name "AIN0/P0.02"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A12"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -55.88 180)
+					(length 5.08)
+					(name "P1.15"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A14"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -50.8 180)
+					(length 5.08)
+					(name "P1.13"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A16"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -17.78 71.12 270)
+					(length 5.08)
+					(name "DEC2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A18"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -43.18 180)
+					(length 5.08)
+					(name "P1.10"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A20"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 71.12 270)
+					(length 5.08)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A22"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -33.02 -5.08 0)
+					(length 5.08)
+					(name "XC2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "A23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -33.02 -45.72 0)
+					(length 5.08)
+					(name "SWDCLK"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AA24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_out line
+					(at 12.7 71.12 270)
+					(length 5.08)
+					(name "DCCH"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AB2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -5.08 71.12 270)
+					(length 5.08)
+					(name "DECUSB"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 27.94 180)
+					(length 5.08)
+					(name "P0.14"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC9"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 22.86 180)
+					(length 5.08)
+					(name "P0.16"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC11"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -33.02 -43.18 0)
+					(length 5.08)
+					(name "P0.18/~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC13"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 17.78 180)
+					(length 5.08)
+					(name "P0.19"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC15"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 12.7 180)
+					(length 5.08)
+					(name "P0.21"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC17"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 7.62 180)
+					(length 5.08)
+					(name "P0.23"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC19"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 2.54 180)
+					(length 5.08)
+					(name "P0.25"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC21"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at -33.02 -48.26 0)
+					(length 5.08)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AC24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 5.08 71.12 270)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -60.96 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -63.5 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD6"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 30.48 180)
+					(length 5.08)
+					(name "P0.13"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 25.4 180)
+					(length 5.08)
+					(name "P0.15"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD10"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 20.32 180)
+					(length 5.08)
+					(name "P0.17"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD12"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 71.12 270)
+					(length 5.08)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD14"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 15.24 180)
+					(length 5.08)
+					(name "P0.20"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD16"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 10.16 180)
+					(length 5.08)
+					(name "P0.22"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD18"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 5.08 180)
+					(length 5.08)
+					(name "P0.24"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD20"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -17.78 180)
+					(length 5.08)
+					(name "TRACEDATA0/P1.00"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD22"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 71.12 270)
+					(length 5.08)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "AD23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 71.12 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_out line
+					(at 10.16 71.12 270)
+					(length 5.08)
+					(name "DCC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -12.7 71.12 270)
+					(length 5.08)
+					(name "DEC4"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -71.12 90)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -10.16 180)
+					(length 5.08)
+					(name "AIN6/P0.30"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -5.08 180)
+					(length 5.08)
+					(name "AIN4/P0.28"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B11"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 55.88 180)
+					(length 5.08)
+					(name "AIN1/P0.03"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B13"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -53.34 180)
+					(length 5.08)
+					(name "P1.14"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B15"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -48.26 180)
+					(length 5.08)
+					(name "P1.12"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B17"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -45.72 180)
+					(length 5.08)
+					(name "P1.11"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B19"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -33.02 5.08 0)
+					(length 5.08)
+					(name "XC1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "B24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -20.32 71.12 270)
+					(length 5.08)
+					(name "DEC1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 63.5 180)
+					(length 5.08)
+					(name "XL1/P0.00"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -15.24 71.12 270)
+					(length 5.08)
+					(name "DEC3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "D23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -7.62 71.12 270)
+					(length 5.08)
+					(name "DEC6"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "E24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -71.12 90)
+					(length 5.08)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "EP"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 60.96 180)
+					(length 5.08)
+					(name "XL2/P0.01"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "F2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 2.54 -71.12 90)
+					(length 5.08)
+					(name "VSS_PA"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "F23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "P0.26"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "G1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "P0.27"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "H2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -33.02 45.72 0)
+					(length 5.08)
+					(name "ANT"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "H23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 53.34 180)
+					(length 5.08)
+					(name "AIN2/P0.04"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "J1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 38.1 180)
+					(length 5.08)
+					(name "NFC2/P0.10"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "J24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 50.8 180)
+					(length 5.08)
+					(name "AIN3/P0.05"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "K2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 48.26 180)
+					(length 5.08)
+					(name "P0.06"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "L1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 40.64 180)
+					(length 5.08)
+					(name "NFC1/P0.09"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "L24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 45.72 180)
+					(length 5.08)
+					(name "TRACECLK/P0.07"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "M2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 43.18 180)
+					(length 5.08)
+					(name "P0.08"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "N1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -10.16 71.12 270)
+					(length 5.08)
+					(name "DEC5"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "N24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -38.1 180)
+					(length 5.08)
+					(name "P1.08"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "P2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -35.56 180)
+					(length 5.08)
+					(name "P1.07"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "P23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -40.64 180)
+					(length 5.08)
+					(name "TRACEDATA3/P1.09"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "R1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -33.02 180)
+					(length 5.08)
+					(name "P1.06"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "R24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 35.56 180)
+					(length 5.08)
+					(name "TRACEDATA2/P0.11"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "T2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -30.48 180)
+					(length 5.08)
+					(name "P1.05"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "T23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 33.02 180)
+					(length 5.08)
+					(name "TRACEDATA1/P0.12"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "U1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -27.94 180)
+					(length 5.08)
+					(name "P1.04"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "U24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -25.4 180)
+					(length 5.08)
+					(name "P1.03"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "V23"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 71.12 270)
+					(length 5.08)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "W1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -22.86 180)
+					(length 5.08)
+					(name "P1.02"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "W24"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 2.54 71.12 270)
+					(length 5.08)
+					(name "VDDH"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "Y2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 33.02 -20.32 180)
+					(length 5.08)
+					(name "P1.01"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "Y23"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286)
+						(xy -2.54 3.556)
+						(xy 2.54 3.556)
+						(xy 2.54 2.286))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -2.032 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.54 -2.286)
+						(xy -2.54 -3.556)
+						(xy 2.54 -3.556)
+						(xy 2.54 -2.286))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.032 -1.27)
+						(xy -2.032 1.27))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none)))
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 -3.81)
+						(xy 0 -3.556))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 2.032 0)
+						(xy 2.54 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 2.032 -1.27)
+						(xy 2.032 1.27))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(hide yes)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL"
+			(property "Reference" "J"
+				(at 2.54 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
+				(at 2.54 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "*TC2030*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_0"
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(alternate "TMS" bidirectional line))
+				(pin open_collector line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(alternate "TCK" output line))
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "SWO"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(alternate "TDO" input line)))
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type background))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762)
+						(xy -4.572 -2.286)
+						(xy -3.81 -2.286)
+						(xy -4.572 -2.286)
+						(xy -4.572 -1.524))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.778 -0.762)
+						(xy -3.302 -2.286)
+						(xy -2.54 -2.286)
+						(xy -3.302 -2.286)
+						(xy -3.302 -1.524))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 0)
+						(xy 1.27 0))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -1.27 -1.27)
+						(xy -1.27 1.27))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 1.27 -1.27)
+						(xy 1.27 1.27)
+						(xy -1.27 0)
+						(xy 1.27 -1.27))
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 0 1.27)
+						(xy 0 3.048))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy 2.54 1.27)
+						(xy -2.54 1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016))
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default))
+					(fill
+						(type none))))
+			(embedded_fonts no))
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.762)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(text "nRF52840-QIAA (aQFN73)"
+		(exclude_from_sim no)
+		(at 20.32 30.48 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "9c87e04b-24d9-5412-9a74-839c5f0761fa"))
+	(text "Supply decoupling (Nordic PS v1.11 reference circuitry)"
+		(exclude_from_sim no)
+		(at 20.32 218.42 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "550b85f5-6300-5b15-803a-4f52f2900eec"))
+	(text "32 MHz crystal (CL = 8 pF -> 12 pF load caps)"
+		(exclude_from_sim no)
+		(at 20.32 271.74 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "2835b5ad-9203-52d3-abee-9acc04ebad12"))
+	(text "ANT matching (Nordic v1.1: 0.8 pF / 4.7 nH / 0.5 pF) - RX_RF comes from the LNA"
+		(exclude_from_sim no)
+		(at 20.32 318.76 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "db607c66-3331-56dc-9bd8-d70bc13b28c0"))
+	(text "SWD (Tag-Connect TC2030-IDC-NL), I2C pull-ups, synth CE default-off"
+		(exclude_from_sim no)
+		(at 20.32 365.78 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "6bff68bc-5046-5b29-b5d8-86e9c9d0c7f9"))
+	(text "User LED and demo button"
+		(exclude_from_sim no)
+		(at 20.32 423.4 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "d7b3189c-e007-53a3-b3b6-36e9d9167643"))
+	(text "M2 mounting holes (enclosure heat-set inserts; 6 mm keepout both sides)"
+		(exclude_from_sim no)
+		(at 20.32 466.22 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "e83f88ac-3b50-53cf-a735-808a73e580cc"))
+	(text "Test points"
+		(exclude_from_sim no)
+		(at 20.32 491.46 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "d0cedede-dde1-5d40-a803-806554af8fbd"))
+	(text "MCU sheet notes\n- Supply: VDD and VDDH both on 3V3 (normal-voltage mode); DCCH unused. REG1 runs in LDO\n  mode (firmware DCDCEN=0): the 10 uH ferrite would saturate in the MagSafe magnet field,\n  so the DC/DC inductors are DNP footprints. VBUS from USB for the USBD peripheral.\n- Removed wearable-only nets copied from the wearable MCU sheet: CTRL_SPDT, Mod_Sel0/1,\n  PMIC_Status0-2, Sensor_SDA/SCL/INT/EN, QSPI_CLK.\n- GPIO map: SYN_SCK P0.19, SYN_MUXOUT P0.20, SYN_SDI P0.21, SYN_CSB P0.22, SYN_CE P0.23,\n  I2C SCL P0.13 / SDA P0.15, PA_EN P0.02, LNA_PD P0.26, 3V3_PG P0.03, LED P1.06,\n  BUTTON P1.09, UART TX P0.06 / RX P0.08, spares P0.28 / P0.04 / P0.05, SWO P1.00.\n- P0.02, P0.03, P0.28 and P1.06 are radio-sensitive (<=10 kHz, standard drive):\n  used only for static enables, PG and the LED.\n- No 32.768 kHz crystal: use the internal LFRC (XL1/XL2 left open)."
+		(exclude_from_sim no)
+		(at 650 20 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "ccb39861-f857-5ae8-9d0f-5472e08fc7b2"))
+	(symbol
+		(lib_id "MCU_Nordic:nRF52840")
+		(at 68.58 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16c8c8e9-05b4-5aa3-b3bf-d11ac47b068d")
+		(property "Reference" "U5"
+			(at 35.56 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "nRF52840-QIAA"
+			(at 35.56 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:U5_Nordic_AQFN-73-1EP_7x7mm_P0.5mm"
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "NRF52840-QIAA-R"
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Nordic Semiconductor"
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "A8"
+			(uuid "825541fa-bf6d-503c-852a-261fe5f4fa22"))
+		(pin "A10"
+			(uuid "bf4a583d-5ee3-5c57-a493-0cadffebec24"))
+		(pin "A12"
+			(uuid "92b9a3a6-e144-5afe-b5b0-07247a6911e2"))
+		(pin "A14"
+			(uuid "78f97dbe-4d66-5936-9f68-380111dcb8a2"))
+		(pin "A16"
+			(uuid "36b8f3cd-2628-5888-98bc-2cdc1d8b7c28"))
+		(pin "A18"
+			(uuid "75a6d260-942a-51cf-8660-5688622af673"))
+		(pin "A20"
+			(uuid "1f022258-d5bf-5195-a8d4-960d2f2cdf97"))
+		(pin "A22"
+			(uuid "ce3b8a53-2a6e-5241-ac94-20d306f5ee11"))
+		(pin "A23"
+			(uuid "dcae3836-0bf3-51ba-96bc-5c2c27890761"))
+		(pin "AA24"
+			(uuid "dc389090-6661-592f-a8ab-fdc60b26ff67"))
+		(pin "AB2"
+			(uuid "fd00f562-aa1d-50fe-a232-f4c2cb7c2e88"))
+		(pin "AC5"
+			(uuid "9c961c7a-322b-5991-93c3-78b752227e89"))
+		(pin "AC9"
+			(uuid "8ed72ea4-cd6b-529a-9de6-320664112016"))
+		(pin "AC11"
+			(uuid "3c08fafa-bf8f-5ef4-b3e5-cdc5cbb7ec7b"))
+		(pin "AC13"
+			(uuid "0c5de74b-3a36-5d79-99f6-d7e080e0ef34"))
+		(pin "AC15"
+			(uuid "94c598bd-20f4-50e4-88f1-f3df872ad97c"))
+		(pin "AC17"
+			(uuid "afd50440-75f1-5863-aaa6-953c7fd41e02"))
+		(pin "AC19"
+			(uuid "c28c0a4a-d899-5b50-831c-8086dc67fb97"))
+		(pin "AC21"
+			(uuid "839dd4fc-60a3-51b1-bed4-d79ee44486b4"))
+		(pin "AC24"
+			(uuid "baaef547-5fc9-5886-adb8-e78d0f360ed4"))
+		(pin "AD2"
+			(uuid "70e9e863-ce7d-5dd3-b145-08f77d6bfa8a"))
+		(pin "AD4"
+			(uuid "19df8804-2c3c-5223-921f-ad8297c36569"))
+		(pin "AD6"
+			(uuid "94147e4b-9e8d-5bf7-846a-bb81b3248d28"))
+		(pin "AD8"
+			(uuid "3cdb9233-2342-55c8-b063-b16fe74f6057"))
+		(pin "AD10"
+			(uuid "3c90e797-a4fe-5a0e-99ce-4b9af5789ea0"))
+		(pin "AD12"
+			(uuid "97d909b6-678b-5375-9b03-f36ce7b918f2"))
+		(pin "AD14"
+			(uuid "9b231833-fa3e-5ab7-8b2d-3ae942849927"))
+		(pin "AD16"
+			(uuid "be5751e0-f8fb-5916-ab9f-67766d23c280"))
+		(pin "AD18"
+			(uuid "5ea9789f-8fcf-587e-a83d-1bfcbb4b258e"))
+		(pin "AD20"
+			(uuid "77088995-b8e5-57b7-9ae5-fcf1f9951a2a"))
+		(pin "AD22"
+			(uuid "592cbb10-2544-5a0b-a3eb-d2ae67197144"))
+		(pin "AD23"
+			(uuid "5da85524-eefc-57a8-9685-22ba80c032c4"))
+		(pin "B1"
+			(uuid "2fd49c6d-10e6-5802-aede-0619edf0848a"))
+		(pin "B3"
+			(uuid "fff886e0-4e8f-594a-b348-3aaaafc2c322"))
+		(pin "B5"
+			(uuid "24ce40cf-8089-548a-be2b-41e42fc5c87a"))
+		(pin "B7"
+			(uuid "de0bf0ea-ff1a-5276-aee6-20391671cc13"))
+		(pin "B9"
+			(uuid "c2c4b651-29dd-5917-8d92-186f3a9e9c43"))
+		(pin "B11"
+			(uuid "cf691098-08d3-5d37-af88-348b49153737"))
+		(pin "B13"
+			(uuid "c2c1c935-737e-53c3-8c87-be59647deb69"))
+		(pin "B15"
+			(uuid "d3fa222e-6707-53f1-abbe-103a6415e9ef"))
+		(pin "B17"
+			(uuid "075ec5aa-a4d3-5fda-9220-6f1a4e96b0a4"))
+		(pin "B19"
+			(uuid "96f70c66-d35b-5c0d-8c83-cd10079bf2ab"))
+		(pin "B24"
+			(uuid "dbbc6243-01ab-592d-a5f0-b67d478f84d1"))
+		(pin "C1"
+			(uuid "1c989d63-e22d-53dd-8ff2-8c06ea360076"))
+		(pin "D2"
+			(uuid "1473c715-0379-5856-bbd1-4ec64dbb833b"))
+		(pin "D23"
+			(uuid "f33d6704-4403-550d-a36e-0f29e9999f56"))
+		(pin "E24"
+			(uuid "b6a00c7f-3f00-5fc1-b432-721a769164cc"))
+		(pin "EP"
+			(uuid "c20cd7a9-c64b-56ef-84f8-d9830cb9f23f"))
+		(pin "F2"
+			(uuid "7ae49e43-aafc-5f8d-8f9d-10d931787f91"))
+		(pin "F23"
+			(uuid "2e625306-fc06-53c2-a266-766260857a24"))
+		(pin "G1"
+			(uuid "d44a155c-9a76-5508-bc51-f8a2e8e15106"))
+		(pin "H2"
+			(uuid "4a2fc9d8-4587-5bd2-a30d-925f0888ef0a"))
+		(pin "H23"
+			(uuid "e8a2e3f6-16eb-5668-94b9-bd050f6a2911"))
+		(pin "J1"
+			(uuid "f24f885d-40ec-5d93-99f1-7a223d700807"))
+		(pin "J24"
+			(uuid "1f49cad5-eb9d-55f7-a37e-9ef56e45593a"))
+		(pin "K2"
+			(uuid "14617685-8deb-5eed-ab13-1daa9df946c7"))
+		(pin "L1"
+			(uuid "a7bc0ac5-79a9-5df0-a9c6-cfc482998030"))
+		(pin "L24"
+			(uuid "3f845669-fd43-5a8d-92b5-388b6d996cf3"))
+		(pin "M2"
+			(uuid "bb8d8d9f-d9d4-5ebb-90e0-b991759fe377"))
+		(pin "N1"
+			(uuid "a07f3eeb-4762-5345-b3e5-079b57c2cd34"))
+		(pin "N24"
+			(uuid "29389fb5-6eba-5f0c-8059-2ba497be9b33"))
+		(pin "P2"
+			(uuid "6bd675b6-9f37-51ae-9645-344cac881207"))
+		(pin "P23"
+			(uuid "1d91e590-715a-5dc8-98b9-0cb311bab9ec"))
+		(pin "R1"
+			(uuid "3984d9b7-5de5-5959-a262-eb1371f7af9c"))
+		(pin "R24"
+			(uuid "51781147-c578-5f43-adb4-2310719346d9"))
+		(pin "T2"
+			(uuid "1b52736c-6fc1-5a8e-ad0f-31900c892af5"))
+		(pin "T23"
+			(uuid "5c30066b-94ae-5ca0-a50b-c1177681af60"))
+		(pin "U1"
+			(uuid "27a937b4-add9-555e-aab9-8dbb7cbc248b"))
+		(pin "U24"
+			(uuid "bc7701bd-8d9b-5c3f-b1e4-5b34b5b29790"))
+		(pin "V23"
+			(uuid "6ce06aea-c76f-59ea-af5f-2a011457ff26"))
+		(pin "W1"
+			(uuid "2fff22cd-ed03-5b3b-b722-b56ccae1d880"))
+		(pin "W24"
+			(uuid "8fb461a9-7fa4-512f-b6f7-2d00784874c3"))
+		(pin "Y2"
+			(uuid "3333ff10-a045-5ee9-924d-140545cc4e30"))
+		(pin "Y23"
+			(uuid "7376420f-202e-5120-85d6-cbf5969fb58c"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "U5")
+					(unit 1)))))
+	(no_connect
+		(at 101.6 134.62)
+		(uuid "f253b771-590c-5ae9-b5e2-c4f856a74882"))
+	(no_connect
+		(at 101.6 129.54)
+		(uuid "ef705a5d-19a3-5132-93eb-73973d593ec4"))
+	(wire
+		(pts
+			(xy 101.6 63.5)
+			(xy 104.14 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e08d9212-8601-58d0-aa59-a50d957e14fc"))
+	(global_label "PA_EN"
+		(shape bidirectional)
+		(at 104.14 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "bd61e19b-b516-503c-aa89-f67c02cf999d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 177.8)
+		(uuid "833ef71f-8941-57de-ad51-bcd930998e7f"))
+	(no_connect
+		(at 101.6 172.72)
+		(uuid "8edbec02-b887-5f54-8955-364ae274b522"))
+	(no_connect
+		(at 50.8 50.8)
+		(uuid "180756a9-82c4-5e44-9e79-9a466bc8ec49"))
+	(no_connect
+		(at 101.6 165.1)
+		(uuid "12cf3059-4528-5adb-85ed-2291fabced8a"))
+	(wire
+		(pts
+			(xy 68.58 50.8)
+			(xy 68.58 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b8ed4c33-9170-51ba-b77b-b106459fec8f"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 68.58 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "7774a327-72fc-5c59-a8ff-de20a5c2121b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 35.56 127)
+			(xy 33.02 127))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3a5bea32-9d0d-5698-a28a-4e88f7858c66"))
+	(label "NRF_XC2"
+		(at 33.02 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "5459d58d-4bdf-5e2e-8f00-b209f6a45718"))
+	(wire
+		(pts
+			(xy 35.56 167.64)
+			(xy 33.02 167.64))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2e0e3277-df03-5310-9ac4-2499be313ff5"))
+	(label "SWDCLK"
+		(at 33.02 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "d140aa97-4173-5b14-827d-3b2adda9bb78"))
+	(no_connect
+		(at 81.28 50.8)
+		(uuid "e26ed2f3-e1c9-53ca-a04e-f5fd99388bea"))
+	(wire
+		(pts
+			(xy 63.5 50.8)
+			(xy 63.5 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e95bd086-8648-532b-b307-45928e7e4bab"))
+	(label "NRF_DECUSB"
+		(at 63.5 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "7079016c-318d-5d22-8eff-6eeb060ff383"))
+	(no_connect
+		(at 101.6 93.98)
+		(uuid "b940048d-0580-5735-9469-4549114e7da0"))
+	(no_connect
+		(at 101.6 99.06)
+		(uuid "80f24ce1-5614-502e-afa4-d45532e94376"))
+	(wire
+		(pts
+			(xy 35.56 165.1)
+			(xy 33.02 165.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "93977710-5e20-5dae-9280-a6a7bb3a45f4"))
+	(label "nRESET"
+		(at 33.02 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "62627913-93bb-5970-a27b-26693425136c"))
+	(wire
+		(pts
+			(xy 101.6 104.14)
+			(xy 104.14 104.14))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "796c9639-2e3f-5482-af53-a1e46921395b"))
+	(label "SYN_SCK_M"
+		(at 104.14 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "07004e17-eb4c-5d5e-92d1-5cb2c0bc30ce"))
+	(wire
+		(pts
+			(xy 101.6 109.22)
+			(xy 104.14 109.22))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "85b6436e-0ff0-54af-b6b7-ea6d3827b18d"))
+	(label "SYN_SDI_M"
+		(at 104.14 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "f238cd62-0856-5823-ba4c-1ef253b26ae9"))
+	(wire
+		(pts
+			(xy 101.6 114.3)
+			(xy 104.14 114.3))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "736a4be1-62dd-5888-9744-c1db47481406"))
+	(global_label "SYN_CE"
+		(shape bidirectional)
+		(at 104.14 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "440b4636-abbd-535d-8b7d-333416e497a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 119.38)
+		(uuid "8d9a4711-b4e4-58f3-9441-ebf10b888e39"))
+	(wire
+		(pts
+			(xy 35.56 170.18)
+			(xy 33.02 170.18))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "42c7e04f-6b57-5df4-9422-7dd5c528578c"))
+	(label "SWDIO"
+		(at 33.02 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "33b33e20-42bc-57df-bc8d-86624e0bd62e"))
+	(wire
+		(pts
+			(xy 73.66 50.8)
+			(xy 73.66 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6ec7286b-748c-5f01-a35a-f7abe87c5230"))
+	(global_label "5V_BUS"
+		(shape bidirectional)
+		(at 73.66 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "6739da28-6881-5b64-b880-8c0071e14446")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.66 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 182.88)
+			(xy 104.14 182.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "25ef559f-6283-5c34-952e-5ac14ba447be"))
+	(global_label "USB_D-"
+		(shape bidirectional)
+		(at 104.14 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "90461802-9924-5893-8339-d0e5bb20f475")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 185.42)
+			(xy 104.14 185.42))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f67d0051-ea35-5b81-9e48-a23a0f9a41ac"))
+	(global_label "USB_D+"
+		(shape bidirectional)
+		(at 104.14 185.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "aae11d1b-14b4-5fa8-83dc-1a27f20ad8c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 91.44)
+			(xy 104.14 91.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7e2b7455-a89d-551f-95da-a29fd488c07e"))
+	(global_label "I2C_SCL"
+		(shape bidirectional)
+		(at 104.14 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "f2162108-001a-5f38-87fc-63cb2f726e93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 96.52)
+			(xy 104.14 96.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0afc4353-2394-53fe-aacc-481387f005eb"))
+	(global_label "I2C_SDA"
+		(shape bidirectional)
+		(at 104.14 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "b2751109-ccab-535a-9760-c7c76d87975e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 101.6)
+		(uuid "f7990954-417f-5afd-9486-ae906daa19c1"))
+	(wire
+		(pts
+			(xy 68.58 50.8)
+			(xy 68.58 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0314957c-d173-53a0-ac1a-f5f1ec6e7ba4"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 68.58 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "877f3b4b-f9e5-5298-9797-28875901c10a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 106.68)
+			(xy 104.14 106.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "670f91eb-2f05-5ecf-b983-b0a73732d6dc"))
+	(global_label "SYN_MUXOUT"
+		(shape bidirectional)
+		(at 104.14 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "a3d74706-dd58-55dd-aaa5-62b3f840e876")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 111.76)
+			(xy 104.14 111.76))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "754a9160-7e86-5ac1-906b-470892171edb"))
+	(label "SYN_CSB_M"
+		(at 104.14 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "16d14842-87af-5a16-b238-ef7fd538bc73"))
+	(no_connect
+		(at 101.6 116.84)
+		(uuid "57e337cb-dbbf-5b0e-ab0b-dc7225d0507d"))
+	(wire
+		(pts
+			(xy 101.6 139.7)
+			(xy 104.14 139.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "85149942-f2fe-528b-bfbd-bbd43888c2f6"))
+	(label "SWO"
+		(at 104.14 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "eea17736-5ac2-5d87-8a7b-73d9f094b771"))
+	(wire
+		(pts
+			(xy 68.58 50.8)
+			(xy 68.58 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "665e6db8-350f-5df5-b2a2-3674c507140c"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 68.58 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "fde2f220-72cb-52f2-b516-64d949b45968")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 68.58 50.8)
+			(xy 68.58 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "223b44ee-da81-5149-a366-119b5db59cd2"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 68.58 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "c3c87536-eef8-5cf5-b643-c20667d65d87")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 78.74 50.8)
+			(xy 78.74 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b89432ed-b301-5372-9959-aed6bd5ea9ac"))
+	(label "NRF_DCC"
+		(at 78.74 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "24e0ab5d-c01b-5cef-a184-dedcdb7b9df5"))
+	(wire
+		(pts
+			(xy 55.88 50.8)
+			(xy 55.88 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "963f9920-7c56-5648-8bb2-bfc41d79a536"))
+	(label "NRF_DEC4_6"
+		(at 55.88 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "fca85733-ed13-540d-ad3b-1903ffcf3441"))
+	(wire
+		(pts
+			(xy 68.58 193.04)
+			(xy 68.58 195.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "370d181b-a93d-573e-a6e8-61ccb54e9d7d"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 68.58 195.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "85c03ee5-70a9-523e-a247-dc20976c3315")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 132.08)
+		(uuid "7b2ef6cf-88e9-5986-8bcd-74617a400a04"))
+	(wire
+		(pts
+			(xy 101.6 127)
+			(xy 104.14 127))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2d4135b7-8084-5f16-aca8-3628af2bd8cc"))
+	(label "SPARE_IO1"
+		(at 104.14 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "1d9cca6b-1658-5fc8-9054-9854acc89070"))
+	(wire
+		(pts
+			(xy 101.6 66.04)
+			(xy 104.14 66.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a42d8993-3d57-5b8e-a439-b0c6692946d7"))
+	(global_label "3V3_PG"
+		(shape bidirectional)
+		(at 104.14 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "8f0a6087-3690-5930-80d6-437b31d7fb35")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 175.26)
+		(uuid "645c9918-dcda-5684-8698-21972b365d4c"))
+	(no_connect
+		(at 101.6 170.18)
+		(uuid "f166f4e2-d802-5b21-b5f3-1c9750decefc"))
+	(no_connect
+		(at 101.6 167.64)
+		(uuid "e6a34cea-641f-57c7-932a-a6a8a37edc48"))
+	(wire
+		(pts
+			(xy 35.56 116.84)
+			(xy 33.02 116.84))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "60a594b2-511d-5fb0-a72c-53881061bd8f"))
+	(label "NRF_XC1"
+		(at 33.02 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "b1aba725-950e-5c39-8e0a-75dc75cddaf9"))
+	(wire
+		(pts
+			(xy 48.26 50.8)
+			(xy 48.26 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "232b9505-e0b4-5cad-aa9b-4caad6871bf8"))
+	(label "NRF_DEC1"
+		(at 48.26 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "03b51288-1301-51dc-a95d-bbb8d5a7d588"))
+	(no_connect
+		(at 101.6 58.42)
+		(uuid "c9181345-1134-5bcc-a8b0-07412f83ed41"))
+	(wire
+		(pts
+			(xy 53.34 50.8)
+			(xy 53.34 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0f97f46b-4396-5d17-aea2-f33266e27c67"))
+	(label "NRF_DEC3"
+		(at 53.34 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "23d1ad93-e4cc-5a43-8b0b-6810ab63f88b"))
+	(wire
+		(pts
+			(xy 60.96 50.8)
+			(xy 60.96 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "78959261-334f-5131-87f7-2dcb4a81856d"))
+	(label "NRF_DEC4_6"
+		(at 60.96 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "bd93c5a7-b62d-5091-8a50-4bf143bb3125"))
+	(wire
+		(pts
+			(xy 68.58 193.04)
+			(xy 68.58 195.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a241abef-d569-5e9d-93af-9ceeaef4acfb"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 68.58 195.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "aaa073de-f468-5475-8ca5-a388d503bafb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 60.96)
+		(uuid "dceb4166-5d14-567f-8747-5bad3ef361dd"))
+	(wire
+		(pts
+			(xy 71.12 193.04)
+			(xy 71.12 195.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "57b064a4-db89-55ee-9497-ad97d58cae4b"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 71.12 195.58 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "e3befe83-0b2c-5346-a934-8840221f9b05")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 121.92)
+			(xy 104.14 121.92))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b507b816-bd72-52e5-81c8-1c08e70b809b"))
+	(global_label "LNA_PD"
+		(shape bidirectional)
+		(at 104.14 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "8bb3f8dc-ba4f-560b-9b97-b37c43a1fa8e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 124.46)
+		(uuid "18472d89-19f5-53e8-9cd6-baceffde9fb4"))
+	(wire
+		(pts
+			(xy 35.56 76.2)
+			(xy 33.02 76.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a6ca9ab8-d7bf-57ed-96bd-9be8f60031fd"))
+	(label "NRF_ANT"
+		(at 33.02 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "10afa80e-4363-58ca-9672-48f63f834067"))
+	(wire
+		(pts
+			(xy 101.6 68.58)
+			(xy 104.14 68.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1b6ade86-e643-56fa-95f6-1743c55fa3e9"))
+	(label "SPARE_IO2"
+		(at 104.14 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "23f663d5-5c1b-582c-9854-236a9db27555"))
+	(no_connect
+		(at 101.6 83.82)
+		(uuid "bf3d75ac-edc8-56e9-995f-ec828014838a"))
+	(wire
+		(pts
+			(xy 101.6 71.12)
+			(xy 104.14 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3fe752df-5d14-5ac0-bb84-25de28f8cf90"))
+	(label "SPARE_IO3"
+		(at 104.14 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "70958738-2786-59c1-afc4-d679a97383ad"))
+	(wire
+		(pts
+			(xy 101.6 73.66)
+			(xy 104.14 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ab4161ca-dd35-51f3-9b82-2cc184207568"))
+	(label "UART_TX"
+		(at 104.14 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "21a9114b-7b22-5d1e-9a86-a136f132463e"))
+	(no_connect
+		(at 101.6 81.28)
+		(uuid "7a5af498-6b42-58b5-9c46-ac005adab2b4"))
+	(no_connect
+		(at 101.6 76.2)
+		(uuid "b9cd54a5-9807-5fff-b2c7-86a4cb97942b"))
+	(wire
+		(pts
+			(xy 101.6 78.74)
+			(xy 104.14 78.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f55c0e04-96eb-57e2-b4db-704ddce97558"))
+	(label "UART_RX"
+		(at 104.14 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "954c89cc-006d-56af-9f02-47b1faad3062"))
+	(no_connect
+		(at 58.42 50.8)
+		(uuid "68f41911-584c-57c1-830a-f8703c484783"))
+	(no_connect
+		(at 101.6 160.02)
+		(uuid "b4935530-2f88-5b9c-b799-f903d729a9a6"))
+	(no_connect
+		(at 101.6 157.48)
+		(uuid "81656822-f9e3-5306-8786-cf8e7e2feb59"))
+	(wire
+		(pts
+			(xy 101.6 162.56)
+			(xy 104.14 162.56))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dca5dcea-fcf6-53fe-b795-1a19548e7836"))
+	(label "BUTTON"
+		(at 104.14 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "648749a1-2fab-5515-b2c7-d1a58dbde24b"))
+	(wire
+		(pts
+			(xy 101.6 154.94)
+			(xy 104.14 154.94))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f787b76a-a661-5617-8a30-2108e2f51a5e"))
+	(label "LED"
+		(at 104.14 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "66ccd118-fc02-5786-8984-54091362f221"))
+	(no_connect
+		(at 101.6 86.36)
+		(uuid "3a439376-b86b-58b1-a66a-d95de2f4750e"))
+	(no_connect
+		(at 101.6 152.4)
+		(uuid "7f4a7207-b03e-5890-8620-b45abfbd5d91"))
+	(no_connect
+		(at 101.6 88.9)
+		(uuid "f4a6efcb-855b-5e13-9e22-3dc11ba2ee9a"))
+	(no_connect
+		(at 101.6 149.86)
+		(uuid "45de3abc-785e-585b-b12a-afcd5b3e9181"))
+	(no_connect
+		(at 101.6 147.32)
+		(uuid "025d6e3e-506a-536b-8644-96d844e3a7d1"))
+	(wire
+		(pts
+			(xy 68.58 50.8)
+			(xy 68.58 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7c79298c-7d88-5ad0-832f-a29ea4aaab69"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 68.58 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "18200787-b30e-5d3f-91cd-6c098ec6f75c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 144.78)
+		(uuid "174b4617-5c20-51f3-9bb5-f54bd86d9ffd"))
+	(wire
+		(pts
+			(xy 71.12 50.8)
+			(xy 71.12 48.26))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e83af895-3c87-5b53-960f-e9b74e5f3897"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 71.12 48.26 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "3d76be56-afd2-5ba0-81f2-a8a8e96ddeda")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(no_connect
+		(at 101.6 142.24)
+		(uuid "e74f68f5-21a6-55b6-84ce-2e308c1bcde6"))
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdb690ae-25e4-51bf-9ef9-72680f55cb34")
+		(property "Reference" "C15"
+			(at 29.21 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7uF"
+			(at 29.21 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C15_C_0603_1608Metric"
+			(at 25.4 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDD W1"
+			(at 25.4 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a0615059-864a-5363-830d-be33e40d8a3f"))
+		(pin "2"
+			(uuid "43b92821-03d0-5135-8da2-cceb0eb7414f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C15")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 25.4 234.95)
+			(xy 25.4 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "eb364b08-46f5-5754-888a-c4de6c1001b9"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 25.4 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "cb3b1c10-0157-5de4-874a-4c4c792763df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.4 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 25.4 242.57)
+			(xy 25.4 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6efdf930-ae16-5230-ac5e-28c64f903e38"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 25.4 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "106d7a19-abac-5a64-8175-ee913f1953ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.4 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 45.72 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6001826e-9915-5e50-b122-0d8dd41b6223")
+		(property "Reference" "C16"
+			(at 49.53 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "1uF"
+			(at 49.53 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C16_C_0402_1005Metric"
+			(at 45.72 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDD B1"
+			(at 45.72 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "64735bad-26f7-5ec7-b3b8-21e2c7b0ee46"))
+		(pin "2"
+			(uuid "5cb40446-6294-58e6-a64f-f683c67f2f5f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C16")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 45.72 234.95)
+			(xy 45.72 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "90bef909-e7ff-5606-9855-b0573c829c3f"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 45.72 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "65889b4f-a164-514b-b6b3-9008e51140da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 45.72 242.57)
+			(xy 45.72 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "160faeb2-38dc-544e-a308-c326f5514fe5"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 45.72 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "7fc34308-2b2c-5919-92ad-ef0b683a034b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 63.5 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "015c89c3-3289-56a3-b3ed-a5848378317d")
+		(property "Reference" "C17"
+			(at 67.31 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100nF"
+			(at 67.31 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C17_C_0402_1005Metric"
+			(at 63.5 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDD A22"
+			(at 63.5 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "651e8298-fad3-5d25-b485-77c916e4d081"))
+		(pin "2"
+			(uuid "4ea9f0c1-c852-5f51-8c32-c398fbe05e16"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C17")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 63.5 234.95)
+			(xy 63.5 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "faa80264-11ec-5540-91ec-881f1f15ae15"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 63.5 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "836227cc-0653-5603-8260-cfd7575db833")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.5 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 63.5 242.57)
+			(xy 63.5 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8c4171f4-bef4-5ffe-8256-f0777fbedf1c"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 63.5 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "fdd6b7b7-9b24-5856-8f54-e1fa1bfb2768")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.5 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 81.28 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60755a0b-5940-5b76-ac0d-f70db796eb58")
+		(property "Reference" "C18"
+			(at 85.09 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100nF"
+			(at 85.09 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C18_C_0402_1005Metric"
+			(at 81.28 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDD AD14"
+			(at 81.28 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "79fbbb33-c1db-5275-ac53-711f3cfae45b"))
+		(pin "2"
+			(uuid "f86a522c-8f52-54e0-b538-701444168144"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C18")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 81.28 234.95)
+			(xy 81.28 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dd8768a5-dbd2-5bb7-b748-752eba7cb5b3"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 81.28 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "232af53c-25a1-5641-be76-29b57c422335")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 81.28 242.57)
+			(xy 81.28 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4dcc2e3a-9bba-5ed8-ae63-63c9304e7df7"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 81.28 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "0d36427e-cd92-5631-8cda-f13a3c7f2492")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 101.6 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e181a060-8c65-55c0-b587-e07315d97585")
+		(property "Reference" "C19"
+			(at 105.41 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100nF"
+			(at 105.41 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C19_C_0402_1005Metric"
+			(at 101.6 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDD AD23"
+			(at 101.6 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "791ec18a-8d50-5ed0-bfb3-ac3b86d92c34"))
+		(pin "2"
+			(uuid "88197bfb-f7e6-5fda-8ec6-04b4612860c4"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C19")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 101.6 234.95)
+			(xy 101.6 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2fa246b9-7225-5847-bd51-06c1ec8d4df8"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 101.6 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "0b12756d-02b9-5d0f-9005-b76f4da21939")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 101.6 242.57)
+			(xy 101.6 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "da1f5c2b-d127-5e02-9291-120a4f103ddf"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 101.6 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "b7714aa6-9188-54a3-b75a-2031776bbe6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eff9e5a9-81bf-5957-8715-01f00da22edc")
+		(property "Reference" "C20"
+			(at 125.73 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7uF"
+			(at 125.73 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C20_C_0603_1608Metric"
+			(at 121.92 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VDDH Y2 (tied to VDD: normal-voltage mode)"
+			(at 121.92 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f55ed857-50af-597f-a55a-de1cfb6d6b35"))
+		(pin "2"
+			(uuid "45005500-5178-5c0a-9970-a2746c6b6163"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C20")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 121.92 234.95)
+			(xy 121.92 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "73831415-4dbd-58d2-9c34-a63c66dd0370"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 121.92 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "82617a1d-18a0-5450-9ac1-d4a83b091275")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 121.92 242.57)
+			(xy 121.92 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2ea05ee9-fb56-51aa-b6c1-b7e3badd785c"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 121.92 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "173113da-a820-58d4-b171-27b863cbc13f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 142.24 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b06824f-721c-5936-a314-4c2f05b6baf7")
+		(property "Reference" "C21"
+			(at 146.05 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7uF"
+			(at 146.05 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C21_C_0603_1608Metric"
+			(at 142.24 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "VBUS AD2"
+			(at 142.24 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "7d72b966-ca23-5bd7-b086-d891b30e028a"))
+		(pin "2"
+			(uuid "08de7278-bfac-5ca7-9875-1d417ca78214"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C21")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 142.24 234.95)
+			(xy 142.24 232.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4b8f5848-611c-57dc-99d0-a50d1c7d6a48"))
+	(global_label "5V_BUS"
+		(shape bidirectional)
+		(at 142.24 232.41 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "46d1f0b5-d052-50e8-aec0-5818f0ddcaae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.24 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 142.24 242.57)
+			(xy 142.24 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6a5d229d-8ee8-5934-98ff-b632df9a7cfe"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 142.24 245.11 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "f98a3090-5654-5bde-8670-13a73d638414")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.24 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 160.02 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "900ee512-00df-51c5-9f2a-18b8abd585b9")
+		(property "Reference" "C22"
+			(at 163.83 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7uF"
+			(at 163.83 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C22_C_0603_1608Metric"
+			(at 160.02 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "c78942e2-d896-5589-8387-ed01a3d87022"))
+		(pin "2"
+			(uuid "3aeb5e4a-e556-5998-95fd-7a8f0b7a4b46"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C22")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 160.02 240.03)
+			(xy 160.02 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a32d0fd1-199d-50b8-9118-5b50269d7e8c"))
+	(label "NRF_DECUSB"
+		(at 160.02 237.49 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "19db7b8a-f66a-504c-ad74-f9c0cf2a12e6"))
+	(wire
+		(pts
+			(xy 160.02 247.65)
+			(xy 160.02 250.19))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "53328406-979b-5d12-b12a-43a7279e8fd4"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 160.02 250.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "3b4e30b5-5091-5a4c-a255-075a6b632b1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c54dced-0d60-5711-8dab-9ff01803d836")
+		(property "Reference" "C23"
+			(at 184.15 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100nF"
+			(at 184.15 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C23_C_0402_1005Metric"
+			(at 180.34 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "07385c89-5e63-5c87-a6d8-a5614465d3b9"))
+		(pin "2"
+			(uuid "dd13eadd-9bb5-5078-8116-1974c964a844"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C23")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 180.34 237.49)
+			(xy 180.34 234.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a6d22c21-6b16-5123-b13b-0be74bc307bf"))
+	(label "NRF_DEC1"
+		(at 180.34 234.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "6bf7d9e3-bbb2-58e2-8f36-ed33a44deea6"))
+	(wire
+		(pts
+			(xy 180.34 245.11)
+			(xy 180.34 247.65))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1bf5d822-ba1b-52d4-96c5-f3836ad36f1e"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 180.34 247.65 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "a9ed7656-b724-5a2c-a3f6-ea4474f13ed7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.34 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 200.66 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cd68eef-b70c-58a7-87b6-217f5f280aeb")
+		(property "Reference" "C24"
+			(at 204.47 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100pF"
+			(at 204.47 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C24_C_0402_1005Metric"
+			(at 200.66 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "aaad59ca-2df1-5b45-9635-0b5472e92f0a"))
+		(pin "2"
+			(uuid "339f5e1b-24bd-5b69-8ce7-0ba7fa44667f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C24")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 200.66 237.49)
+			(xy 200.66 234.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b144ecbc-9c9f-58b6-87a4-b4c4fd9daa02"))
+	(label "NRF_DEC3"
+		(at 200.66 234.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "fa5add24-75bf-5ddb-baa0-ede7669bd15a"))
+	(wire
+		(pts
+			(xy 200.66 245.11)
+			(xy 200.66 247.65))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "66062fb1-8ef4-51d9-8b46-8440d08451ba"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 200.66 247.65 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "acdeff17-cc86-5c72-83d7-00a8322c39b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 218.44 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41fb5ab9-bacd-57a1-9a65-f6cab1dbb451")
+		(property "Reference" "C25"
+			(at 222.25 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "1uF"
+			(at 222.25 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C25_C_0402_1005Metric"
+			(at 218.44 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "fee65229-3eb8-5799-ae1c-3ba70b84fc3d"))
+		(pin "2"
+			(uuid "805dc93f-4289-5e17-9b4b-ba4476eaaa3b"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C25")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 218.44 240.03)
+			(xy 218.44 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "18d5d3f5-0890-56ea-ab06-c164da3c41cd"))
+	(label "NRF_DEC4_6"
+		(at 218.44 237.49 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "a3a0f426-964a-5733-88d2-1d5c40666b9d"))
+	(wire
+		(pts
+			(xy 218.44 247.65)
+			(xy 218.44 250.19))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2cc8af32-3268-54d0-bb5d-ab4f4f65929c"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 218.44 250.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "567b6cf7-1f25-56f4-a2e9-97cfde34e288")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 236.22 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1429436-de7f-509d-a0a2-ddec2cdb7a25")
+		(property "Reference" "C26"
+			(at 240.03 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "47nF"
+			(at 240.03 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C26_C_0402_1005Metric"
+			(at 236.22 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "abf0b044-de02-5c25-97de-8f7c853f912e"))
+		(pin "2"
+			(uuid "c41b7aaa-4109-5869-957e-3f830ae17da0"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C26")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 236.22 240.03)
+			(xy 236.22 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f02c5323-9b26-5509-8ffb-2332633bfc5a"))
+	(label "NRF_DEC4_6"
+		(at 236.22 237.49 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "4fd80f6c-cb06-5664-b45b-1ca6a57afd8b"))
+	(wire
+		(pts
+			(xy 236.22 247.65)
+			(xy 236.22 250.19))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "efcd6b0c-02fe-586d-964a-f9a76c0c750a"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 236.22 250.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "2ade84a0-9d8d-5309-9737-64b3f29991ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:L")
+		(at 254 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "03bb520d-5425-5b22-a3db-0dcbe0962f03")
+		(property "Reference" "L2"
+			(at 255.27 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "10uH"
+			(at 255.27 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:L2_L_0603_1608Metric"
+			(at 254 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQM18PN100MFRL"
+			(at 254 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "DNP: ferrite saturates in the MagSafe field - REG1 runs in LDO mode (DCDCEN=0)"
+			(at 254 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "485c34ad-b785-5106-94e1-62689f726be2"))
+		(pin "2"
+			(uuid "4b4fdc52-718e-50f1-b87c-b706198fbb1e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "L2")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 254 240.03)
+			(xy 254 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0e26f1f7-5f3b-5802-a559-3763d7acc0c8"))
+	(label "NRF_DCC"
+		(at 254 237.49 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "58cfb0ad-2c00-5ea5-9720-13606936fe67"))
+	(wire
+		(pts
+			(xy 254 247.65)
+			(xy 254 250.19))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8f6f22b6-c0f0-52ce-8319-8414226c1db2"))
+	(label "NRF_DCC_L"
+		(at 254 250.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "be18d117-10ef-5eb3-bee0-fdbcfcba4201"))
+	(symbol
+		(lib_id "Device:L")
+		(at 269.24 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "3a1af290-42e4-5e13-b2af-9fae5ba3c17d")
+		(property "Reference" "L3"
+			(at 270.51 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "15nH"
+			(at 270.51 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:L3_L_0402_1005Metric"
+			(at 269.24 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQG15HS15NJ02D"
+			(at 269.24 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "DNP with the 10 uH (LDO mode)"
+			(at 269.24 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ad0a55ba-205f-589c-b944-d25ea52c9ffe"))
+		(pin "2"
+			(uuid "67b708c3-388e-5cfe-b079-81092866e506"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "L3")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 269.24 240.03)
+			(xy 269.24 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b281138a-7a5d-5f95-aa4a-4080d5ba3d4b"))
+	(label "NRF_DCC_L"
+		(at 269.24 237.49 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "f1577360-bbb9-5197-ab07-a92b555b426b"))
+	(wire
+		(pts
+			(xy 269.24 247.65)
+			(xy 269.24 250.19))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "484bbbe8-eb9b-5a2f-acdf-3cbc30442255"))
+	(label "NRF_DEC4_6"
+		(at 269.24 250.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "dd7c9fc8-c86d-53ce-b924-a82da50221ec"))
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 38.1 284.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "632e4f7b-db8c-51a9-8b87-9914fdd3eb19")
+		(property "Reference" "Y1"
+			(at 34.29 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "32MHz"
+			(at 34.29 292.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:Y1_Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 38.1 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "ABM11W-32.0000MHZ-8-B1U-T3"
+			(at 38.1 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Abracon"
+			(at 38.1 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "59daa587-aaef-5084-b045-f5f4ee4995be"))
+		(pin "2"
+			(uuid "e39e5e1d-8010-5878-b931-e19b5758ed87"))
+		(pin "3"
+			(uuid "d9fdcd3c-3fbc-5b9a-a052-09b5671f0f86"))
+		(pin "4"
+			(uuid "4d2f9596-5fc4-5b83-ba9d-75c85e0190c4"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "Y1")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 34.29 284.48)
+			(xy 31.75 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8f5ce769-5f4e-552b-85af-ea27796d1063"))
+	(label "NRF_XC1"
+		(at 31.75 284.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "dfc08e91-6348-5ee8-888a-27e32e47e085"))
+	(wire
+		(pts
+			(xy 38.1 289.56)
+			(xy 38.1 292.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5d7ef08c-226d-5bf5-b14e-3cf9568c6e35"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 38.1 292.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "42eb1f1c-8278-5bd6-8026-4e093acc2213")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 292.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 41.91 284.48)
+			(xy 44.45 284.48))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "38a3a2d8-4d1d-5884-bd3e-e3a1606a3f08"))
+	(label "NRF_XC2"
+		(at 44.45 284.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "a6d263e3-0962-58ee-9380-c2783b194fd3"))
+	(wire
+		(pts
+			(xy 38.1 289.56)
+			(xy 38.1 292.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "77f8e18e-764c-5242-9976-c17d6d10a8a9"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 38.1 292.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "577495d9-af26-5cd1-baaf-c41a3ac00ff1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 292.1 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 60.96 294.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2131c655-ec5b-522c-a1d3-2de8b8969f5a")
+		(property "Reference" "C27"
+			(at 64.77 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "12pF"
+			(at 64.77 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C27_C_0402_1005Metric"
+			(at 60.96 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "07c54d76-40f2-524d-a72c-89a8d41bca36"))
+		(pin "2"
+			(uuid "018f676b-1b3a-556d-a8e8-8471453d13c7"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C27")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 60.96 290.83)
+			(xy 60.96 288.29))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c74641ae-b795-5a38-9821-35e36e730a4f"))
+	(label "NRF_XC1"
+		(at 60.96 288.29 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "d6f16c93-a596-57d8-864f-7fb8a231f4d6"))
+	(wire
+		(pts
+			(xy 60.96 298.45)
+			(xy 60.96 300.99))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a6ee83de-3cc6-5e15-8034-e72d02a7a15d"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 60.96 300.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "e09bc452-1746-5741-b26a-bb640c7c60e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 81.28 294.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b0542e8-1fe7-5c1e-958d-5e5fc0cc5d4a")
+		(property "Reference" "C28"
+			(at 85.09 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "12pF"
+			(at 85.09 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C28_C_0402_1005Metric"
+			(at 81.28 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2a90588e-7cdb-556e-bfac-b7ba736b5db5"))
+		(pin "2"
+			(uuid "4c4b5898-3ec4-5430-81b3-d62ca3accb98"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C28")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 81.28 290.83)
+			(xy 81.28 288.29))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b30b4dfd-24c0-5cb2-8cb0-bf03f7cb48c7"))
+	(label "NRF_XC2"
+		(at 81.28 288.29 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "a00fe402-9d2b-5bf8-ab4f-ef464fd7a6e9"))
+	(wire
+		(pts
+			(xy 81.28 298.45)
+			(xy 81.28 300.99))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b1a8a9a7-a921-5482-bc12-a99ea989dd86"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 81.28 300.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "a19fe7a3-bd22-52f1-99a5-4c06fbf041d3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 340.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0cc0b48d-3318-5679-a303-ddf7af874f82")
+		(property "Reference" "C29"
+			(at 29.21 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "0.8pF"
+			(at 29.21 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C29_C_0402_1005Metric"
+			(at 25.4 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "GJM1555C1HR80BB01D"
+			(at 25.4 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Return to VSS_PA"
+			(at 25.4 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d9256899-84a8-5f81-9e8e-fcc731e34e77"))
+		(pin "2"
+			(uuid "45054304-b6c3-5bbe-b483-789103ddab18"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C29")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 25.4 336.55)
+			(xy 25.4 334.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6d16f125-84ea-5a2f-a91e-5676ec0dc201"))
+	(label "NRF_ANT"
+		(at 25.4 334.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "4a700419-17b4-52a1-a5e7-215f36c32fff"))
+	(wire
+		(pts
+			(xy 25.4 344.17)
+			(xy 25.4 346.71))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bbaf616e-a788-5a16-820f-905d7219a3e0"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 25.4 346.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "b7435477-8132-58ab-9327-884f8632b66b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.4 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:L")
+		(at 43.18 340.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "caab91c0-bd7f-5fbc-9517-359a144febc3")
+		(property "Reference" "L4"
+			(at 44.45 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7nH"
+			(at 44.45 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:L4_L_0402_1005Metric"
+			(at 43.18 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQG15HS4N7B02D"
+			(at 43.18 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C162543"
+			(at 43.18 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "906103a3-8fa9-5f92-861f-822b5ef85b2f"))
+		(pin "2"
+			(uuid "d540b7a5-5800-524a-8603-84ef51bfe233"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "L4")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 43.18 336.55)
+			(xy 43.18 334.01))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fad5dbb8-8eca-54af-953d-b297d70f3ed5"))
+	(label "NRF_ANT"
+		(at 43.18 334.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "216c83de-36a5-5402-bca8-272d14c317e9"))
+	(wire
+		(pts
+			(xy 43.18 344.17)
+			(xy 43.18 346.71))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e48df5d1-db2d-555a-803b-f1d9124cea44"))
+	(global_label "RX_RF"
+		(shape bidirectional)
+		(at 43.18 346.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "a6c8987d-acc3-5fb7-9490-1b18fd68e1e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.18 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 60.96 337.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2eae8769-d263-5e4b-be3d-9fa88b3f5e8d")
+		(property "Reference" "C30"
+			(at 64.77 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "0.5pF"
+			(at 64.77 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C30_C_0402_1005Metric"
+			(at 60.96 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "GJM1555C1HR50BB01D"
+			(at 60.96 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "9be3063b-8656-5a62-a263-5d7d06f42b20"))
+		(pin "2"
+			(uuid "b34954ac-2146-5c08-868c-2afb1c22589a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "C30")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 60.96 334.01)
+			(xy 60.96 331.47))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e04c485f-fabf-587e-9737-355c2fafba3f"))
+	(global_label "RX_RF"
+		(shape bidirectional)
+		(at 60.96 331.47 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "75767a27-e048-5eb3-87d9-68994988c88d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 60.96 341.63)
+			(xy 60.96 344.17))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c7427967-41c2-5796-90b5-2ba4b6648c73"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 60.96 344.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "17b3c1f0-4133-57ba-8cb4-eb2e1fa0030f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL")
+		(at 27.94 393.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7cadd7d-d770-56a5-950c-345915622e1f")
+		(property "Reference" "J2"
+			(at 22.86 382.27 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "TC2030-IDC-NL"
+			(at 22.86 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:J2_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+			(at 27.94 393.7 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1d5e362f-5d68-5e09-8288-c69e8f542c76"))
+		(pin "2"
+			(uuid "24e643a5-a60e-5d51-b9d0-3c47d2cc5066"))
+		(pin "3"
+			(uuid "6078b095-25a3-508d-b41e-64892c2d941b"))
+		(pin "4"
+			(uuid "98671b96-06c8-504a-a8a6-7ec76f6e3310"))
+		(pin "5"
+			(uuid "3e067b72-f040-5d13-ba21-479176b3cc7a"))
+		(pin "6"
+			(uuid "5523ae2a-097a-5370-b669-88c84af114db"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "J2")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 25.4 383.54)
+			(xy 25.4 381))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2a3da5fe-3d4a-55c3-a8b8-89fb32535417"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 25.4 381 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "bf5d6a24-96eb-594a-9280-7670e78adff1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.4 381 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 35.56 396.24)
+			(xy 38.1 396.24))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "175106d8-0dfc-597c-a25c-5894ed4813ca"))
+	(label "SWDIO"
+		(at 38.1 396.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "8a5d9b92-6efc-546b-9e6c-8e2990fb5933"))
+	(wire
+		(pts
+			(xy 35.56 388.62)
+			(xy 38.1 388.62))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "40cb0a6e-68a7-5576-abef-dbab7b0cfdf5"))
+	(label "nRESET"
+		(at 38.1 388.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "fd9b6abe-57b7-510e-bb99-2c51ccff9424"))
+	(wire
+		(pts
+			(xy 35.56 393.7)
+			(xy 38.1 393.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7dd2de29-1144-5444-9f49-a39cd4784fbb"))
+	(label "SWDCLK"
+		(at 38.1 393.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "b748c538-083a-5680-af80-5f49238e2317"))
+	(wire
+		(pts
+			(xy 25.4 403.86)
+			(xy 25.4 406.4))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c026353a-6e32-596f-ba20-d1b9c8158f42"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 25.4 406.4 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "f4ac4ec0-e256-5fbc-99e8-80bfd17bc798")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.4 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 35.56 398.78)
+			(xy 38.1 398.78))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f80002ea-4553-5131-89c6-3143ff60fafd"))
+	(label "SWO"
+		(at 38.1 398.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "c383add4-9826-5687-b724-1a74789ee544"))
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 388.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "837274e7-1883-56b9-bfa0-6438050d4c2d")
+		(property "Reference" "R13"
+			(at 58.42 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7k"
+			(at 58.42 389.89 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R13_R_0402_1005Metric"
+			(at 55.88 388.62 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "433090df-350a-5daf-8fbd-6f2cebbc50c3"))
+		(pin "2"
+			(uuid "e48660b0-6a40-5ccb-832c-8d5c319315c8"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R13")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 55.88 384.81)
+			(xy 55.88 382.27))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5f248aa2-8b10-5cd1-9c04-7bd3eb6311af"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 55.88 382.27 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "7ba235cd-d5ae-522d-8e66-195da92ca80e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 382.27 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 55.88 392.43)
+			(xy 55.88 394.97))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "abbee23b-301d-59eb-8333-c058c3924d12"))
+	(global_label "I2C_SCL"
+		(shape bidirectional)
+		(at 55.88 394.97 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "2655ac52-56d0-5c22-9f8c-acdd850190be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 394.97 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 388.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "849687f8-aa8f-57d1-ac6d-6abb90a131fb")
+		(property "Reference" "R14"
+			(at 73.66 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "4.7k"
+			(at 73.66 389.89 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R14_R_0402_1005Metric"
+			(at 71.12 388.62 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "75ab7273-debe-5219-9570-a50c412ad5ba"))
+		(pin "2"
+			(uuid "ab289a03-4d2a-5e11-b65a-3e3838bab7e7"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R14")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 384.81)
+			(xy 71.12 382.27))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4520edc0-7c64-5414-9eba-1cc110f122a3"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 71.12 382.27 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "04704985-8653-518b-984d-af00a56a5863")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 382.27 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 71.12 392.43)
+			(xy 71.12 394.97))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ca9951e1-059a-5824-9a6a-d58686a487a0"))
+	(global_label "I2C_SDA"
+		(shape bidirectional)
+		(at 71.12 394.97 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "03625a67-42cb-5f4f-93a7-963ec06d561a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 394.97 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 88.9 386.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61e62ead-9af8-5a05-bb80-a64ed5424f11")
+		(property "Reference" "R15"
+			(at 91.44 384.81 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100k"
+			(at 91.44 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R15_R_0402_1005Metric"
+			(at 88.9 386.08 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Synth disabled until firmware enables it"
+			(at 88.9 386.08 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "68ff513a-0e37-5437-8df2-d6598aa23170"))
+		(pin "2"
+			(uuid "a218065d-2356-5164-be5f-ec23b4e30ca6"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R15")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 88.9 382.27)
+			(xy 88.9 379.73))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c6339128-65bd-5a3c-ba0b-2c8af62841da"))
+	(global_label "SYN_CE"
+		(shape bidirectional)
+		(at 88.9 379.73 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "31ec5844-600e-502b-a6e4-d495b45171a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 379.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 88.9 389.89)
+			(xy 88.9 392.43))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "83f577e7-decc-590d-8b60-c47aa3caa3f2"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 88.9 392.43 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "de3aaffd-b0b1-5814-966f-6132a3960d83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 392.43 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 104.14 391.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76a0b490-bb90-5af6-8f84-022ba6769a70")
+		(property "Reference" "R16"
+			(at 106.68 389.89 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "33"
+			(at 106.68 392.43 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R16_R_0402_1005Metric"
+			(at 104.14 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Series termination (3x 33R from the Altium MCU sheet)"
+			(at 104.14 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ba321bd8-fe59-5e56-8b0a-5b848886b760"))
+		(pin "2"
+			(uuid "b4a4342b-ae47-51d7-bf22-47c43299e7a1"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R16")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 104.14 387.35)
+			(xy 104.14 384.81))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "199a1727-39b3-5b77-a7d9-85bf366c5d97"))
+	(label "SYN_SCK_M"
+		(at 104.14 384.81 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "e95963e6-d6fe-5e28-989e-81b0b7100d4a"))
+	(wire
+		(pts
+			(xy 104.14 394.97)
+			(xy 104.14 397.51))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5efaa59c-b0a4-5d26-a7de-50a59e1392dc"))
+	(global_label "SYN_SCK"
+		(shape bidirectional)
+		(at 104.14 397.51 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "4919da4e-8f6f-5a93-8e5d-e8f7f9fde089")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 397.51 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 391.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3fb12d7-ec04-56cf-ae53-719006411557")
+		(property "Reference" "R17"
+			(at 121.92 389.89 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "33"
+			(at 121.92 392.43 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R17_R_0402_1005Metric"
+			(at 119.38 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Series termination (3x 33R from the Altium MCU sheet)"
+			(at 119.38 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "2e1142dd-14f3-55e8-82e1-9d8a7db57c81"))
+		(pin "2"
+			(uuid "66ad9fd8-3777-58c2-b892-2b9d939cd350"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R17")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 119.38 387.35)
+			(xy 119.38 384.81))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f440165c-abf7-5c5c-8514-7f902fe72181"))
+	(label "SYN_SDI_M"
+		(at 119.38 384.81 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "782d194e-3b28-57dc-8962-bc7cf37fcbed"))
+	(wire
+		(pts
+			(xy 119.38 394.97)
+			(xy 119.38 397.51))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5cecd131-90ef-5e3f-b449-564cd2108803"))
+	(global_label "SYN_SDI"
+		(shape bidirectional)
+		(at 119.38 397.51 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "c6367813-7d1b-5455-88e3-7ebf484a13a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.38 397.51 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 391.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "77d3e445-35f0-5c42-bf29-e9085bfe87ac")
+		(property "Reference" "R18"
+			(at 137.16 389.89 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "33"
+			(at 137.16 392.43 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R18_R_0402_1005Metric"
+			(at 134.62 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Series termination (3x 33R from the Altium MCU sheet)"
+			(at 134.62 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "15688319-80f5-569e-88f1-d8bc94743f97"))
+		(pin "2"
+			(uuid "56649c62-ba6b-565c-8116-51025e35a11a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R18")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 134.62 387.35)
+			(xy 134.62 384.81))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4e979a42-ab0e-56a0-a41e-7962a412c5f0"))
+	(label "SYN_CSB_M"
+		(at 134.62 384.81 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "400f7759-5dc2-510e-a576-6356d794bcfb"))
+	(wire
+		(pts
+			(xy 134.62 394.97)
+			(xy 134.62 397.51))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "663ca9b6-e8e0-55bd-b760-c45fbefa3d3d"))
+	(global_label "SYN_CSB"
+		(shape bidirectional)
+		(at 134.62 397.51 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "492f3123-b2f0-5e56-a8bc-2f68b06809db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.62 397.51 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 25.4 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6345b589-4084-5915-9414-a9df535796d9")
+		(property "Reference" "R19"
+			(at 27.94 443.23 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "1.5k"
+			(at 27.94 445.77 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R19_R_0402_1005Metric"
+			(at 25.4 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "57662bd0-294f-533c-ae2b-d71e1b4388eb"))
+		(pin "2"
+			(uuid "1365bb79-ccc5-5327-af76-e6889e8946c4"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "R19")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 25.4 440.69)
+			(xy 25.4 438.15))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "29fbb469-4bf4-55f4-80f4-8db55d998d6e"))
+	(label "LED"
+		(at 25.4 438.15 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "5d80c458-7b32-5a07-b50c-046a266ba9c9"))
+	(wire
+		(pts
+			(xy 25.4 448.31)
+			(xy 25.4 450.85))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8e7016b9-c55e-5d10-9804-15da8ff51168"))
+	(label "LED_A"
+		(at 25.4 450.85 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "ba69c9fb-6379-51e6-aa55-bb7fca453046"))
+	(symbol
+		(lib_id "Device:LED")
+		(at 53.34 434.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0128c68-3dc1-57dc-a886-f7efa8ea0631")
+		(property "Reference" "D2"
+			(at 48.26 431.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "Red"
+			(at 48.26 439.42 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:D2_LED_0603_1608Metric"
+			(at 53.34 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "KT-0603R"
+			(at 53.34 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 53.34 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cc599b74-a713-5570-9cf8-0035fc70d419"))
+		(pin "2"
+			(uuid "864a15e2-e203-51e4-b49f-d99216d4c97a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "D2")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 49.53 434.34)
+			(xy 46.99 434.34))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b425050d-49bf-566f-92e2-9fb74a5586c7"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 46.99 434.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "bf648326-b0f0-5792-bd96-fdaa6d7f4c07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 57.15 434.34)
+			(xy 59.69 434.34))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b216894c-5157-5950-b8c5-7afd18a290f2"))
+	(label "LED_A"
+		(at 59.69 434.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "c02d616e-4719-5578-8a6c-40a2086bb60c"))
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 436.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9f2e274-3a3d-5f7e-922d-9161d748c96e")
+		(property "Reference" "SW1"
+			(at 83.82 433.07 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "B3U-1000P"
+			(at 83.82 439.42 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:SW1_SW_SPST_B3U-1000P"
+			(at 88.9 436.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "B3U-1000P"
+			(at 88.9 436.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Omron"
+			(at 88.9 436.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Firmware test / start demo TX (internal pull-up)"
+			(at 88.9 436.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "53879f18-6431-59dc-9eaf-01f5edfcdf80"))
+		(pin "2"
+			(uuid "5c1fee7c-9a3c-52e4-bbe2-d5730f8d5f61"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "SW1")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 83.82 436.88)
+			(xy 81.28 436.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "250d99e1-577f-5db6-a2f3-4239a2196335"))
+	(label "BUTTON"
+		(at 81.28 436.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "e3b4b615-4ef3-5abb-94ee-eb14f146724a"))
+	(wire
+		(pts
+			(xy 93.98 436.88)
+			(xy 96.52 436.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cb1b69ed-d267-50f5-b4fa-119f44b03f18"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 96.52 436.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "d61c1ffe-981c-575d-959e-253b0983c6f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.52 436.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 477.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0275158a-633a-54ee-8d8b-f0c2cf7858ed")
+		(property "Reference" "H1"
+			(at 27.94 476.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "M2"
+			(at 27.94 478.79 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:H1_MountingHole_2.2mm_M2"
+			(at 25.4 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "H1")
+					(unit 1)))))
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 477.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "de7e7286-dfca-5e82-be4e-c88b371a94a0")
+		(property "Reference" "H2"
+			(at 43.18 476.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "M2"
+			(at 43.18 478.79 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:H2_MountingHole_2.2mm_M2"
+			(at 40.64 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "H2")
+					(unit 1)))))
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 55.88 477.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "301b96c6-0976-5093-9782-333c8e00382b")
+		(property "Reference" "H3"
+			(at 58.42 476.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "M2"
+			(at 58.42 478.79 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:H3_MountingHole_2.2mm_M2"
+			(at 55.88 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "H3")
+					(unit 1)))))
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 68.58 477.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3006a0c2-bade-58b8-a857-766b5050e2f5")
+		(property "Reference" "H4"
+			(at 71.12 476.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "M2"
+			(at 71.12 478.79 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:H4_MountingHole_2.2mm_M2"
+			(at 68.58 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "H4")
+					(unit 1)))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 22.86 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d95f1f2e-4b05-5a66-9840-637e13084066")
+		(property "Reference" "TP1"
+			(at 25.4 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "UART_TX"
+			(at 25.4 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP1_TestPoint_Pad_D1.0mm"
+			(at 22.86 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a1bf2958-de26-5c98-bf5c-243db429a5ec"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP1")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 22.86 505.46)
+			(xy 22.86 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a7983366-3340-518c-b110-76c105593f20"))
+	(label "UART_TX"
+		(at 22.86 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "30c7a6bb-347c-5c5e-8b79-baaf473e0f09"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 43.18 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba998016-268d-5cea-a543-3893f7acef57")
+		(property "Reference" "TP2"
+			(at 45.72 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "UART_RX"
+			(at 45.72 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP2_TestPoint_Pad_D1.0mm"
+			(at 43.18 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "cf7374f9-ba4e-58da-88d0-a75717c206ae"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP2")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 43.18 505.46)
+			(xy 43.18 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "42d9a5c7-6ca8-5c69-acd4-0ece121d4662"))
+	(label "UART_RX"
+		(at 43.18 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "dc375023-6d67-50f4-9f4d-e87da70a5837"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "06a4ff46-0098-5b49-b8d5-3abc74833a37")
+		(property "Reference" "TP3"
+			(at 63.5 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "SPARE_IO1"
+			(at 63.5 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP3_TestPoint_Pad_D1.0mm"
+			(at 60.96 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b991bca1-49a0-5bca-bb51-1d2764cb4ab4"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP3")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 60.96 505.46)
+			(xy 60.96 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dba885e9-bcf6-5e00-bc6f-11cb769af62c"))
+	(label "SPARE_IO1"
+		(at 60.96 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "61b986d2-91a1-5a88-bf13-d6cc2d6c89b5"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.82 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "08463e38-58a3-5117-9407-eb7024e3d758")
+		(property "Reference" "TP4"
+			(at 86.36 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "SPARE_IO2"
+			(at 86.36 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP4_TestPoint_Pad_D1.0mm"
+			(at 83.82 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a0eec942-91b0-5f08-87d4-970eba56b6b3"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP4")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 83.82 505.46)
+			(xy 83.82 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "29d49a57-2340-5a0d-8c27-f01fbe803d61"))
+	(label "SPARE_IO2"
+		(at 83.82 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "ef35dfcc-0bf8-5487-9175-cc7b167f6a58"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c8265ce-532f-541d-b896-0d0440f5a7d4")
+		(property "Reference" "TP5"
+			(at 106.68 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "SPARE_IO3"
+			(at 106.68 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP5_TestPoint_Pad_D1.0mm"
+			(at 104.14 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "88535ca2-a8a7-57af-b291-c8bc17017e5a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP5")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 104.14 505.46)
+			(xy 104.14 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "13630ec0-2711-50fd-883f-573534a4a7ac"))
+	(label "SPARE_IO3"
+		(at 104.14 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "a72cf649-7c45-51c9-92fc-dfb4bd8d533e"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "43e02b2c-3fac-5a0d-9c40-e60210c939df")
+		(property "Reference" "TP6"
+			(at 127 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "I2C_SCL"
+			(at 127 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP6_TestPoint_Pad_D1.0mm"
+			(at 124.46 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1049898a-65cf-5ba0-9bb8-2ab252f47de2"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP6")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 124.46 505.46)
+			(xy 124.46 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ba628f05-8882-5425-aa65-1e7e285d1d63"))
+	(global_label "I2C_SCL"
+		(shape bidirectional)
+		(at 124.46 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "c45d03f0-461a-526a-b142-e9e6141c4313")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 144.78 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "95232a21-f0ba-5cdc-840a-ce80c7fcae8e")
+		(property "Reference" "TP7"
+			(at 147.32 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "I2C_SDA"
+			(at 147.32 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP7_TestPoint_Pad_D1.0mm"
+			(at 144.78 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "be51563b-e815-5413-9632-37d783808c9e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP7")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 144.78 505.46)
+			(xy 144.78 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4bcccab2-abf9-50eb-a28d-53dfd1930d79"))
+	(global_label "I2C_SDA"
+		(shape bidirectional)
+		(at 144.78 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "23e82e3b-0073-56ed-9166-2ae022e42143")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.78 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 162.56 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "feea214e-76d7-558d-a35b-4df8beee3048")
+		(property "Reference" "TP8"
+			(at 165.1 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "SYN_MUXOUT"
+			(at 165.1 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP8_TestPoint_Pad_D1.0mm"
+			(at 162.56 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b0c671f5-7c68-583b-b9bd-e3b14b00410c"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP8")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 162.56 505.46)
+			(xy 162.56 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "14e41358-ff2b-5592-8437-4ef9a0e681b4"))
+	(global_label "SYN_MUXOUT"
+		(shape bidirectional)
+		(at 162.56 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "43f023e2-3fad-5a70-bcfb-28d0d2c28893")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cf9a35f-8392-504a-92e9-cd18e72661d4")
+		(property "Reference" "TP9"
+			(at 187.96 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "PA_EN"
+			(at 187.96 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP9_TestPoint_Pad_D1.0mm"
+			(at 185.42 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "17002fc8-7d30-5c3e-a023-27e87414ff8e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP9")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 185.42 505.46)
+			(xy 185.42 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0f069034-310a-5bd7-a9b3-8d695a6afa42"))
+	(global_label "PA_EN"
+		(shape bidirectional)
+		(at 185.42 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "5180abd5-86fe-51a3-bc45-b27a205b9571")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "db1f8476-f52b-5475-9049-b145f6133bf7")
+		(property "Reference" "TP10"
+			(at 205.74 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "LNA_PD"
+			(at 205.74 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP10_TestPoint_Pad_D1.0mm"
+			(at 203.2 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d5982bed-ba15-58d1-82d0-51fd76c98a95"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP10")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 203.2 505.46)
+			(xy 203.2 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "47fe9ce8-bc0d-5e07-90a2-a18238adac5f"))
+	(global_label "LNA_PD"
+		(shape bidirectional)
+		(at 203.2 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "07746c31-eec8-504c-8723-8880fd9c83ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 220.98 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "291adec1-b16a-5bf2-92ff-78c09f577966")
+		(property "Reference" "TP11"
+			(at 223.52 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "3V3"
+			(at 223.52 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP11_TestPoint_Pad_D1.0mm"
+			(at 220.98 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "e663b497-7140-5b2b-b740-47fb4a152765"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP11")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 505.46)
+			(xy 220.98 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "33e5c991-4fff-5a18-bc41-d9e6a7cf5e21"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 220.98 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "508e0e4b-6804-5400-a142-82276598f22f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.98 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 236.22 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "19e55549-c80b-5e60-b43f-80e0c63de9ea")
+		(property "Reference" "TP12"
+			(at 238.76 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "5V_BUS"
+			(at 238.76 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP12_TestPoint_Pad_D1.0mm"
+			(at 236.22 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8fd1a340-3f95-506d-8cc0-1114c316629a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP12")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 236.22 505.46)
+			(xy 236.22 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3d89e45a-8c46-53f8-8578-c9a949e30a8b"))
+	(global_label "5V_BUS"
+		(shape bidirectional)
+		(at 236.22 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "ed8a36c4-4860-5319-a208-7ceffd8b7d4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "607eeb46-1ba2-50dd-9198-ab2693688f62")
+		(property "Reference" "TP13"
+			(at 256.54 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "GND"
+			(at 256.54 506.73 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:TP13_TestPoint_Pad_D1.0mm"
+			(at 254 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "76110c6b-d612-5a10-9a69-c80e3910996f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/b3a5e572-0620-5b71-943a-b78f0b375d5d"
+					(reference "TP13")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 254 505.46)
+			(xy 254 508))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a18f17fa-fb70-5161-8d54-272e4e5f7553"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 254 508 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "948f746f-8c94-52ae-ab13-e2929b6aad84")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 254 508 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(sheet_instances
+		(path "/"
+			(page "1"))))

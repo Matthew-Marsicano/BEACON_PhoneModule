@@ -1,0 +1,123 @@
+(footprint "R31_R_0402_1005Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "R31"
+		(at 0 -1.17 0)
+		(layer "F.Fab")
+		(uuid "dc5ee7a2-a904-4343-8245-c6d03507dec9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Value" "300"
+		(at 0 1.17 0)
+		(layer "F.Fab")
+		(uuid "428538f6-e3cf-4164-b299-b8533d8fd125")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7135c668-9f2d-4837-8519-4f20e9fdf9ad")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94d1af33-e55e-4988-b9a9-86007aa85341")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7945862-33f3-4c8b-a414-e7bd48b7adac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Note" "Was 294: JLC Preferred swap (C25102), pad still 3.0 dB"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f3bb12d-7252-420d-b6f4-ba3262e9877c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "TX_PA")
+	(sheetfile "TX_PA.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.93 -0.47)
+		(end 0.93 0.47)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "59d4b4fb-2359-48c5-b69f-64c84e940d9e"))
+	(fp_line
+		(start -0.153641 -0.38)
+		(end 0.153641 -0.38)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "8aa1afec-746f-42b9-9980-59d7462e3f37"))
+	(fp_line
+		(start -0.153641 0.38)
+		(end 0.153641 0.38)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "0f666514-ed87-49f0-9223-f44e851676a4"))
+	(fp_rect
+		(start -0.525 -0.27)
+		(end 0.525 0.27)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "62c87cc6-df86-4b1d-acb8-f85280d1bda6"))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a32bc883-26e9-4535-aa68-4f5d8eb6140b")
+		(effects
+			(font
+				(size 0.26 0.26)
+				(thickness 0.04))))
+	(pad "1" smd roundrect
+		(at -0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ff94e41e-1b03-434d-99a2-802013fdc235"))
+	(pad "2" smd roundrect
+		(at 0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "742d3908-08d3-4a1d-9488-a58c70954a52"))
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0))
+		(scale
+			(xyz 1 1 1))
+		(rotate
+			(xyz 0 0 0))))

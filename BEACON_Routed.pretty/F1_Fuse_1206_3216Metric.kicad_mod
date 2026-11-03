@@ -1,0 +1,132 @@
+(footprint "F1_Fuse_1206_3216Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
+	(tags "fuse")
+	(property "Reference" "F1"
+		(at 0 -1.83 0)
+		(layer "F.Fab")
+		(uuid "f58b1de2-a3cc-4936-98c7-d8b4ce7325b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Value" "0.75A hold"
+		(at 0 1.83 0)
+		(layer "F.Fab")
+		(uuid "a4bc04e7-020d-4793-b6c8-9d0694f4d0cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30dcf595-b0f9-469b-9596-97d9e66cbbf1")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63de899a-e35d-4340-b610-6be3f52d9c2d")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dfd04f02-7b83-4202-a864-b47c84ea47c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "MPN" "NANOSMDC075F-2"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78e6158d-c89a-442f-9d84-693cd405b990")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Manufacturer" "Littelfuse"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3af0043-bf5b-49e3-aacc-5251b97c45d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "USB")
+	(sheetfile "USB.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.28 -1.13)
+		(end 2.28 1.13)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bf2d0bf6-8b73-484a-9bcf-ac3330d333cf"))
+	(fp_line
+		(start -0.602064 -0.91)
+		(end 0.602064 -0.91)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "38a7831a-c861-454a-a95c-2b5320d0016a"))
+	(fp_line
+		(start -0.602064 0.91)
+		(end 0.602064 0.91)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "d216daab-0104-43bd-9519-58a5937226b7"))
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "133b0aa2-0109-4e54-92cd-e26ac4dbb114"))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "bd628817-0f84-4555-a825-d3a56c04e7af")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12))))
+	(pad "1" smd roundrect
+		(at -1.4 0)
+		(size 1.25 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "ce62d4d8-aba0-42b3-ae28-52776c0855b1"))
+	(pad "2" smd roundrect
+		(at 1.4 0)
+		(size 1.25 1.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "c85c5c7e-be70-45af-9bb2-b52078eae57f"))
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+		(offset
+			(xyz 0 0 0))
+		(scale
+			(xyz 1 1 1))
+		(rotate
+			(xyz 0 0 0))))

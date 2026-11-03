@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "BEACON")(type "KiCad")(uri "${KIPRJMOD}/BEACON.kicad_sym")(options "")(descr "BEACON project symbols"))
+)

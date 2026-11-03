@@ -1,0 +1,87 @@
+# ECHO diff: original (Downloads/beacon_phone_magsafe_2p5mm_Latest.scad) vs rev_pcb, part=print_plate
+11c11
+< ECHO: "USB-C: centreline 8.95 mm above the phone face, opening 12.6 x 6.7 mm"
+---
+> ECHO: "USB-C: centreline 9.05 mm above the phone face, opening 12.6 x 6.7 mm"
+13c13,14
+< ECHO: "TX jack: right board edge at 66 mm; board notch 1.5 x 7.1 mm; axis 8.02 mm above the phone face, 5.2 mm of thread outside the wall"
+---
+> ECHO: "TX jack: right board edge at 66 mm; board notch 1.5 x 7.1 mm; axis 7.72 mm above the phone face, 6.07 mm of barrel outside the wall; slot 6.6 mm (0.13 mm radial on the thread)"
+> ECHO: "Lid: print light-coloured PETG (white/natural). Vents off"
+
+# Derived-variable diff (wrapper include + echo of every derived value; lines not shown are identical)
+22,23c22,23
+< ECHO: "VAR usb_zc = 8.95"
+< ECHO: "VAR usb_z0 = 5.6"
+---
+> ECHO: "VAR usb_zc = 9.05"
+> ECHO: "VAR usb_z0 = 5.7"
+30,33c30,33
+< ECHO: "VAR sma_z = 8.02"
+< ECHO: "VAR sma_hole = 6.85"
+< ECHO: "VAR jack_a = [26.2, 11.8]"
+< ECHO: "VAR jack_b = [27.8, 18.3]"
+---
+> ECHO: "VAR sma_z = 7.72"
+> ECHO: "VAR sma_hole = 6.6"
+> ECHO: "VAR jack_a = [26.15, 11.875]"
+> ECHO: "VAR jack_b = [27.8, 18.225]"
+
+# Identical derived values:
+cav_r = 3.3
+cav_x = 27.8
+cav_y0 = -51.25
+cav_y1 = 27.8
+engage = 2.4
+holes = [[-24, -47.45], [24, -47.45], [-24, 24], [24, 24]]
+holes_pcb = [[3.5, 3.5], [51.5, 3.5], [3.5, 74.95], [51.5, 74.95]]
+out_r = 5.1
+out_x = 29.6
+out_y0 = -53.05
+out_y1 = 29.6
+patch_c = [27.5, 39.225]
+patch_xy = [0, -11.725]
+pause_layer = 29
+pcb_L = 78.45
+pcb_W = 55
+pcb_x0 = -27.5
+pcb_y0 = -50.95
+screw_L = 4
+skin_t = 0.68
+snap_gd = 0.35
+snap_z = 10.57
+top_clear = 5.4
+tx_along = 15.05
+tx_gap = 0.3
+tx_notch = 1.5
+tx_nw = 3.55
+z_floor = 4.16
+z_hole_bot = 2.32
+z_pause = 3.56
+z_pcb_bot = 5.72
+z_pcb_top = 7.32
+z_seam = 12.72
+z_top = 14.32
+z_wall = 12.72
+
+# DXF vs KiCad Edge.Cuts
+DXF: 168 lines, 5 loops; outer 72 vertices, bbox (0.0, 0.0, 55.0, 78.45)
+KiCad Edge.Cuts: 12 items, KiCad X 100.0..155.0, Y 100.0..178.45
+  arc  (0.0, 75.45) -> (3.0, 78.45), c (3.0, 75.45), r 3.0000
+  line (0.0, 3.0) -> (0.0, 75.45)
+  line (3.0, 78.45) -> (52.0, 78.45)
+  arc  (3.0, 0.0) -> (0.0, 3.0), c (3.0, 3.0), r 3.0000
+  arc  (52.0, 78.45) -> (55.0, 75.45), c (52.0, 75.45), r 3.0000
+  line (52.0, 0.0) -> (3.0, 0.0)
+  line (53.5, 69.55) -> (53.5, 62.45)
+  line (53.5, 62.45) -> (55.0, 62.45)
+  line (55.0, 75.45) -> (55.0, 69.55)
+  line (55.0, 69.55) -> (53.5, 69.55)
+  line (55.0, 62.45) -> (55.0, 3.0)
+  arc  (55.0, 3.0) -> (52.0, 0.0), c (52.0, 3.0), r 3.0000
+DXF outer -> KiCad Edge.Cuts: max deviation 0.0038 mm at (53.232, 78.181)
+KiCad Edge.Cuts -> DXF outer: max deviation 0.0037 mm at (0.964, 77.653)
+  DXF hole c (51.5000, 74.9500) d_vertex 2.2000 (24 sides) <-> KiCad H4 c (51.5000, 74.9500) drill 2.2: centre offset 0.0000, vertex radius err 0.0000
+  DXF hole c (51.5000, 3.5000) d_vertex 2.2000 (24 sides) <-> KiCad H2 c (51.5000, 3.5000) drill 2.2: centre offset 0.0000, vertex radius err 0.0000
+  DXF hole c (3.5000, 74.9500) d_vertex 2.2000 (24 sides) <-> KiCad H3 c (3.5000, 74.9500) drill 2.2: centre offset 0.0000, vertex radius err 0.0000
+  DXF hole c (3.5000, 3.5000) d_vertex 2.2000 (24 sides) <-> KiCad H1 c (3.5000, 3.5000) drill 2.2: centre offset 0.0000, vertex radius err 0.0000

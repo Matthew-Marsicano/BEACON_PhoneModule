@@ -1,0 +1,206 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "93628b6b-7c33-5f9d-9b5b-ebf929aebfc7")
+	(paper "A3")
+	(title_block
+		(title "BEACON Phone Module")
+		(date "2026-11-02")
+		(rev "A")
+		(company "BEACON - Northeastern University Senior Capstone")
+		(comment 1 "Never charge. Never miss a beat. - World's first backscatter wearable")
+		(comment 2 "HW: M. Marsicano, J. Oshinsky, N. McKillips, I. Hong | FW: J. Faubus, J. Hensley")
+		(comment 3 "Advisor: Prof. Bahram Shafai"))
+	(lib_symbols)
+	(sheet
+		(at 30 40)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "5429c06b-d2b2-5aaa-8b8d-ad0a6f9f94d0")
+		(property "Sheetname" "USB"
+			(at 30 39.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "USB.kicad_sch"
+			(at 30 90.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "2")))))
+	(sheet
+		(at 150 40)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "e8d4fc19-d394-5c60-a779-c7e2af0fc5b0")
+		(property "Sheetname" "Power"
+			(at 150 39.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 150 90.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "3")))))
+	(sheet
+		(at 270 40)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "b3a5e572-0620-5b71-943a-b78f0b375d5d")
+		(property "Sheetname" "MCU"
+			(at 270 39.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 270 90.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "4")))))
+	(sheet
+		(at 30 120)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "9e39a85c-8b13-58eb-936f-909acb01695e")
+		(property "Sheetname" "RX_Frontend"
+			(at 30 119.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "RX_Frontend.kicad_sch"
+			(at 30 170.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "5")))))
+	(sheet
+		(at 150 120)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "95916daf-b70e-5c9d-ae2a-eef56eb1fe97")
+		(property "Sheetname" "TX_PA"
+			(at 150 119.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "TX_PA.kicad_sch"
+			(at 150 170.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "6")))))
+	(sheet
+		(at 270 120)
+		(size 90 50)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid))
+		(fill
+			(color 0 0 0 0))
+		(uuid "1b353bca-573f-55c0-bd6c-834ff2ca6585")
+		(property "Sheetname" "CW_Synth"
+			(at 270 119.3 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "CW_Synth.kicad_sch"
+			(at 270 170.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7"
+					(page "7")))))
+	(text "BEACON Phone Module - inferred specifications (no spec doc supplied; derived from the Altium schematic)\n  * Plugs straight into the phone through a USB-C plug: USB 2.0 FS data + 5 V power (<= 500 mA).\n  * Illuminates the backscatter wearable with a 2.4 GHz ISM CW carrier: LMX2582 -> CC2595 PA, about +20 dBm\n    conducted into a U.FL for a Taoglas FXP70.07.0053A flex antenna, low-pass filtered for harmonics.\n  * Receives the backscattered signal on a Taoglas WDP.2458 ceramic patch: BPF -> QPL9547 LNA -> nRF52840.\n  * Housed in a MagSafe puck (beacon_phone_magsafe_2p5mm.scad): 55 x 78.45 mm board, 4x M2, USB-C cable to the phone.\n  * nRF52840 controls the synth (SPI), PA_EN, LNA shutdown and the USB link; it reads two INA219 monitors\n    (5 V input and 3.3 V rail).\n  * 3.3 V rail from an LT80602 Silent Switcher buck; expected load about 0.45 A.\nTop-sheet TODOs from the Altium file: RX/TX antenna connectors added; PA GND connected; MCU and CW synth completed."
+		(exclude_from_sim no)
+		(at 30 205 0)
+		(effects
+			(font
+				(size 1.5 1.5))
+			(justify left top))
+		(uuid "12eda4c7-129b-5ca5-bdd5-71cffe0e241e"))
+	(sheet_instances
+		(path "/"
+			(page "1"))))

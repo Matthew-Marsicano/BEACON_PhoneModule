@@ -1,0 +1,64 @@
+Comment,Designator,Footprint,LCSC Part #,MPN,Manufacturer,Quantity,Type,Notes
+1uF,"C1,C16,C25,C35,C60,C61,C65",C_0402_1005Metric,C52923,CL05A105KA5NQNC,Samsung Electro-Mechanics,7,Basic,"1uF 25V X5R 10%. 25 V covers the 5V_BUS/5V0/LNA_VCC caps (C1, C35)."
+100nF,"C2,C3,C4,C5,C7,C8,C11,C17,C18,C19,C23,C40,C41,C42,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55",C_0402_1005Metric,C1525,CL05B104KO5NNNC,Samsung Electro-Mechanics,24,Basic,"100nF 16V X7R 10%. 16 V covers the 5V0 hot-loop caps (C7, C8)."
+4.7uF,"C6,C15,C20,C21,C22",C_0603_1608Metric,C19666,CL10A475KO8NNNC,Samsung Electro-Mechanics,5,Basic,4.7uF 16V X5R 10%. 16 V covers 5V0 (C6) and VBUS (C21).
+22nF,C9,C_0402_1005Metric,C1532,0402B223K500NT,FH,1,Basic,"SWAP (2026-11-02): was 18nF GCM155R71H183KA55D (C710669, extended). 22nF 50V X7R 10% Basic part. Soft-start ramp about 22% slower, still milliseconds."
+2.2uF,C10,C_0603_1608Metric,C23630,CL10A225KO8NNNC,Samsung Electro-Mechanics,1,Basic,2.2uF 16V X5R (INTVCC).
+4.7pF,C12,C_0402_1005Metric,C1569,0402CG4R7C500NT,FH,1,Extended (Preferred),4.7pF 50V C0G +/-0.25pF (FB feed-forward). Preferred-extended part.
+22uF,"C13,C14",C_0805_2012Metric,C45783,CL21A226MAQNNNE,Samsung Electro-Mechanics,2,Basic,22uF 25V X5R 20% 0805.
+100pF,"C24,C32,C33,C36,C37,C39,C70,C71,C72",C_0402_1005Metric,C1546,0402CG101J500NT,FH,9,Basic,100pF 50V C0G 5% (RF DC blocks and decoupling).
+47nF,C26,C_0402_1005Metric,C272875,CC0402KRX7R9BB473,YAGEO,1,Extended,47nF 50V X7R 10% (nRF DEC4/6). No Basic 47 nF 0402 exists.
+12pF,"C27,C28",C_0402_1005Metric,C1547,0402CG120J500NT,FH,2,Basic,12pF 50V C0G 5% (32 MHz crystal load caps).
+0.8pF,C29,C_0402_1005Metric,C76915,GJM1555C1HR80BB01D,muRata,1,Extended,"Exact MPN, Murata GJM high-Q C0G 0.8pF +/-0.1pF (nRF ANT match)."
+0.5pF,C30,C_0402_1005Metric,C76911,GJM1555C1HR50BB01D,muRata,1,Extended,"Exact MPN, Murata GJM high-Q C0G 0.5pF +/-0.1pF (nRF ANT match)."
+10uF,"C34,C38,C45,C56,C57,C58,C59,C62,C63,C64",C_0603_1608Metric,C96446,CL10A106MA8NRNC,Samsung Electro-Mechanics,10,Basic,"10uF 25V X5R 20%. 25 V covers LNA_VCC (C34, about 4.35 V). C19702 (10 V) also works for the 3V3-only caps."
+1.5pF,C43,C_0402_1005Metric,C1552,0402CG1R5C500NT,FH,1,Extended (Preferred),"SWAP (2026-11-02): was Murata GJM1555C1H1R5BB01D (C76900, high-Q). FH 1.5pF 50V C0G +/-0.25pF preferred-extended part, slightly lower Q (PA output match)."
+22pF,C44,C_0402_1005Metric,C1555,0402CG220J500NT,FH,1,Basic,22pF 50V C0G 5% (PA DC block).
+820pF,C66,C_0402_1005Metric,C296004,0402N821J500CT,Walsin,1,Extended,820pF 50V NP0/C0G 5% (loop-filter C1). If it runs short: C161159 GCM1555C1H821JA16D (Murata C0G).
+68nF,C67,C_0603_1608Metric,C31658,CL10B683KB8NNNC,Samsung Electro-Mechanics,1,Extended (Preferred),"APPROVED SUB (user, 2026-11-02). FLAG: no 68nF C0G in 0603 is stocked at LCSC. This is X7R 50V 10% (preferred-extended). The 50 V rating keeps DC-bias loss small at the <3.3 V Vtune node. A C0G part would need an 0805/1206 footprint."
+3.3nF,C69,C_0402_1005Metric,C1518207,GRM1555C1H332JE01D,muRata,1,Extended,3.3nF 50V C0G 5% (loop-filter C4 at Vtune).
+SZSMF6.0AT1G,D1,D_SOD-123F,C1975319,SZSMF6.0AT1G,Littelfuse (ex-onsemi),1,Extended,"Exact MPN. LCSC stock is low (20), so reserve or order now."
+Red,D2,LED_0603_1608Metric,C2286,KT-0603R,Hubei KENTO,1,Basic,"Exact MPN. KT-0603R is a Hubei KENTO part, not Kingbright, so the schematic Manufacturer field is wrong. JLC Basic part."
+0.75A hold,F1,Fuse_1206_3216Metric,C315953,NANOSMDC075F-2,Littelfuse,1,Extended,Exact MPN (LCSC lists it as NANOSMDC075F-2/RF1348-000).
+DEA202450BT-1294D1-H,FL1,TDK_DEA202450BT-1294D1-H_2012,C1512913,DEA202450BT-1294D1-H,TDK,1,Extended,"APPROVED SUB (user, 2026-11-02): replaces Johanson 2450BP08C0100001T (no stock anywhere). IL 1.02 typ / 1.35 max dB, 1 W. See docs/bpf_alternative.md"
+2450LP07C0100001T,FL2,Johanson_2450LP07_0402_4T,C17630068,2450LP07C0100001T,Johanson Dielectrics,1,Extended,"FLAG: exact MPN is listed at LCSC but stock is 0 (""Pre/New""). Pre-order it into your JLC parts inventory, or consign it (DigiKey/Mouser) or hand-solder."
+USB4105-GF-A,J1,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,C3020560,USB4105-GF-A,Global Connector Technology,1,Extended,Exact MPN. LCSC stock 465.
+TX antenna U.FL,J3,U.FL_Hirose_U.FL-R-SMT-1_Vertical,C88374,U.FL-R-SMT-1(10),Hirose,1,Extended,"Hirose U.FL-R-SMT-1(80), C88374, JLC stock 360,956. It is the same connector as the U.FL-R-SMT-1(10) in the schematic, on a different reel. The exact (10) part, C88373, has only 65 pcs (pre-order)."
+5.6uH,L1,L_Abracon_ASPI-4030S,C5224561,ASPI-4030S-5R6M-T,Abracon,1,Extended,"APPROVED SUB (user, 2026-11-02): replaces Wurth 74438357056; Isat 2.6 A vs ~0.56 A peak; footprint changed to L_Abracon_ASPI-4030S (pads 1.1 x 3.4 at +-1.5 mm)"
+4.7nH,L4,L_0402_1005Metric,C162543,LQG15HS4N7B02D,Murata,1,Extended,"APPROVED SUB (user, 2026-11-02). FLAG ALT: exact LQP15MN4N7B02D (C23769) has 0 stock. LQG15HS4N7B02D is the same 0402 size, 4.7nH +/-0.1nH, 700 mA (multilayer, slightly lower Q). Thin-film alternative: C1330427 ABRACON ATFC-0402-4N7B-T."
+18nH,L6,L_0402_1005Metric,C22398296,0402CS-18NXGRW,Coilcraft,1,Extended,"Exact MPN (Coilcraft). LCSC stock is low (49), so order now."
+12nH,L7,L_0402_1005Metric,C86128,LQW15AN12NG00D,Murata,1,Extended,"APPROVED SUB (user, 2026-11-02). FLAG ALT: exact LQW15AN12NJ00D (C82920) has 0 stock. LQW15AN12NG00D is identical except for tolerance (+/-2% vs +/-5%): same series, 500 mA, 140 mOhm, non-magnetic."
+1.2nH,L8,L_0402_1005Metric,C488336,LQG15HS1N2B02D,Murata,1,Extended,"APPROVED SUB (user, 2026-11-02). FLAG ALT: exact LQP15MN1N2B02D (C77117) has 0 stock and is reported obsolete. LQG15HS1N2B02D is 0402, 1.2nH +/-0.1nH, 1 A, 70 mOhm (multilayer)."
+5.1k,"R1,R2",R_0402_1005Metric,C25905,0402WGF5101TCE,UNI-ROYAL,2,Basic,5.1k 1% (CC pull-downs).
+50m,"R3,R6",R_0805_2012Metric,C2075868,ERJ-6BWFR050V,PANASONIC,2,Extended,"Exact MPN, 50 mOhm 1% 0.5 W 0805 shunt. LCSC 17,450 stock. Fallback: C858632 YAGEO PE0805FRM470R05L."
+10,"R4,R5,R7,R8",R_0402_1005Metric,C25077,0402WGF100JTCE,UNI-ROYAL,4,Basic,10R 1%.
+37.4k,R9,R_0402_1005Metric,C25888,0402WGF3742TCE,UNI-ROYAL,1,Extended,37.4k 1% (buck RT). No Basic part exists for this value.
+634k,R10,R_0402_1005Metric,C270588,0402WGF6343TCE,UNI-ROYAL,1,Extended,634k 1% (buck FB top). No Basic part exists.
+200k,R11,R_0402_1005Metric,C25764,0402WGF2003TCE,UNI-ROYAL,1,Basic,200k 1% (buck FB bottom).
+10k,R12,R_0402_1005Metric,C25744,0402WGF1002TCE,UNI-ROYAL,1,Basic,10k 1%.
+4.7k,"R13,R14",R_0402_1005Metric,C25900,0402WGF4701TCE,UNI-ROYAL,2,Basic,4.7k 1% (I2C pull-ups).
+100k,"R15,R27,R35",R_0402_1005Metric,C25741,0402WGF1003TCE,UNI-ROYAL,3,Basic,100k 1%.
+33,"R16,R17,R18",R_0402_1005Metric,C25105,0402WGF330JTCE,UNI-ROYAL,3,Basic,33R 1%.
+1.5k,R19,R_0402_1005Metric,C25867,0402WGF1501TCE,UNI-ROYAL,1,Basic,1.5k 1%.
+0,"R20,R21,R26,R40",R_0402_1005Metric,C17168,0402WGF0000TCE,UNI-ROYAL,4,Basic,0R jumper 0402.
+3.3k,R24,R_0402_1005Metric,C25890,0402WGF3301TCE,UNI-ROYAL,1,Basic,"SWAP (2026-11-02): was 3.32k RC0402FR-073K32L (C137993, extended). 3.3k 1% Basic part, LNA bias current changes 0.6%."
+10,R25,R_0603_1608Metric,C22859,0603WAF100JT5E,UNI-ROYAL,1,Basic,10R 1% 0603 (LNA RC filter).
+1,R28,R_0603_1608Metric,C22936,0603WAF100KT5E,UNI-ROYAL,1,Basic,1R 1% 0603 (PA RC filter).
+300,"R29,R31",R_0402_1005Metric,C25102,0402WGF3000TCE,UNI-ROYAL,2,Extended (Preferred),"SWAP (2026-11-02): was 294R 0402WGF2940TCE (C270618, extended). 300R 1% preferred-extended part. The pi pad with R30 17.8R is still 3.02 dB, S11 -47 dB."
+17.8,R30,R_0402_1005Metric,C245886,RC0402FR-0717R8L,YAGEO,1,Extended,17.8R 1% (PA input pad). No Basic part exists. Fallback: C2077103 Panasonic ERJ2RKF17R8X.
+4.7,R32,R_0402_1005Metric,C25121,0402WGF470KTCE,UNI-ROYAL,1,Extended,4.7R 1%. No Basic part exists.
+20k,"R33,R34",R_0402_1005Metric,C25765,0402WGF2002TCE,UNI-ROYAL,2,Basic,20k 1% (CC2595 RBIAS).
+0,R36,R_0603_1608Metric,C21189,0603WAF0000T5E,UNI-ROYAL,1,Basic,0R jumper 0603 (synth supply link).
+150,R38,R_0402_1005Metric,C25082,0402WGF1500TCE,UNI-ROYAL,1,Extended (Preferred),150R 1% (loop-filter R2). Preferred-extended part.
+22,R39,R_0402_1005Metric,C25092,0402WGF220JTCE,UNI-ROYAL,1,Basic,22R 1% (loop-filter R3).
+49.9,"R41,R42,R43",R_0402_1005Metric,C25120,0402WGF499JTCE,UNI-ROYAL,3,Basic,49.9R 1% (OUTA pull-ups/termination).
+B3U-1000P,SW1,SW_SPST_B3U-1000P,C231329,B3U-1000P,OMRON,1,Extended,Exact MPN.
+USBLC6-2SC6,U1,SOT-23-6,C7519,USBLC6-2SC6,ST,1,Extended,"Exact MPN (ST). C2827654 (TECH PUBLIC clone) is cheaper, but keep the ST part."
+INA219BIDCNR,"U2,U3",SOT-23-8,C962069,INA219BIDCNR,TI,2,Extended,Exact MPN (B grade). C87469 INA219AIDCNR is a pin-compatible A-grade fallback.
+LT80602AFOA/VY+T,U4,ADI_FC2QFN-17-1EP_3x3mm_LT80602,C54448890,LT80602AFO+,Analog Devices (Maxim),1,Extended,"APPROVED SUB (user, 2026-11-02). FLAG ALT: LCSC does not carry LT80602AFOA/VY+T. LT80602AFO+ is the same die and the same FC2QFN-17 3x3 package, without the /VY+T suffix (automotive screening / T&R). LCSC stock 656. The ADI datasheet ordering table is the reference. Confirm the grade is acceptable."
+nRF52840-QIAA,U5,Nordic_AQFN-73-1EP_7x7mm_P0.5mm,C190794,NRF52840-QIAA-R,NORDIC,1,Extended,"Exact MPN, NRF52840-QIAA-R (reel of the QIAA)."
+QPL9547TR7,U6,Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm,C5367093,QPL9547TR7,Qorvo,1,Extended,"Exact MPN. LCSC stock 4,651."
+CC2595RGTR,U7,VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias,C2654449,CC2595RGTR,TI,1,Extended,"Exact MPN. LCSC stock is only 10 (enough for 5 boards), so reserve now. One source reports the part obsolete."
+LMX2582RHAR,U8,Texas_RHA_VQFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm_ThermalVias,C2864397,LMX2582RHAR,TI,1,Extended,Exact MPN. LCSC stock 47.
+32MHz,Y1,Crystal_SMD_2016-4Pin_2.0x1.6mm,C1985774,ABM11W-32.0000MHZ-8-B1U-T3,ABRACON,1,Extended,Exact MPN. LCSC stock 44.
+26MHz,Y2,Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm,C7527389,X1G0054210204,Epson,1,Extended,"APPROVED SUB (user, 2026-11-02). FLAG ALT: exact TG2520SMN 26.0000M-ECGNNM3 (C20844969) has 0 stock. X1G0054210204 is an Epson TG2520SMN-family 26 MHz TCXO (2520 4-pad, LCSC 2,342 stock). Check its supply voltage (3.3 V), clipped-sine output and ppm grade against the Epson datasheet before ordering."

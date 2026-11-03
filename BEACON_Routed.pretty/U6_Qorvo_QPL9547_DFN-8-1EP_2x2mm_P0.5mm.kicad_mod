@@ -1,0 +1,156 @@
+(footprint "U6_Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Qorvo QPL9547 2x2 DFN-8, land per datasheet Rev D p.8")
+	(property "Reference" "U6"
+		(at 0 -1.6 0)
+		(layer "F.Fab")
+		(uuid "eae48c38-81de-488d-9ab1-c9a0484882f5")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Value" "QPL9547TR7"
+		(at 0 1.6 0)
+		(layer "F.Fab")
+		(uuid "85b6d7f0-50da-4056-a9db-ee3e5c35338c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "663113a3-4d17-47d9-916d-98647e61eb7b")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81834db6-964f-4082-80ae-087e6f08713b")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "MPN" "QPL9547TR7"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76b5ee6d-f8bd-406a-b88c-d261b1085df8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Manufacturer" "Qorvo"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2dc988f-740a-4e62-874c-6b3e78c93e8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "RX_Frontend")
+	(sheetfile "RX_Frontend.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.4 -1.25)
+		(end 1.4 1.25)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e559b356-f080-4e59-bdd9-fbdc5980af27"))
+	(fp_line
+		(start -1.35 -1.05)
+		(end -1.35 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "006c7210-eb29-403f-90f4-61af836e491e"))
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d7000194-6572-4147-bec9-25823c7017ed"))
+	(pad "" smd rect
+		(at 0 -0.42)
+		(size 0.6 0.55)
+		(layers "F.Paste")
+		(uuid "77fbdb7e-b3f5-4ce4-9051-de82fa3a5a65"))
+	(pad "" smd rect
+		(at 0 0.42)
+		(size 0.6 0.55)
+		(layers "F.Paste")
+		(uuid "448f1966-9f06-461d-bf88-a2eb00ea14d8"))
+	(pad "1" smd rect
+		(at -0.915 -0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1c1f71df-05bb-4f5f-ba99-8c490c428d1f"))
+	(pad "2" smd rect
+		(at -0.915 -0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6ba19e21-5825-4c37-9493-da88bc50e176"))
+	(pad "3" smd rect
+		(at -0.915 0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "88170c9c-a7fb-461e-9e11-c94dc0ed2540"))
+	(pad "4" smd rect
+		(at -0.915 0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "15f7d969-9603-4d3a-80bb-910a76ef7c4d"))
+	(pad "5" smd rect
+		(at 0.915 0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7dd9f14a-7446-4786-8c56-39b4ca576032"))
+	(pad "6" smd rect
+		(at 0.915 0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2d99bd41-4d35-4f90-bf99-8857b454fc5f"))
+	(pad "7" smd rect
+		(at 0.915 -0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "909dca4a-8c51-4a94-98a0-b291143d607d"))
+	(pad "8" smd rect
+		(at 0.915 -0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e1e544f8-9591-485c-8bfb-02830b45e542"))
+	(pad "9" thru_hole circle
+		(at 0 -0.45)
+		(size 0.45 0.45)
+		(drill 0.25)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9d61817f-6e8d-443b-962f-7bbb77df274c"))
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.8 1.6)
+		(layers "F.Cu" "F.Mask")
+		(uuid "83a77014-d401-4167-9ea8-23c80d18416a"))
+	(pad "9" thru_hole circle
+		(at 0 0.45)
+		(size 0.45 0.45)
+		(drill 0.25)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "38dbd2fc-5057-4aa5-b8aa-710f60bb9137"))
+	(embedded_fonts no))

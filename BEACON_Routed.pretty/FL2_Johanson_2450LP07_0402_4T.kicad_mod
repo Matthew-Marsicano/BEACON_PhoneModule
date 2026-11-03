@@ -1,0 +1,99 @@
+(footprint "FL2_Johanson_2450LP07_0402_4T"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Johanson 2450LP07C0100001T low-pass filter, EIA0402 4-terminal")
+	(property "Reference" "FL2"
+		(at 0 -0.8 0)
+		(layer "F.Fab")
+		(uuid "e9f9d08c-592c-466e-a9c7-f1140b4b14f4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Value" "2450LP07C0100001T"
+		(at 0 0.8 0)
+		(layer "F.Fab")
+		(uuid "df4f2dfa-6ad9-4948-ab1a-a5f0971aa063")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6fb8dae4-b6c5-46a2-9f4a-3ac45b151127")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c210c273-318e-48c2-940e-170f42fc7514")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "MPN" "2450LP07C0100001T"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f865e640-8a93-42f9-bc79-ecbca83143ca")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Manufacturer" "Johanson Technology"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1d282f7-077f-4ad3-b058-11cb4403eddf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "TX_PA")
+	(sheetfile "TX_PA.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.85 -0.6)
+		(end 0.85 0.6)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9f22ddbd-ee3b-4454-8d18-003f8d651166"))
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c235c943-84ef-4ce2-8170-ad4b32dec309"))
+	(pad "1" smd rect
+		(at 0 -0.325)
+		(size 0.3 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7e92e73a-6b2e-48b2-aae7-b1eac7fe1a83"))
+	(pad "2" smd rect
+		(at 0.575 0)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "50c642b7-0642-4b21-92e1-6c1de354649d"))
+	(pad "3" smd rect
+		(at 0 0.325)
+		(size 0.3 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d7f8cbe-3592-4ef1-a5b3-f2b9d3732902"))
+	(pad "4" smd rect
+		(at -0.575 0)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "88d47504-b6b4-4eed-98dd-150c44888486"))
+	(embedded_fonts no))

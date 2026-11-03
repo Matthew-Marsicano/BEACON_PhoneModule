@@ -1,0 +1,8 @@
+# Keep KiCad's LF line endings on every platform (avoids whole-file diffs between Windows and macOS/Linux)
+* text=auto eol=lf
+*.stl binary
+*.step binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary

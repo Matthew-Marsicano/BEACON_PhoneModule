@@ -1,0 +1,116 @@
+(footprint "L6_L_0402_1005Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
+	(tags "inductor")
+	(property "Reference" "L6"
+		(at 0 -1.17 0)
+		(layer "F.Fab")
+		(uuid "f25d05ec-4955-403f-9f95-43b9b188f963")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Value" "18nH"
+		(at 0 1.17 0)
+		(layer "F.Fab")
+		(uuid "7678b42e-3a99-4b76-8caa-7b967b437507")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d20108ce-04ed-4552-ad92-51d56b466033")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5e3d5750-fa52-4546-92cd-8b1f0b8257af")
+		(effects
+			(font
+				(size 1.27 1.27))))
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ef317a0-087c-4592-add6-6f6c1ec53bae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "MPN" "0402CS-18NXGRW"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "381c79dd-f2be-4246-accf-ffa97c906f4f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Note" "RF choke"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0981c27-42ae-4d26-829b-dfc744757d13")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "RX_Frontend")
+	(sheetfile "RX_Frontend.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.93 -0.47)
+		(end 0.93 0.47)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "58a669e8-6b82-4f6f-a270-0473d80254f3"))
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1de50fd6-91f3-4536-924b-cfd577c66966"))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4cc64e29-68f5-4b68-bf00-002f6cc3672c")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04))))
+	(pad "1" smd roundrect
+		(at -0.485 0)
+		(size 0.59 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "f6fe7ae0-ae20-4cc1-93fc-8dfe2e85cc14"))
+	(pad "2" smd roundrect
+		(at 0.485 0)
+		(size 0.59 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "cb99c0c0-1880-45a4-9049-c90a7d279b2b"))
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0))
+		(scale
+			(xyz 1 1 1))
+		(rotate
+			(xyz 0 0 0))))

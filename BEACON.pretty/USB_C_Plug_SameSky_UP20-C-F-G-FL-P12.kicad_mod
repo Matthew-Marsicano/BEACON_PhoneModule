@@ -1,0 +1,116 @@
+(footprint "USB_C_Plug_SameSky_UP20-C-F-G-FL-P12"
+	(version 20241229)
+	(generator "kigen")
+	(layer "F.Cu")
+	(descr "Same Sky UP20-C-F-G-FL-P12-TR USB-C plug, board-edge, per datasheet Recommended PCB Layout (top view, rotated 180 deg so the board is at +y)")
+	(property "Reference" "REF**"
+		(at 0 3.2 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Value" "USB_C_Plug_SameSky_UP20-C-F-G-FL-P12"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(attr smd)
+	(fp_rect
+		(start -5.1 -11.5)
+		(end 5.1 2.8)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd"))
+	(pad "A1" smd rect
+		(at -2.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A2" smd rect
+		(at -2.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A3" smd rect
+		(at -1.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A4" smd rect
+		(at -1.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "B12" smd rect
+		(at -0.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "B11" smd rect
+		(at -0.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "B10" smd rect
+		(at 0.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "B9" smd rect
+		(at 0.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A5" smd rect
+		(at 1.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A6" smd rect
+		(at 1.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A7" smd rect
+		(at 2.25 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "A12" smd rect
+		(at 2.75 1.56)
+		(size 0.3 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "SH" thru_hole oval
+		(at -4.3 1.4)
+		(size 0.85 2.2)
+		(drill oval 0.45 1.8)
+		(layers "*.Cu" "*.Mask"))
+	(pad "SH" smd rect
+		(at -4.01 0.75)
+		(size 1.42 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "SH" thru_hole oval
+		(at 4.3 1.4)
+		(size 0.85 2.2)
+		(drill oval 0.45 1.8)
+		(layers "*.Cu" "*.Mask"))
+	(pad "SH" smd rect
+		(at 4.01 0.75)
+		(size 1.42 1)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(fp_line
+		(start -4.6 0)
+		(end 4.6 0)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "Dwgs.User"))
+	(fp_rect
+		(start -4.3 -11.25)
+		(end 4.3 0)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab"))
+	(fp_text user "PCB EDGE"
+		(at 0 -0.6 0)
+		(layer "Dwgs.User")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)))))

@@ -1,0 +1,300 @@
+(footprint "Taoglas_WDP.2458.25.4_Patch"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Taoglas WDP.2458.25.4.B.02 25x25x4 mm pin-fed ceramic patch, 2.4/5 GHz, adhesive mount on solid GND. Feed pin dia 0.9+/-0.2, 2.4+/-0.4 long, at (+1.8,+1.8) from centre (datasheet SPE-14-8-039-F rev F p.9). Pad 1 = RF feed (plated 1.3 mm hole), pad 2 = GND copper under the patch (F.Cu only, mask kept), In1/In2 void dia 4.0 at the feed. https://www.taoglas.com/datasheets/WDP.2458.25.4.B.02.pdf")
+	(tags "patch antenna ceramic 2.4GHz 5GHz WiFi Taoglas WDP")
+	(property "Reference" "AE**"
+		(at 0 -14.3 0)
+		(layer "F.SilkS")
+		(uuid "969b51d9-aa73-4cee-a092-444a6d9605f1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Value" "WDP.2458.25.4.B.02"
+		(at 0 14.3 0)
+		(layer "F.Fab")
+		(uuid "02a1a1ee-da04-4016-8729-ec48389390ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Datasheet" "https://www.taoglas.com/datasheets/WDP.2458.25.4.B.02.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45be9d7b-6579-442d-b1e0-5d27b0d1516a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Description" "Taoglas 2.4/5 GHz 25x25x4 mm pin-fed ceramic patch"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a084a35-e62d-46ba-8cc4-42ee74428211")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(attr through_hole)
+	(fp_line
+		(start -9.74 -12.55)
+		(end 11.04 -12.55)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "feec9cf1-84d1-4c90-9bf3-1581a5c85cb3"))
+	(fp_line
+		(start 12.55 -11.04)
+		(end 12.55 11.04)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "b4090ea7-9ee9-47e4-9974-79658a571192"))
+	(fp_line
+		(start 11.04 12.55)
+		(end -11.04 12.55)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "65c23534-977e-4a1f-a2cb-9c1a32ac1f73"))
+	(fp_line
+		(start -12.55 11.04)
+		(end -12.55 -9.74)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "317b8607-51fa-48c4-bc1a-ccc6b3b1853d"))
+	(fp_arc
+		(start -12.55 -9.74)
+		(mid -11.727 -11.727)
+		(end -9.74 -12.55)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "599d5e21-43d9-4f35-ae48-333a970898af"))
+	(fp_arc
+		(start 11.04 -12.55)
+		(mid 12.1077 -12.1077)
+		(end 12.55 -11.04)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "4d45c015-73a8-4b3c-9a8f-96332f2f2f0f"))
+	(fp_arc
+		(start 12.55 11.04)
+		(mid 12.1077 12.1077)
+		(end 11.04 12.55)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "25ef34a3-e48f-49f6-9033-5acbea9b99ab"))
+	(fp_arc
+		(start -11.04 12.55)
+		(mid -12.1077 12.1077)
+		(end -12.55 11.04)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "6cc1bb79-aea6-462e-90a5-8047997d7585"))
+	(fp_circle
+		(center 1.8 1.8)
+		(end 2.25 1.8)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6414cff7-59c7-4b2e-93a1-0cc65e99e902"))
+	(fp_line
+		(start 0.8 1.8)
+		(end 2.8 1.8)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "5253fa7b-6550-4d3e-879b-90a8cf99868a"))
+	(fp_line
+		(start 1.8 0.8)
+		(end 1.8 2.8)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "49e20ea6-9f4d-4fd6-8c1d-126ddc5ca9cd"))
+	(fp_text user "${REFERENCE}"
+		(at 0 -4 0)
+		(layer "F.Fab")
+		(uuid "a06e92d3-1f20-43be-bb20-31c0a121e503")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(fp_text user "FEED"
+		(at 4.1 3.4 0)
+		(layer "F.Fab")
+		(uuid "b959d33a-88e3-4542-80c4-66a5fc78a848")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12))))
+	(fp_text user "KEY R2.81"
+		(at -7.35 -10.95 0)
+		(layer "F.Fab")
+		(uuid "c69338d3-117c-47e8-9564-64a43b6a9ada")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12))))
+	(fp_line
+		(start -10.85 -12.85)
+		(end 12.85 -12.85)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "6a7ea27b-a2fd-47c9-ab90-0f451fe53be5"))
+	(fp_line
+		(start 12.85 -12.85)
+		(end 12.85 12.85)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "10b453c3-f95e-46b0-85aa-6ce4ca3f61cf"))
+	(fp_line
+		(start 12.85 12.85)
+		(end -12.85 12.85)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "c0feeb6a-6b47-4b16-8cb4-aebd7bf6a533"))
+	(fp_line
+		(start -12.85 12.85)
+		(end -12.85 -10.85)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "59c5277c-ae3a-4df0-a0a1-4f76d9704739"))
+	(fp_line
+		(start -12.85 -10.85)
+		(end -10.85 -12.85)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")
+		(uuid "a1a51252-078b-4e53-85f2-f7f041811754"))
+	(fp_rect
+		(start -13.25 -13.25)
+		(end 13.25 13.25)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9d622b30-12c4-4293-8d7a-03bd3a29d445"))
+	(fp_rect
+		(start 0.05 0.05)
+		(end 3.55 3.55)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "c91f9788-bd65-4172-b9cf-c1f3beca4290"))
+	(pad "1" thru_hole circle
+		(at 1.8 1.8)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(clearance 0.5)
+		(thermal_bridge_angle 45)
+		(uuid "972a2094-9309-4a63-ac34-cd97758e5e71"))
+	(pad "2" smd rect
+		(at -6.2 0)
+		(size 13 25.4)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "9cd2c1a2-ff36-4a37-a803-2a0f3731391d"))
+	(pad "2" smd rect
+		(at 8 0)
+		(size 9.4 25.4)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "2b2fef0f-6136-48a4-9613-e0e7322b9fcc"))
+	(pad "2" smd rect
+		(at 1.8 -6.2)
+		(size 3.02 13)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "ba08734d-5027-44be-9296-61767225845a"))
+	(pad "2" smd rect
+		(at 1.8 8)
+		(size 3.02 9.4)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(uuid "1c45f326-8798-4fc1-8ddf-a412a2da69c2"))
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu")
+		(uuid "59019e3c-d2b5-4ee3-82e6-ceeada3b5477")
+		(name "PATCH_NO_TRACKS_F")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0))
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints not_allowed))
+		(placement
+			(enabled no)
+			(sheetname ""))
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5))
+		(polygon
+			(pts (xy -12.7 -12.7) (xy 12.7 -12.7) (xy 12.7 12.7) (xy -12.7 12.7))))
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "In1.Cu" "In2.Cu")
+		(uuid "7ab7f902-95e1-4211-bbe3-de52dcd0b8ff")
+		(name "PATCH_FEED_VOID_INNER")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0))
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed))
+		(placement
+			(enabled no)
+			(sheetname ""))
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5))
+		(polygon
+			(pts (xy 3.8 1.8) (xy 3.7616 2.1902) (xy 3.6478 2.5654) (xy 3.4629 2.9111) (xy 3.2142 3.2142) (xy 2.9111 3.4629) (xy 2.5654 3.6478) (xy 2.1902 3.7616) (xy 1.8 3.8) (xy 1.4098 3.7616) (xy 1.0346 3.6478) (xy 0.6889 3.4629) (xy 0.3858 3.2142) (xy 0.1371 2.9111) (xy -0.0478 2.5654) (xy -0.1616 2.1902) (xy -0.2 1.8) (xy -0.1616 1.4098) (xy -0.0478 1.0346) (xy 0.1371 0.6889) (xy 0.3858 0.3858) (xy 0.6889 0.1371) (xy 1.0346 -0.0478) (xy 1.4098 -0.1616) (xy 1.8 -0.2) (xy 2.1902 -0.1616) (xy 2.5654 -0.0478) (xy 2.9111 0.1371) (xy 3.2142 0.3858) (xy 3.4629 0.6889) (xy 3.6478 1.0346) (xy 3.7616 1.4098))))
+)

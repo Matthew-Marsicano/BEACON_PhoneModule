@@ -1,0 +1,97 @@
+(footprint "Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm"
+	(version 20241229)
+	(generator "kigen")
+	(layer "F.Cu")
+	(descr "Qorvo QPL9547 2x2 DFN-8, land per datasheet Rev D p.8")
+	(property "Reference" "REF**"
+		(at 0 -1.6 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Value" "Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm"
+		(at 0 1.6 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(attr smd)
+	(fp_rect
+		(start -1.4 -1.25)
+		(end 1.4 1.25)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd"))
+	(pad "1" smd rect
+		(at -0.915 -0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "8" smd rect
+		(at 0.915 -0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "2" smd rect
+		(at -0.915 -0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "7" smd rect
+		(at 0.915 -0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "3" smd rect
+		(at -0.915 0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "6" smd rect
+		(at 0.915 0.25)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "4" smd rect
+		(at -0.915 0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "5" smd rect
+		(at 0.915 0.75)
+		(size 0.43 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask"))
+	(pad "9" smd rect
+		(at 0 0)
+		(size 0.8 1.6)
+		(layers "F.Cu" "F.Mask"))
+	(pad "9" smd rect
+		(at 0 -0.42)
+		(size 0.6 0.55)
+		(layers "F.Paste"))
+	(pad "9" smd rect
+		(at 0 0.42)
+		(size 0.6 0.55)
+		(layers "F.Paste"))
+	(pad "9" thru_hole circle
+		(at 0 -0.45)
+		(size 0.45 0.45)
+		(drill 0.25)
+		(layers "*.Cu" "*.Mask"))
+	(pad "9" thru_hole circle
+		(at 0 0.45)
+		(size 0.45 0.45)
+		(drill 0.25)
+		(layers "*.Cu" "*.Mask"))
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill no)
+		(layer "F.Fab"))
+	(fp_line
+		(start -1.35 -1.05)
+		(end -1.35 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.SilkS")))

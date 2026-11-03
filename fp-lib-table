@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "BEACON")(type "KiCad")(uri "${KIPRJMOD}/BEACON.pretty")(options "")(descr "BEACON project footprints"))
+
+(lib (name "BEACON_Routed")(type "KiCad")(uri "${KIPRJMOD}/BEACON_Routed.pretty")(options "")(descr "Board-specific footprints with assembly markings on fabrication layers"))
+)

@@ -1,0 +1,457 @@
+{
+ "_source": "C:/Users/marsi/Downloads/beacon_phone_magsafe_2p5mm_Latest.scad, default parameters. Values from OpenSCAD 2021.01 run headless (ECHO lines plus a wrapper that echoes every derived variable); cross-checked against the STL (outer box, floor, board and jack Z levels match).",
+ "_units": "mm",
+ "_frame": "BOARD coordinates: origin = board lower-left corner seen from the component (top) side, USB-C edge at the bottom (y=0), +x right, +y toward the top of the phone. Z is given as absolute enclosure Z (0 = phone-contact face) and/or relative to the board top or bottom, as named.",
+ "_kicad_note": "KiCad's Y axis points down. With the board lower-left at KiCad (X0, Y0): kicad_x = X0 + x, kicad_y = Y0 - y. Arcs are CCW here and become CW on screen, so use start/mid/end points (unambiguous). Components on the top side of the board = F.Cu.",
+ "transform": {
+  "board_to_enclosure": {
+   "x_enc": "x_board + -27.5",
+   "y_enc": "y_board + -50.95",
+   "offset": [-27.5, -50.95]
+  },
+  "enclosure_to_board": {
+   "x_board": "x_enc + 27.5",
+   "y_board": "y_enc + 50.95",
+   "offset": [27.5, 50.95]
+  },
+  "enclosure_frame": "origin = MagSafe ring centre on the phone-contact face; +Y toward the top of the phone; +X right seen from the back of the phone; +Z away from the phone. Axes are parallel to the board axes (no rotation, no mirror).",
+  "z_phone_face": 0.0,
+  "z_skin_top": 0.68,
+  "z_pocket_top_pause": 3.56,
+  "z_cavity_floor": 4.16,
+  "z_board_bottom": 5.72,
+  "z_board_top": 7.32,
+  "z_lid_lip_bottom": 9.72,
+  "z_lid_underside": 12.72,
+  "z_lid_outer": 14.32,
+  "z_lid_underside_over_radome": 13.12
+ },
+ "board": {
+  "width": 55,
+  "length": 78.45,
+  "thickness": 1.6,
+  "corner_radius": 3.0,
+  "edge_to_cavity_wall": 0.3,
+  "outline_primitives": [
+   {
+    "type": "line",
+    "start": [3.0, 0.0],
+    "end": [52.0, 0.0]
+   },
+   {
+    "type": "arc",
+    "center": [52.0, 3.0],
+    "start": [52.0, 0.0],
+    "end": [55.0, 3.0],
+    "radius": 3.0,
+    "mid": [54.1213, 0.8787],
+    "direction": "CCW in board coords (+y up)"
+   },
+   {
+    "type": "line",
+    "start": [55.0, 3.0],
+    "end": [55.0, 62.45]
+   },
+   {
+    "type": "line",
+    "start": [55.0, 62.45],
+    "end": [53.5, 62.45]
+   },
+   {
+    "type": "line",
+    "start": [53.5, 62.45],
+    "end": [53.5, 69.55]
+   },
+   {
+    "type": "line",
+    "start": [53.5, 69.55],
+    "end": [55.0, 69.55]
+   },
+   {
+    "type": "line",
+    "start": [55.0, 69.55],
+    "end": [55.0, 75.45]
+   },
+   {
+    "type": "arc",
+    "center": [52.0, 75.45],
+    "start": [55.0, 75.45],
+    "end": [52.0, 78.45],
+    "radius": 3.0,
+    "mid": [54.1213, 77.5713],
+    "direction": "CCW in board coords (+y up)"
+   },
+   {
+    "type": "line",
+    "start": [52.0, 78.45],
+    "end": [3.0, 78.45]
+   },
+   {
+    "type": "arc",
+    "center": [3.0, 75.45],
+    "start": [3.0, 78.45],
+    "end": [0.0, 75.45],
+    "radius": 3.0,
+    "mid": [0.8787, 77.5713],
+    "direction": "CCW in board coords (+y up)"
+   },
+   {
+    "type": "line",
+    "start": [0.0, 75.45],
+    "end": [0.0, 3.0]
+   },
+   {
+    "type": "arc",
+    "center": [3.0, 3.0],
+    "start": [0.0, 3.0],
+    "end": [3.0, 0.0],
+    "radius": 3.0,
+    "mid": [0.8787, 0.8787],
+    "direction": "CCW in board coords (+y up)"
+   }
+  ],
+  "outline_polygon": [
+   [3.0, 0.0],
+   [52.0, 0.0],
+   [52.585, 0.058],
+   [53.148, 0.228],
+   [53.667, 0.506],
+   [54.121, 0.879],
+   [54.494, 1.333],
+   [54.772, 1.852],
+   [54.942, 2.415],
+   [55.0, 3.0],
+   [55.0, 62.45],
+   [53.5, 62.45],
+   [53.5, 69.55],
+   [55.0, 69.55],
+   [55.0, 75.45],
+   [54.942, 76.035],
+   [54.772, 76.598],
+   [54.494, 77.117],
+   [54.121, 77.571],
+   [53.667, 77.944],
+   [53.148, 78.222],
+   [52.585, 78.392],
+   [52.0, 78.45],
+   [3.0, 78.45],
+   [2.415, 78.392],
+   [1.852, 78.222],
+   [1.333, 77.944],
+   [0.879, 77.571],
+   [0.506, 77.117],
+   [0.228, 76.598],
+   [0.058, 76.035],
+   [0.0, 75.45],
+   [0.0, 3.0],
+   [0.058, 2.415],
+   [0.228, 1.852],
+   [0.506, 1.333],
+   [0.879, 0.879],
+   [1.333, 0.506],
+   [1.852, 0.228],
+   [2.415, 0.058]
+  ],
+  "outline_polygon_note": "CCW, 8 segments per 90-degree corner, closing segment implied. Notch inner corners are square in the scad; the router rounds them (r ~0.4-0.5), which still clears the jack body (0.2 to the notch floor, 0.3 per side).",
+  "tx_notch": {
+   "edge": "right",
+   "x0": 53.5,
+   "x1": 55,
+   "y0": 62.45,
+   "y1": 69.55,
+   "depth": 1.5,
+   "width": 7.1,
+   "formula": "depth = sma_body[1] + 0.2 - tx_gap = 1.6 + 0.2 - 0.3; half-width tx_nw = sma_body[0]/2 + 0.3 = 3.55"
+  },
+  "mounting_holes": [
+   [3.5, 3.5],
+   [51.5, 3.5],
+   [3.5, 74.95],
+   [51.5, 74.95]
+  ],
+  "mounting_holes_enclosure": [
+   [-24, -47.45],
+   [24, -47.45],
+   [-24, 24],
+   [24, 24]
+  ],
+  "hole_diameter": 2.2,
+  "standoff_pad_keepout_diameter": 6.0,
+  "standoff_pad_keepout_note": "6 mm standoff under the board at each hole, cavity floor to board bottom. The scad echo says keep 6 mm pads clear on BOTH sides.",
+  "screw": "4x M2 x 4 pan/cheese head, top-down into M2 x 3 heat-set inserts, 2.4 thread engagement",
+  "screw_head_keepout_top": {
+   "diameter": 3.8,
+   "height": 1.6,
+   "diameter_with_scad_margin": 4.4,
+   "note": "scad clearance checks use screw_head_d/2 + 0.3 = 2.2 radius"
+  },
+  "insert_hole_diameter_in_standoff": 3.2
+ },
+ "cavity_inner_wall": {
+  "x0": -0.3,
+  "x1": 55.3,
+  "y0": -0.3,
+  "y1": 78.75,
+  "corner_r": 3.3
+ },
+ "enclosure_outside": {
+  "x0": -2.1,
+  "x1": 57.1,
+  "y0": -2.1,
+  "y1": 80.55,
+  "corner_r": 5.1,
+  "size_xyz": [59.2, 82.65, 14.32]
+ },
+ "ring_centre": [27.5, 50.95],
+ "ring_centre_enclosure": [0.0, 0.0],
+ "magnets": {
+  "ring_annulus": {
+   "centre": [27.5, 50.95],
+   "inner_radius_pocket": 22.85,
+   "outer_radius_pocket": 27.2,
+   "inner_radius_magnet": 23.0,
+   "outer_radius_magnet": 27.05,
+   "clearance_radial": 0.15,
+   "z_magnet_bottom": 0.68,
+   "z_magnet_top": 3.23,
+   "z_pocket_top": 3.56,
+   "note": "pocket radii include mag_clr. Projected onto the board the annulus spans x 0.3..54.7, y 23.75..78.15."
+  },
+  "clocking_magnet": {
+   "pocket_rect": {
+    "x0": 24.35,
+    "x1": 30.65,
+    "y0": 0.3,
+    "y1": 19.9
+   },
+   "magnet_rect": {
+    "x0": 24.5,
+    "x1": 30.5,
+    "y0": 0.45,
+    "y1": 19.75
+   },
+   "corner_relief_diameter": 0.8,
+   "z_magnet_bottom": 0.68,
+   "z_magnet_top": 3.23,
+   "z_pocket_top": 3.56
+  },
+  "z_below_board_bottom": {
+   "cavity_floor_top": 1.56,
+   "pocket_top": 2.16,
+   "magnet_top": 2.49,
+   "magnet_bottom": 5.04,
+   "phone_face": 5.72
+  }
+ },
+ "usb": {
+  "edge": "bottom",
+  "centre_x": 27.5,
+  "front_flush_with_board_edge": true,
+  "overhang_past_edge": 0,
+  "opening_width": 12.6,
+  "opening_height": 6.7,
+  "opening_corner_r": 1.5,
+  "opening_x_range": [21.2, 33.8],
+  "opening_shape": "open-top U through the bottom wall, closed by the lid; U bottom at enclosure z 5.6, 0.12 below the board bottom",
+  "opening_z_bottom_rel_board_top": -1.72,
+  "opening_z_nominal_top_rel_board_top": 4.98,
+  "centreline_above_board_top": 1.63,
+  "centreline_z_enclosure": 8.95,
+  "body_size_wlh": [8.94, 7.3, 3.26],
+  "body_rect": {
+   "x0": 23.03,
+   "x1": 31.97,
+   "y0": 0.0,
+   "y1": 7.3
+  },
+  "hole_keepout_rect": {
+   "x0": 21.2,
+   "x1": 33.8,
+   "y0": -2.1,
+   "y1": 7.3,
+   "min_hole_distance": 3.3
+  }
+ },
+ "rx_patch": {
+  "part": "Taoglas WDP.2458.25.4.B.02, pin-fed 25x25x4 ceramic patch, taped to the top side",
+  "centre": [27.5, 39.225],
+  "centre_enclosure": [0.0, -11.725],
+  "nominal_size": 25.1,
+  "tolerance": 0.3,
+  "footprint_size_incl_tol": 25.4,
+  "footprint_rect": {
+   "x0": 14.8,
+   "x1": 40.2,
+   "y0": 26.525,
+   "y1": 51.925
+  },
+  "radome_size": 28.4,
+  "radome_rect": {
+   "x0": 13.3,
+   "x1": 41.7,
+   "y0": 25.025,
+   "y1": 53.425
+  },
+  "radome_note": "lid underside recessed 0.4 (lid_t - patch_cover) over this square, leaving a 1.2 radome; there the lid underside is 5.8 above the board top",
+  "tape_h": 0.3,
+  "patch_h": 4.1,
+  "stack_h": 4.4,
+  "air_gap_to_lid_design": 1.0,
+  "air_gap_to_radome_actual": 1.4,
+  "feed_pin_length": 2.8,
+  "feed_pin_below_board_bottom": 1.2,
+  "feed_pin_below_note": "scad assumes pin length - board thickness (ignores the 0.3 tape)",
+  "feed_pin_clearance_to_floor": 0.36
+ },
+ "tx_jack": {
+  "part": "edge-launch SMA(F) jack (standard SMA) for Taoglas GW.26.0111",
+  "side": "right",
+  "position_along_edge_y": 66,
+  "position_enclosure_y": 15.05,
+  "notch": {
+   "x0": 53.5,
+   "x1": 55,
+   "y0": 62.45,
+   "y1": 69.55,
+   "depth": 1.5,
+   "width": 7.1
+  },
+  "body_size_w_thick_h": [6.5, 1.6, 6.5],
+  "body_rect": {
+   "x0": 53.7,
+   "x1": 55.3,
+   "y0": 62.75,
+   "y1": 69.25,
+   "note": "body bears on the inner wall face (board x 55.3); its back face is 0.2 beyond the notch floor (x 53.5)"
+  },
+  "body_z_rel_board_top": [-2.55, 3.95],
+  "body_bottom_clearance_to_floor": 0.61,
+  "barrel_axis_above_board_top": 0.7,
+  "barrel_axis_z_enclosure": 8.02,
+  "barrel_thread_d": 6.35,
+  "wall_hole_d": 6.85,
+  "barrel_length_from_body": 7.0,
+  "thread_outside_wall": 5.2,
+  "board_edge_to_wall_gap": 0.3
+ },
+ "height_limits": {
+  "top_clear": 5.4,
+  "top_clear_note": "board top to lid underside, zero margin (lid underside at z 12.72). Set by the patch stack 4.4 + 1.0 air. The scad's design value for the tallest ordinary part is top_parts_h = 3.3 (+0.5 margin = 3.8).",
+  "lid_lip_band_width": 1.1,
+  "lid_lip_band_max_height": 2.4,
+  "lid_lip_band_note": "lid lip (1.2 thick, 3.0 deep) covers the board from its edge inward 1.1 (lip outer face 0.1 outside the board edge). Lip bottom is 2.4 above the board top. The band follows the board outline; its inner corner radius is 1.9, concentric with the 3.0 board corners. The lip is cut away (full 5.4 available) at the USB-C and TX gaps below.",
+  "lid_lip_gaps": {
+   "bottom_edge_x": [20.9, 34.1],
+   "right_edge_y": [62.25, 69.75]
+  },
+  "radome_region_top_clear": 5.8,
+  "below_board": 1.56,
+  "below_board_note": "board bottom to cavity floor (z 5.72 - 4.16), no margin built in. pcb_gap parameter = 1.5 (minimum, rounded up to a layer). The scad gives the patch pin a 0.3 margin.",
+  "below_board_recommended_with_0p3_margin": 1.26,
+  "patch_pin_protrusion": 1.2,
+  "below_board_minus_patch_pin": 0.36,
+  "below_board_standoffs": "6 mm diameter standoffs fill the whole gap under each hole"
+ },
+ "edge_intrusions": {
+  "lid_lip": {
+   "band_from_edge": 1.1,
+   "bottom_above_board_top": 2.4,
+   "lip_thickness": 1.2,
+   "lip_depth": 3.0
+  },
+  "snap_beads": {
+   "beads": [
+    {
+     "wall": "right",
+     "along": "y",
+     "centre": 18.95,
+     "span": [12.95, 24.95]
+    },
+    {
+     "wall": "right",
+     "along": "y",
+     "centre": 48.95,
+     "span": [42.95, 54.95]
+    },
+    {
+     "wall": "left",
+     "along": "y",
+     "centre": 18.95,
+     "span": [12.95, 24.95]
+    },
+    {
+     "wall": "left",
+     "along": "y",
+     "centre": 48.95,
+     "span": [42.95, 54.95]
+    },
+    {
+     "wall": "top",
+     "along": "x",
+     "centre": 27.5,
+     "span": [21.5, 33.5]
+    }
+   ],
+   "length": 12,
+   "z_centre_above_board_top": 3.25,
+   "z_half_height": 0.75,
+   "note": "beads sit on the lip's OUTER face and click into 0.35-deep grooves in the wall; they add no intrusion over the board beyond the lip band"
+  },
+  "pry_notch": {
+   "wall": "bottom",
+   "x_range": [39.5, 47.5],
+   "note": "cut in the outer half of the bottom wall at the seam (z 11.52-12.72); no intrusion over the board"
+  },
+  "usb_opening": {
+   "wall": "bottom",
+   "x_range": [21.2, 33.8]
+  },
+  "tx_slot": {
+   "wall": "right",
+   "y_range": [62.575, 69.425],
+   "note": "U-slot from the barrel axis up through the wall top, closed by a 6.55-wide lid tongue"
+  },
+  "screw_heads": "3.8 heads at the holes reach 1.6 from the board edges (0.5 inboard of the 1.1 lip band); head top 1.6 above the board top, below the 2.4 lip bottom"
+ },
+ "placement_rules_from_asserts": {
+  "hole_to_ring_centre_distance": {
+   "must_be_at_least": 30.7,
+   "or_at_most": 19.35
+  },
+  "hole_to_clock_pocket_min": 3.5,
+  "hole_to_usb_keepout_rect_min": 3.3,
+  "hole_to_patch_radome_min": 2.2,
+  "hole_to_tx_jack_body_min": 3.3,
+  "hole_centre_to_board_edge_min": 1.6,
+  "patch_footprint_to_board_edge_min": 1.0,
+  "patch_footprint_to_tx_jack_min": 1.0,
+  "tx_pos_allowed_right_or_left_edge": {
+   "ranges": [
+    [6.925, 8.525],
+    [29.375, 38.525],
+    [59.375, 71.525]
+   ],
+   "note": "corner-radius assert (line 379) gives 6.925..71.525; snap beads at board y 18.95 and 48.95 on both side walls exclude +/-10.425 (line 332)"
+  },
+  "usb_centre_x_allowed": {
+   "range": [9.3, 32.2],
+   "note": "corner assert (line 348) gives 9.3..45.7; pry notch at board x 43.5 (pry_x 16) needs |pry_x - usb_x| >= 11.3 (line 339), so the upper limit is 32.2"
+  },
+  "patch_pin_floor_margin_spare": 0.06
+ },
+ "scad_echo": [
+  "=== BEACON MagSafe enclosure, 2.55 mm ring ===",
+  "Skin over magnets: 0.68 mm (5 layers); pocket depth 2.88 mm, 0.33 mm headroom; cap 5 layers to 4.16 mm",
+  "PAUSE: after layer 29 (top at Z = 3.56 mm), i.e. before the layer that ends at Z = 3.68 mm. Insert magnets, then resume.",
+  "Outside: 59.2 x 82.65 x 14.32 mm; ring centre 29.6 mm below the top edge",
+  "PCB: 55 x 78.45 x 1.6 mm, corner r 3, underside 5.72 mm above the phone",
+  "Ring centre in board coords: [27.5, 50.95]",
+  "Mounting holes in board coords: [[3.5, 3.5], [51.5, 3.5], [3.5, 74.95], [51.5, 74.95]]; keep 6 mm pads clear on both sides",
+  "Part height: under board 1.56 mm, over board 5.4 mm (2.4 mm within 1.1 mm of the board edge, under the lid lip)",
+  "PCB screws: 4x M2 x 4 pan/cheese head, top-down through the board, 2.4 mm of thread in M2 x 3 heat-set inserts",
+  "Lid: snap fit, 5 beads x 12 mm, 0.25 mm interference, bead centre 2.15 mm below the seam",
+  "USB-C: centreline 8.95 mm above the phone face, opening 12.6 x 6.7 mm",
+  "RX patch: centre [27.5, 39.23] in board coords, [0, -11.73] from the ring centre; 1.4 mm air under a 1.2 mm radome",
+  "TX jack: right board edge at 66 mm; board notch 1.5 x 7.1 mm; axis 8.02 mm above the phone face, 5.2 mm of thread outside the wall"
+ ]
+}

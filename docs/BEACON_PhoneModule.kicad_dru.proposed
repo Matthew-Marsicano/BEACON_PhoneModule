@@ -1,0 +1,179 @@
+(version 1)
+# =============================================================================
+# BEACON_PhoneModule - proposed custom design rules (KiCad 10, rules syntax v1)
+# Fab: JLCPCB 4-layer 1.6 mm, impedance stackup JLC04161H-7628
+#   L1 F.Cu  35 um | PP 7628 0.2104 mm Er 4.4 | L2 In1.Cu 15.2 um (solid GND)
+#   core 1.065 mm Er 4.6 | L3 In2.Cu 15.2 um (power/signal)
+#   PP 7628 0.2104 mm Er 4.4 | L4 B.Cu 35 um (signal + GND pour)
+# Companion doc: docs/stackup_and_rules.md
+#
+# Rule order matters: for each constraint type KiCad uses the LAST rule in
+# this file whose condition matches, so rules go from general to specific.
+#
+# Net classes these rules expect (define them in Board Setup > Net Classes):
+#   Default, Power, RF, USB      (see the doc for widths/clearances/patterns)
+#
+# Board Setup > Constraints minimums that must be <= the values below:
+#   min clearance 0.08, min track 0.09, min via annular 0.075, min via dia 0.45,
+#   min through-hole 0.2, hole-to-hole 0.2, copper-to-edge 0.3, hole clearance 0.2
+#   (KiCad's new-board defaults are 0.2 track / 0.5 via / 0.3 hole / 0.5 edge and
+#   would otherwise mask several of these rules)
+#
+# USB: KiCad only pairs nets whose names end in +/- or P/N. USB_DP/USB_DM are
+# NOT recognised -> rename the global labels to USB_D+ / USB_D- (or USB_DP /
+# USB_DN) before routing, otherwise the diff-pair rules below never match.
+#
+# Verified 2026-11-02 with KiCad 10.0.7 kicad-cli: every rule parses, and a test
+# board triggered exactly the intended violations (RF gap, RF on inner layer,
+# RF via, narrow RF/Power/Default tracks, small via, edge clearance) while the
+# J1 edge pads, the 0.09 mm aQFN escape and the coupled USB pair passed. A GND
+# pour filled 0.200 mm from a 0.30 mm RF track and 0.30 mm from the board edge.
+# =============================================================================
+
+# ---------------------------------------------------------------- fab limits
+# JLC 4-layer capability is 0.09 mm; Freerouting necks tracks to ~0.112 mm at fine-pitch pins
+(rule "JLC min track (general)"
+	(constraint track_width (min 0.1mm)))
+
+(rule "JLC min clearance (general)"
+	(constraint clearance (min 0.127mm)))
+
+(rule "JLC copper to board edge"
+	(constraint edge_clearance (min 0.3mm)))
+
+(rule "JLC via diameter / standard price"
+	# 0.2/0.25 mm holes with a pad < 0.45 mm are a paid option at JLC
+	(condition "A.Type == 'Via'")
+	(constraint via_diameter (min 0.45mm))
+	(constraint annular_width (min 0.075mm)))
+
+(rule "JLC drilled hole min"
+	(condition "A.isPlated() && A.Hole_Size_X == A.Hole_Size_Y")
+	(constraint hole_size (min 0.2mm) (max 6.3mm)))
+
+(rule "JLC plated slot min"
+	(condition "A.isPlated() && A.Hole_Size_X != A.Hole_Size_Y")
+	(constraint hole_size (min 0.35mm)))
+
+(rule "JLC NPTH min"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+	(constraint hole_size (min 0.5mm)))
+
+(rule "JLC hole to hole (vias)"
+	(constraint hole_to_hole (min 0.2mm)))
+
+(rule "JLC hole to hole (PTH pads, different nets)"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net")
+	(constraint hole_to_hole (min 0.45mm)))
+
+(rule "JLC via hole to copper"
+	(constraint hole_clearance (min 0.2mm)))
+
+(rule "JLC PTH hole to copper"
+	(condition "A.Type == 'Pad' && A.isPlated() && A.Pad_Type == 'Through-hole' && B.Type != 'Zone'")
+	(constraint hole_clearance (min 0.28mm)))
+
+(rule "Courtyards must not overlap"
+	(constraint courtyard_clearance (min 0mm)))
+
+(rule "Silk to pads"
+	(condition "A.Type == 'Pad' || B.Type == 'Pad'")
+	(constraint silk_clearance (min 0.15mm)))
+
+(rule "JLC silkscreen text"
+	(severity warning)
+	(condition "A.Layer == 'F.Silkscreen' || A.Layer == 'B.Silkscreen'")
+	(constraint text_height (min 1.0mm))
+	(constraint text_thickness (min 0.15mm)))
+
+# ---------------------------------------------------------------- USB-C plug at the board edge
+# J1 (Same Sky UP20 plug) pads sit on/over the board edge by design.
+(rule "J3 edge-launch SMA pads run to the notch edge"
+	(condition "A.memberOfFootprint('J3')")
+	(constraint edge_clearance)
+	(severity ignore))
+
+# ---------------------------------------------------------------- Power class
+(rule "Power track width (outer)"
+	(layer outer)
+	(condition "A.hasNetclass('Power')")
+	(constraint track_width (min 0.3mm) (opt 0.4mm)))
+
+(rule "Power track width (inner, 0.5 oz)"
+	(layer inner)
+	(condition "A.hasNetclass('Power')")
+	(constraint track_width (min 0.3mm) (opt 0.6mm)))
+
+(rule "Power neck-down at pins"
+	(condition "A.hasNetclass('Power') && A.intersectsCourtyard('*')")
+	(constraint track_width (min 0.1mm)))
+
+(rule "Power clearance"
+	(condition "A.hasNetclass('Power')")
+	(constraint clearance (min 0.15mm)))
+
+(rule "Power vias"
+	(condition "A.Type == 'Via' && A.hasNetclass('Power')")
+	(constraint via_diameter (min 0.45mm) (opt 0.6mm))
+	(constraint hole_size (min 0.25mm) (opt 0.3mm)))
+
+(rule "Power pad connections"
+	(condition "A.Type == 'Pad' && A.hasNetclass('Power')")
+	(constraint thermal_spoke_width (opt 0.3mm)))
+
+# ---------------------------------------------------------------- USB 2.0 FS pair (90 ohm diff)
+(rule "USB pair geometry (L1)"
+	(layer "F.Cu")
+	(condition "A.hasNetclass('USB')")
+	(constraint track_width (min 0.19mm) (opt 0.20mm) (max 0.21mm))
+	(constraint diff_pair_gap (min 0.12mm) (opt 0.13mm) (max 0.18mm))
+	(constraint diff_pair_uncoupled (max 3mm)))
+
+(rule "USB pair skew"
+	# USB 2.0 Full Speed (12 Mbit/s, 83 ns bit): 8 mm is ~50 ps. The skew comes from the USB-C A6/B6 vs A7/B7
+	# crossover between J1 and the ESD part U1; the U1 -> nRF run is a coupled pair.
+	(condition "A.inDiffPair('USB_D')")
+	(constraint skew (max 8mm) (within_diff_pairs)))
+
+(rule "USB to other nets"
+	(condition "A.hasNetclass('USB') && !AB.isCoupledDiffPair()")
+	(constraint clearance (min 0.2mm)))
+
+# ---------------------------------------------------------------- RF class: 50 ohm CPWG on L1 over L2 GND
+(rule "RF CPWG width"
+	(condition "A.hasNetclass('RF')")
+	(constraint track_width (min 0.325mm) (opt 0.335mm) (max 0.345mm)))
+
+(rule "RF CPWG gap (sets the GND pour gap)"
+	(condition "A.hasNetclass('RF')")
+	(constraint clearance (min 0.20mm)))
+
+(rule "RF L1 only, no vias"
+	(condition "A.hasNetclass('RF') && A.NetName != '/RX_Frontend/RX_PATCH' && (A.Type == 'Via' || A.Layer != 'F.Cu')")
+	(constraint disallow track via))
+
+(rule "RF taper into small RF pads"
+	# nRF ANT (0.25 mm round), Johanson LTCC pads (0.22-0.36 mm), DFN/QFN pins
+	(condition "A.hasNetclass('RF') && (A.intersectsCourtyard('U5') || A.intersectsCourtyard('U6') || A.intersectsCourtyard('U7') || A.intersectsCourtyard('U8') || A.intersectsCourtyard('FL*'))")
+	(constraint track_width (min 0.2mm) (opt 0.335mm) (max 0.345mm)))
+
+(rule "RF clearance inside RF part courtyards"
+	# 2450BP08 (FL1) has 0.165 mm between its RF and GND lands; IC pins are 0.25 mm apart
+	(condition "A.hasNetclass('RF') && (A.intersectsCourtyard('U5') || A.intersectsCourtyard('U6') || A.intersectsCourtyard('U7') || A.intersectsCourtyard('U8') || A.intersectsCourtyard('FL*') || A.intersectsCourtyard('J3') || A.intersectsCourtyard('AE1'))")
+	(constraint clearance (min 0.15mm)))
+
+(rule "RF ground pads solid to pour"
+	(condition "A.Type == 'Pad' && A.NetName == 'GND' && (A.memberOfFootprint('J3') || A.memberOfFootprint('AE1') || A.memberOfFootprint('FL*') || A.memberOfFootprint('U6') || A.memberOfFootprint('U7') || A.memberOfFootprint('U8'))")
+	(constraint zone_connection solid))
+
+# ---------------------------------------------------------------- nRF52840 aQFN-73 (U5) escape
+# 0.25 mm round pads, 0.5 mm pitch, 0.25 mm between pads: one 0.09 mm track
+# between two pads leaves 0.08 mm each side (JLC: 3.5 mil std, 3 mil OK in
+# BGA fan-out). Zones are excluded so the pour keeps the normal clearance.
+(rule "U5 aQFN escape track"
+	(condition "A.intersectsCourtyard('U5') && A.Type == 'Track' && !A.hasNetclass('RF')")
+	(constraint track_width (min 0.09mm)))
+
+(rule "U5 aQFN escape clearance"
+	(condition "(A.intersectsCourtyard('U5') || B.intersectsCourtyard('U5')) && A.Type != 'Zone' && B.Type != 'Zone' && !A.hasNetclass('RF') && !B.hasNetclass('RF')")
+	(constraint clearance (min 0.08mm)))

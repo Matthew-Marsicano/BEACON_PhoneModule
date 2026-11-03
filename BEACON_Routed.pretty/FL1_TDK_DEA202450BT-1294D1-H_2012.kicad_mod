@@ -1,0 +1,251 @@
+(footprint "FL1_TDK_DEA202450BT-1294D1-H_2012"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TDK DEA202450BT-1294D1-H multilayer (LTCC) band-pass filter, 2.4 GHz WLAN/BT, 2.00x1.25x0.80 mm (EIA 0805), 4 bottom terminals. Land = TDK 'Recommended Land Pattern' (datasheet Ver.1.0 Oct 2017 p.6): end GND lands 0.45x1.00, centre RF lands 0.35x0.35 with 0.30 gap, 0.25 gaps. Pad numbers follow a 1=IN / 4=OUT / 2,3=GND symbol: pad 1 = TDK terminal (1) Input (top), pad 4 = TDK terminal (3) Output (bottom), pad 2 = TDK (2) GND (right end), pad 3 = TDK (4) GND (left end, body mark side). RF enters/leaves across the 1.25 mm width; no external matching. LCSC C1512913. https://datasheet.lcsc.com/datasheet/pdf/21e478ccbe38ab150c1e4ae8c08eb514.pdf?productCode=C1512913")
+	(tags "band-pass filter BPF LTCC 2.4GHz 2450MHz WLAN Bluetooth TDK DEA 0805 2012")
+	(property "Reference" "FL1"
+		(at 0 -1.5 0)
+		(layer "F.Fab")
+		(uuid "c8185ebe-0538-4d35-9306-9fd12d3cc08d")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08))))
+	(property "Value" "DEA202450BT-1294D1-H"
+		(at 0 1.4 0)
+		(layer "F.Fab")
+		(uuid "401b0c31-0b0f-4f38-bce4-eb6dc4b41e84")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06))))
+	(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/21e478ccbe38ab150c1e4ae8c08eb514.pdf?productCode=C1512913"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "433c4a28-77ec-4d68-b91e-b388cdfde28b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "Description" "TDK 2.4 GHz LTCC band-pass filter, 2012 (0805), 1=IN 4=OUT 2/3=GND"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "99ce9169-f9ee-41e4-9d88-112582fc7d11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property "MPN" "DEA202450BT-1294D1-H"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cd9c969-8b9f-4696-9c44-962c9aae4e7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Manufacturer" "TDK"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5fac4e48-1883-4392-8451-0fc9ddea36af")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "LCSC" "C1512913"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46ef0246-b915-43c2-9d2f-91178b25f6ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(property "Note" "Replaces Johanson 2450BP08C0100001T (no stock); IL 1.02 dB typ / 1.35 dB max, 1 W"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2bbeedfa-fc69-4b4d-bf00-dc9e6a22f3a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15))))
+	(sheetname "RX_Frontend")
+	(sheetfile "RX_Frontend.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.25 -0.875)
+		(end 1.25 0.875)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "4c111fea-bcd6-4758-a684-076c8c881a0e"))
+	(fp_line
+		(start -1.07 -0.56)
+		(end -1.07 0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "891f196c-1b42-4872-8d51-c446f3035f84"))
+	(fp_line
+		(start -1.07 0.76)
+		(end -0.4 0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "9c28a3b9-9d20-4a62-ac68-9f257ebd1285"))
+	(fp_line
+		(start -1 -0.375)
+		(end -0.75 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "67e82666-ba16-423e-9f5b-bff2cededc69"))
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.375)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "27a40159-7edd-497a-9178-0dd21ce9d9f5"))
+	(fp_line
+		(start -0.87 -0.76)
+		(end -1.07 -0.56)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "5b431133-0939-45ff-9925-07ebbac4cf5e"))
+	(fp_line
+		(start -0.75 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "c40866aa-d783-4825-8fd1-09874aed144e"))
+	(fp_line
+		(start -0.4 -0.76)
+		(end -0.87 -0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "9ced139e-e2d0-4c38-aede-ea8560e73aeb"))
+	(fp_line
+		(start 0.4 -0.76)
+		(end 1.07 -0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "40261899-2237-407b-ac73-3062fb0fd5d6"))
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "99335ff6-e3ed-4a4d-bd0e-542b38862ac6"))
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "855c7c86-fcd9-4fdd-aa70-0d1aa405a5b9"))
+	(fp_line
+		(start 1.07 -0.76)
+		(end 1.07 0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "75eacfb4-a753-4cd9-b626-b567ccbb78f2"))
+	(fp_line
+		(start 1.07 0.76)
+		(end 0.4 0.76)
+		(stroke
+			(width 0.12)
+			(type solid))
+		(layer "F.Fab")
+		(uuid "97f9a6e4-c50b-4814-82cd-6f9a085010d4"))
+	(fp_rect
+		(start -0.85 -0.45)
+		(end -0.45 -0.05)
+		(stroke
+			(width 0.05)
+			(type solid))
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "aa293991-76e3-4c21-a904-7d795677611f"))
+	(fp_circle
+		(center -0.62 -0.98)
+		(end -0.55 -0.98)
+		(stroke
+			(width 0.1)
+			(type solid))
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "222d7aa4-5d0a-4a08-9a06-475e5e948b3d"))
+	(fp_text user "IN"
+		(at 0 -0.88 0)
+		(layer "F.Fab")
+		(uuid "b7027bd6-31d7-4487-a389-1272d7f80856")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04))))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "c02ea762-753f-40c1-b180-bd9abf6c182f")
+		(effects
+			(font
+				(size 0.2 0.2)
+				(thickness 0.03))))
+	(fp_text user "OUT"
+		(at 0 0.88 0)
+		(layer "F.Fab")
+		(uuid "990f9ce7-db20-408b-8501-4772860e949d")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04))))
+	(pad "1" smd rect
+		(at 0 -0.325)
+		(size 0.35 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "17d23bb6-50be-4a43-a6dd-bb290f9e3c9c"))
+	(pad "2" smd rect
+		(at 0.65 0)
+		(size 0.45 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
+		(uuid "3937648e-7315-4d80-a8d3-65d9940e9df7"))
+	(pad "3" smd rect
+		(at -0.65 0)
+		(size 0.45 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
+		(uuid "bc3e159b-55b3-41a5-bd33-24f3af6114af"))
+	(pad "4" smd rect
+		(at 0 0.325)
+		(size 0.35 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fbdf7480-0d7c-46d7-8460-6a9f19531783"))
+	(embedded_fonts no))

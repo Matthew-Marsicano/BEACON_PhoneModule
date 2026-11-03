@@ -1,0 +1,2546 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9e39a85c-8b13-58eb-936f-909acb01695e")
+	(paper "A3")
+	(title_block
+		(title "RX chain: antenna, BPF, QPL9547 LNA")
+		(date "2026-11-02")
+		(rev "A")
+		(company "BEACON - Northeastern University Senior Capstone")
+		(comment 1 "Translated from Altium BeaconPhoneModule.pdf and completed")
+		(comment 2 "HW: M. Marsicano, J. Oshinsky, N. McKillips, I. Hong")
+		(comment 3 "Advisor: Prof. Bahram Shafai"))
+	(lib_symbols
+		(symbol "BEACON:Taoglas_WDP2458"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "AE"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left bottom)))
+			(property "Value" "Taoglas_WDP2458"
+				(at -5.08 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left top)))
+			(property "Footprint" "BEACON:Taoglas_WDP.2458.25.4_Patch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Description" "Taoglas WDP.2458.25.4.B.02 2.4 GHz 25x25x4 mm pin-fed ceramic patch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(symbol "Taoglas_WDP2458_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "Taoglas_WDP2458_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "FEED"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))))
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 1.016)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none)))
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "BEACON:DEA202450BT-1294D1-H"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left bottom)))
+			(property "Value" "DEA202450BT-1294D1-H"
+				(at -5.08 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left top)))
+			(property "Footprint" "BEACON:TDK_DEA202450BT-1294D1-H_2012"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Description" "TDK 2.45 GHz LTCC band-pass filter, 2012, 1 W (pads: 1=IN, 4=OUT, 2/3=GND; TDK terminals 1/3/2,4)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(symbol "DEA202450BT-1294D1-H_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "DEA202450BT-1294D1-H_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -1.27 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 1.27 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))))
+		(symbol "BEACON:QPL9547"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -10.16 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left bottom)))
+			(property "Value" "QPL9547"
+				(at -10.16 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left top)))
+			(property "Footprint" "BEACON:Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(property "Description" "Qorvo QPL9547 0.6-4.2 GHz ultra-low-noise LNA (Shut_Down active high)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(hide yes)))
+			(symbol "QPL9547_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(symbol "QPL9547_1_1"
+				(pin passive line
+					(at -12.7 3.81 0)
+					(length 2.54)
+					(name "RF_IN"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at -12.7 -1.27 0)
+					(length 2.54)
+					(name "VBIAS"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -3.81 0)
+					(length 2.54)
+					(name "SHUT_DOWN"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "RF_OUT"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin no_connect line
+					(at -3.81 7.62 270)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin no_connect line
+					(at -1.27 7.62 270)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin no_connect line
+					(at 1.27 7.62 270)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin no_connect line
+					(at 3.81 7.62 270)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)))))))
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27))
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(embedded_fonts no)))
+	(text "RX antenna: Taoglas WDP.2458.25.4 ceramic patch (pin-fed, board ground = its ground plane) + pi match"
+		(exclude_from_sim no)
+		(at 20.32 30.48 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "d7be08db-c1a4-5328-acb8-6e3f71a399fe"))
+	(text "QPL9547 LNA (Qorvo EVB values; ~17.8 dB gain at 2.4 GHz)"
+		(exclude_from_sim no)
+		(at 20.32 79.6 0)
+		(effects
+			(font
+				(size 2 2))
+			(justify left bottom))
+		(uuid "9e367257-390c-52e1-88bf-b6c9dc95c374"))
+	(text "RX notes\n- RX antenna: Taoglas WDP.2458.25.4 25x25 mm pin-fed patch at the board centre (MagSafe enclosure).\n  Feed runs on B.Cu from the pin, then an RF via to L1. Pi match footprints for tuning.\n- The LNA now runs from 5V0 (QPL9547 recommended 3.15-5.25 V).\n- LNA is OFF at reset (100k pull-up on Shut_Down); firmware drives LNA_PD low to enable.\n- LNA supply through a ferrite bead from 5V0 (keeps buck ripple off the LNA).\n- RX OVERLOAD: TX carrier leaking into the RX antenna is in-band and gets ~17 dB of gain.\n  Keep antenna-to-antenna isolation >= 30 dB, or fit the pi pad (R_ATT shunts) so the\n  nRF ANT pin stays below 0 dBm (abs max +10 dBm). The nRF must never transmit: its ANT\n  pin drives straight into the LNA output.\n- All RF lines: 50 Ohm grounded CPW, see the PCB stackup notes."
+		(exclude_from_sim no)
+		(at 300 20 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left top))
+		(uuid "c6cf8b7f-db10-5b80-99f1-e74b31c6708a"))
+	(symbol
+		(lib_id "BEACON:Taoglas_WDP2458")
+		(at 43.18 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "562252c5-63c4-5300-b66e-9c228dcb583c")
+		(property "Reference" "AE1"
+			(at 35.56 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "WDP.2458.25.4.B.02"
+			(at 35.56 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:AE1_Taoglas_WDP.2458.25.4_Patch"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "WDP.2458.25.4.B.02"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Taoglas"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" "https://www.taoglas.com/datasheets/WDP.2458.25.4.B.02.pdf"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Taped to the board top; pin soldered on the bottom"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f173dbfe-46d5-560e-a240-863499f0def9"))
+		(pin "2"
+			(uuid "a0e7613c-3b4e-551f-9a50-6784cfcad49f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "AE1")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 45.72)
+			(xy 33.02 45.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6c5a235e-6ed4-5195-b1b1-e4f11dde215d"))
+	(label "RX_PATCH"
+		(at 33.02 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "d7206942-620a-5ea7-b941-283233fb5797"))
+	(wire
+		(pts
+			(xy 43.18 53.34)
+			(xy 43.18 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1aaea9b8-e142-5fbe-aa61-08029b655f14"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 43.18 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "ef0831af-2ea4-547a-8329-880202c4b6d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.18 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 58.42 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1540505a-884b-5785-a4fc-d3b6cc86a1b0")
+		(property "Reference" "C31"
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "DNP"
+			(at 62.23 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C31_C_0402_1005Metric"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Patch match shunt (tune)"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1e73d3d3-847a-5b44-befb-71eeb96164fc"))
+		(pin "2"
+			(uuid "4a29845d-d0c5-5512-be06-03994acb1a58"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C31")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 58.42 49.53)
+			(xy 58.42 46.99))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bff40f05-c358-579e-9b95-816e36ff49b1"))
+	(label "RX_PATCH"
+		(at 58.42 46.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "1a5306ac-cc41-595c-a00b-5c284c015c65"))
+	(wire
+		(pts
+			(xy 58.42 57.15)
+			(xy 58.42 59.69))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9f91a158-c0a5-5ff5-8d90-7c78cf168fa2"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 58.42 59.69 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "1190a262-84be-5dbe-b464-42b05cf419b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "345aa880-5ebc-5c2c-ba23-9c46eca96688")
+		(property "Reference" "R20"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "0"
+			(at 76.2 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R20_R_0402_1005Metric"
+			(at 73.66 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Patch match series arm (tune; 0R default)"
+			(at 73.66 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "acc6e249-1045-5d74-94bb-75401cbb1068"))
+		(pin "2"
+			(uuid "d478231c-476b-5700-9ad4-60f80e6eaed0"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R20")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 73.66 49.53)
+			(xy 73.66 46.99))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c449005e-4555-58e2-b8c2-9b3c8c84c90e"))
+	(label "RX_PATCH"
+		(at 73.66 46.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "3a837ff9-7686-5540-925b-31c437358ea5"))
+	(wire
+		(pts
+			(xy 73.66 57.15)
+			(xy 73.66 59.69))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ff3e6894-d578-5dc3-896a-288ddf1c633a"))
+	(label "RX_ANT"
+		(at 73.66 59.69 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "b058811d-874b-5267-bfd9-88dc14a2b133"))
+	(symbol
+		(lib_id "Device:L")
+		(at 88.9 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "313ac4d0-8226-529d-90a3-7c2aef20740b")
+		(property "Reference" "L5"
+			(at 90.17 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "22nH"
+			(at 90.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:L5_L_0402_1005Metric"
+			(at 88.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "LQW15AN22NJ00D"
+			(at 88.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Optional ESD shunt choke (non-magnetic core)"
+			(at 88.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "85997b55-45f6-5fb9-98f7-82a389fcf033"))
+		(pin "2"
+			(uuid "7af8d344-b760-5bd8-956b-eef5ef209d66"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "L5")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 88.9 46.99)
+			(xy 88.9 44.45))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c87490be-dfff-58a9-980e-5fb89a914809"))
+	(label "RX_ANT"
+		(at 88.9 44.45 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "a7e3742a-3523-51f5-9083-1955556f1062"))
+	(wire
+		(pts
+			(xy 88.9 54.61)
+			(xy 88.9 57.15))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9ba38a7e-3484-5f13-b063-1f8a231b2538"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 88.9 57.15 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "cba9c57b-c606-5bb0-9399-52264ed4e9b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "BEACON:DEA202450BT-1294D1-H")
+		(at 119.38 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56b72ea9-84c9-56c8-9182-94572de60a7a")
+		(property "Reference" "FL1"
+			(at 111.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "DEA202450BT-1294D1-H"
+			(at 111.76 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:FL1_TDK_DEA202450BT-1294D1-H_2012"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "DEA202450BT-1294D1-H"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "TDK"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "LCSC" "C1512913"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Replaces Johanson 2450BP08C0100001T (no stock); IL 1.02 dB typ / 1.35 dB max, 1 W"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d913e4f6-c90e-5631-9308-c1a250a0edf3"))
+		(pin "4"
+			(uuid "7cc0c5bd-1262-58e1-a46d-c9cc3084a82c"))
+		(pin "2"
+			(uuid "1e4eacf8-330d-566d-88a8-ca1099d4be99"))
+		(pin "3"
+			(uuid "f7db874e-069a-5a10-ab00-9ff2b9ed24e1"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "FL1")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 111.76 45.72)
+			(xy 109.22 45.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ef786e31-09ee-5701-aca3-67ccb9755ee7"))
+	(label "RX_ANT"
+		(at 109.22 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "fc2750e8-c16a-563b-8c2a-7e6a2d1ef6a3"))
+	(wire
+		(pts
+			(xy 127 45.72)
+			(xy 129.54 45.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0c6875af-9845-5502-83c0-3b963740bcfd"))
+	(label "RX_BPF"
+		(at 129.54 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "6d4784b3-eeb7-5c17-a82d-f17120f8613e"))
+	(wire
+		(pts
+			(xy 118.11 53.34)
+			(xy 118.11 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0b6afdf1-058d-5896-b9f8-acda6c1dff65"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 118.11 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "59d20f1e-f7dd-5152-856c-db6e48719ce9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 120.65 53.34)
+			(xy 120.65 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3a1c4073-ccde-5f0c-a447-11948b25bf6f"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 120.65 55.88 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "5d4b6143-617f-5d19-940d-864c657a1204")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66d42d49-4dc6-5bb7-a358-b40cba754e0a")
+		(property "Reference" "C32"
+			(at 29.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100pF"
+			(at 29.21 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C32_C_0402_1005Metric"
+			(at 25.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "DC block"
+			(at 25.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6d5baa55-da7e-5b19-a138-5403113e3d59"))
+		(pin "2"
+			(uuid "1647ff1a-341f-5c84-8b01-5da1b93ddfd7"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C32")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 25.4 97.79)
+			(xy 25.4 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b00d0efb-0fc8-5ccc-b7e5-d9c4a30ab2f3"))
+	(label "RX_BPF"
+		(at 25.4 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "7ccbf12c-3e6d-51c9-b651-92e95b501147"))
+	(wire
+		(pts
+			(xy 25.4 105.41)
+			(xy 25.4 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "45790d9b-ef01-5acd-9194-27edaba54b54"))
+	(label "LNA_IN"
+		(at 25.4 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "a5f30ace-5606-51b2-8406-16e044964c35"))
+	(symbol
+		(lib_id "BEACON:QPL9547")
+		(at 68.58 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22292219-39d0-5448-bd90-71ae3e53e71d")
+		(property "Reference" "U6"
+			(at 55.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "QPL9547TR7"
+			(at 55.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:U6_Qorvo_QPL9547_DFN-8-1EP_2x2mm_P0.5mm"
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "QPL9547TR7"
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Manufacturer" "Qorvo"
+			(at 68.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "2"
+			(uuid "59a281a0-1d67-53b8-a068-6bd3948c8d82"))
+		(pin "1"
+			(uuid "e19f156c-8a3f-5fb2-a66d-149bd64feb98"))
+		(pin "6"
+			(uuid "b4e5202e-8ecd-57d4-a4ca-c054ed18cc1f"))
+		(pin "7"
+			(uuid "4035c4d7-c00c-5b6c-ad03-c4aebdcbf45d"))
+		(pin "3"
+			(uuid "8cc642c5-8baa-5d2e-bbc2-c2f8a50b2c9b"))
+		(pin "4"
+			(uuid "38bba2cf-3b27-5d1b-a51d-6778905b0686"))
+		(pin "5"
+			(uuid "58688da1-8799-50f7-a966-0b9bf96a4f8b"))
+		(pin "8"
+			(uuid "844a9194-9a43-5591-9c79-05ce3c0a4fed"))
+		(pin "9"
+			(uuid "25dc8dd7-1278-5c67-9f84-4d32e1c6ddfb"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "U6")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 55.88 92.71)
+			(xy 53.34 92.71))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5041e08d-70dc-5d5a-862f-88ea40ca0d8a"))
+	(label "LNA_IN"
+		(at 53.34 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "b525b6b0-23ed-5910-b821-1b3337031f60"))
+	(wire
+		(pts
+			(xy 55.88 97.79)
+			(xy 53.34 97.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bfcd1e87-b565-5b02-84b2-96ac8834562f"))
+	(label "LNA_VBIAS"
+		(at 53.34 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "730cf204-d21d-531e-b777-4532784dea35"))
+	(wire
+		(pts
+			(xy 55.88 100.33)
+			(xy 53.34 100.33))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4731dba2-bd30-57ed-a9b3-dee3fe57ca0e"))
+	(label "LNA_SD"
+		(at 53.34 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "2f82a2d1-69a3-5463-8eaa-ae47ca2abee0"))
+	(wire
+		(pts
+			(xy 81.28 96.52)
+			(xy 83.82 96.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "265c7753-3e95-5cb1-8f49-d6f176a95548"))
+	(label "LNA_OUT"
+		(at 83.82 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "5686796c-9442-5a84-96a2-72018aece437"))
+	(no_connect
+		(at 64.77 88.9)
+		(uuid "8c1d86b7-3fdf-5e73-94ab-0fe6b4bf1897"))
+	(no_connect
+		(at 67.31 88.9)
+		(uuid "b2b956a6-f1c9-5dc5-8686-f2de2f97f54e"))
+	(no_connect
+		(at 69.85 88.9)
+		(uuid "818d0b7d-4e6c-5e90-bf03-a10aca8b3f4c"))
+	(no_connect
+		(at 72.39 88.9)
+		(uuid "ec22d5c6-9bc7-51a0-b01f-e59c11b72e7f"))
+	(wire
+		(pts
+			(xy 68.58 104.14)
+			(xy 68.58 106.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c7659f36-3f10-56cd-84c5-b5854ce53de5"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 68.58 106.68 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "3cdc8e17-6e7b-5aef-bb70-4898dfd8ab1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:L")
+		(at 101.6 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f09e7829-41fc-5be4-b511-c3d4364b015b")
+		(property "Reference" "L6"
+			(at 102.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "18nH"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:L6_L_0402_1005Metric"
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "0402CS-18NXGRW"
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "RF choke"
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "9ff1fd7a-2b0c-577f-a9fe-55a49613d42e"))
+		(pin "2"
+			(uuid "b0fd0b73-eaef-5bf0-9bed-a6ca3108ae6a"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "L6")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 101.6 97.79)
+			(xy 101.6 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "52b77454-bbda-507d-8788-a8d45587cb23"))
+	(label "LNA_VCC"
+		(at 101.6 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "d99e3884-3122-5bd4-a587-ec98ab272304"))
+	(wire
+		(pts
+			(xy 101.6 105.41)
+			(xy 101.6 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5b61ba6b-d979-5b77-bdca-a443edf98d2c"))
+	(label "LNA_OUT"
+		(at 101.6 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "962962a7-0ab7-5913-b7cb-2ab13a165677"))
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8db25800-c5d2-5585-a318-51fe2d10153c")
+		(property "Reference" "C33"
+			(at 123.19 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100pF"
+			(at 123.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C33_C_0402_1005Metric"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "DC block"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "5b2a6a23-ee6d-5087-8f3b-d3282625c3d9"))
+		(pin "2"
+			(uuid "a147ebe3-2192-559c-ab69-399428f64a1e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C33")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 119.38 97.79)
+			(xy 119.38 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d9ea08f5-059e-5e74-9bc5-a8f3fac38856"))
+	(label "LNA_OUT"
+		(at 119.38 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "2a597373-0c01-543f-9b51-9b445b844f99"))
+	(wire
+		(pts
+			(xy 119.38 105.41)
+			(xy 119.38 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "75cb8b98-50a5-52b8-8cc5-041418259789"))
+	(label "RX_ATT"
+		(at 119.38 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "651965ac-2985-576e-a83b-9d5fd7ca7ce3"))
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "802cd801-bba5-50c8-b703-87e6d4364487")
+		(property "Reference" "R21"
+			(at 139.7 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "0"
+			(at 139.7 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R21_R_0402_1005Metric"
+			(at 137.16 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Pi pad series arm (0R = no attenuation)"
+			(at 137.16 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6d0e70f0-7645-599c-acf9-53223d1a5444"))
+		(pin "2"
+			(uuid "546f1839-f160-5944-ab83-fc6aa305c79f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R21")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 137.16 97.79)
+			(xy 137.16 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "65f67751-e6a3-5c91-9a88-4a123ea7e449"))
+	(label "RX_ATT"
+		(at 137.16 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "febe6950-c50f-5de0-8162-8d3068c8f6a8"))
+	(wire
+		(pts
+			(xy 137.16 105.41)
+			(xy 137.16 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e665cb7d-bdd4-5420-a1c9-dd50ee5a1f12"))
+	(global_label "RX_RF"
+		(shape bidirectional)
+		(at 137.16 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "f9e755ec-c927-571b-85e8-6b386a1b84cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "cb11c135-2c13-5625-ab0e-bde87532cc77")
+		(property "Reference" "R22"
+			(at 154.94 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "DNP"
+			(at 154.94 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R22_R_0402_1005Metric"
+			(at 152.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Pi pad shunt - fit to protect the nRF from TX leakage"
+			(at 152.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4e870c70-c552-5042-bcee-99a7ebad049c"))
+		(pin "2"
+			(uuid "b5cd0d83-c970-5196-b7e6-6760b4ae14ee"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R22")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 97.79)
+			(xy 152.4 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0d35234c-cba0-5945-a426-860e8c7f07bf"))
+	(label "RX_ATT"
+		(at 152.4 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "afe38746-360a-50a0-9025-248ea5a01be1"))
+	(wire
+		(pts
+			(xy 152.4 105.41)
+			(xy 152.4 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e67e0d3a-8181-5810-a77b-c33b3bfc4dc4"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 152.4 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "8c09373c-5e04-5b32-98a6-43994b44a199")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "24acd463-bd5d-55a8-8187-b0942ee7b0a2")
+		(property "Reference" "R23"
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "DNP"
+			(at 170.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R23_R_0402_1005Metric"
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Pi pad shunt"
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "71272268-0348-5d0e-b913-f8865eaef2e0"))
+		(pin "2"
+			(uuid "2e33a029-4868-5cde-bd39-aa561f499602"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R23")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 167.64 95.25)
+			(xy 167.64 92.71))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "708d8601-a3d0-5091-9fae-b99aab18b8ff"))
+	(global_label "RX_RF"
+		(shape bidirectional)
+		(at 167.64 92.71 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "e5082eed-74ff-56f4-9b7c-45901d899cfb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 167.64 102.87)
+			(xy 167.64 105.41))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "df9c783c-fbed-5bd0-88f7-4d8dbe70d9b3"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 167.64 105.41 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "0e45d59b-ad7d-557b-8207-1c982f2ea3d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 182.88 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "888d6399-95da-5a50-b907-a67be7a3acba")
+		(property "Reference" "R24"
+			(at 185.42 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "3.3k"
+			(at 185.42 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R24_R_0402_1005Metric"
+			(at 182.88 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "Sets LNA bias current. Was 3.32k: JLC Basic swap (C25890)"
+			(at 182.88 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "d8b9f4bd-43e4-5f90-949e-0e81aa1d6d1f"))
+		(pin "2"
+			(uuid "505641b6-1c21-5e74-bf5a-fd2e2488340f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R24")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 100.33)
+			(xy 182.88 97.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7e45568d-7ef6-5f4b-bd03-b97c0e22ccac"))
+	(label "LNA_VCC"
+		(at 182.88 97.79 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "bb618022-8b03-518b-bc6f-4afcf3213bd4"))
+	(wire
+		(pts
+			(xy 182.88 107.95)
+			(xy 182.88 110.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "aa760922-08d1-52ad-9ed8-be9ecef1d0b6"))
+	(label "LNA_VBIAS"
+		(at 182.88 110.49 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "8ea3f6e9-89a4-538a-84e3-4e7bc2f4a6ea"))
+	(symbol
+		(lib_id "Device:R")
+		(at 200.66 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "366aa398-69fd-5e2c-9b70-fdb391e6d784")
+		(property "Reference" "R25"
+			(at 203.2 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "10"
+			(at 203.2 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R25_R_0603_1608Metric"
+			(at 200.66 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "RC supply filter with the LNA caps (was a ferrite bead: MagSafe field); 4.35 V at the LNA"
+			(at 200.66 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b1a208bd-6bbe-50bb-ac59-821cdb00cebe"))
+		(pin "2"
+			(uuid "240a2941-cb48-5932-8f95-e843d8b4d647"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R25")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 200.66 97.79)
+			(xy 200.66 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1588dc15-4231-5d9a-8cf8-c6a64755b178"))
+	(global_label "5V0"
+		(shape bidirectional)
+		(at 200.66 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "4b302734-d6f4-5971-be65-73a799a84f5a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 200.66 105.41)
+			(xy 200.66 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0e0194bc-61ce-517f-a194-7e170375cadd"))
+	(label "LNA_VCC"
+		(at 200.66 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "fae5a2ac-fe35-5c83-a9d6-16d6554ae7ce"))
+	(symbol
+		(lib_id "Device:C")
+		(at 218.44 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ccb09bf-86fb-5160-b62c-0a00b63d0958")
+		(property "Reference" "C34"
+			(at 222.25 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "10uF"
+			(at 222.25 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C34_C_0603_1608Metric"
+			(at 218.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "RC filter"
+			(at 218.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "904c3600-a5c7-5d5e-8de9-41988c973aa8"))
+		(pin "2"
+			(uuid "256bd671-1091-51e4-937f-7830517f701e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C34")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 218.44 97.79)
+			(xy 218.44 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7d4c8ce0-3289-55d5-9b14-2d3ff88f7717"))
+	(label "LNA_VCC"
+		(at 218.44 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "5edf5024-3388-5d2d-bc78-570382102ab4"))
+	(wire
+		(pts
+			(xy 218.44 105.41)
+			(xy 218.44 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7189138d-ec06-5337-a23d-159db63f78a5"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 218.44 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "46db3a58-3377-5f47-ad4c-639c6cea1f69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 236.22 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "193fb859-a5e0-59c3-a1b6-cd775781204b")
+		(property "Reference" "C35"
+			(at 240.03 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "1uF"
+			(at 240.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C35_C_0402_1005Metric"
+			(at 236.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b036b402-6b3c-573d-9363-16088e6c5c11"))
+		(pin "2"
+			(uuid "75593dee-b34f-5d81-a673-24a1806e58c3"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C35")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 236.22 97.79)
+			(xy 236.22 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "99fd43b4-2bff-5f30-b5bd-719352bcacf2"))
+	(label "LNA_VCC"
+		(at 236.22 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "30c2652d-2290-5483-b70c-7d8c9a37eb28"))
+	(wire
+		(pts
+			(xy 236.22 105.41)
+			(xy 236.22 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4c672738-8e7a-5b06-b3f8-0aeab5cf5883"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 236.22 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "d760d7ec-ec50-5761-a075-b8ddf159020c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 254 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4b4a48b-807b-59db-9e1c-c6b4a2adab14")
+		(property "Reference" "C36"
+			(at 257.81 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100pF"
+			(at 257.81 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C36_C_0402_1005Metric"
+			(at 254 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a67a3a96-dbf4-5e8d-bb7a-676cede220b7"))
+		(pin "2"
+			(uuid "07db1e5a-c1b5-56f3-b5b1-001559ef1e26"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C36")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 254 97.79)
+			(xy 254 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0fb9a7f8-9f26-5d3d-92f8-e58ce70355cc"))
+	(label "LNA_VCC"
+		(at 254 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "b104537a-b1e2-56fc-8ba3-b94811479601"))
+	(wire
+		(pts
+			(xy 254 105.41)
+			(xy 254 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "def73994-7055-5dbf-8658-ba9ec7a0db47"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 254 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "d6388905-25fe-5e3f-83fe-484048c5f374")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 254 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:C")
+		(at 274.32 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cb2dbf5-e38b-5e07-9dba-bc91901f1721")
+		(property "Reference" "C37"
+			(at 278.13 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100pF"
+			(at 278.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:C37_C_0402_1005Metric"
+			(at 274.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "5b218d8a-9dac-59fa-be1f-84eddaec7d39"))
+		(pin "2"
+			(uuid "19c73d97-7c6b-54f8-a000-8e4f87a51859"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "C37")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 274.32 97.79)
+			(xy 274.32 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "84988a94-78e9-57e8-b163-404fe0fdfbfe"))
+	(label "LNA_VCC"
+		(at 274.32 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "c25f439c-afea-5a31-904b-a5e88d2db974"))
+	(wire
+		(pts
+			(xy 274.32 105.41)
+			(xy 274.32 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9c496e37-d7b7-5c1f-80f0-b8b29a41f071"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 274.32 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "500dac48-b5f7-5e69-876f-a5c62ac82aa9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 274.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "Device:R")
+		(at 292.1 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e754176a-a139-5e0f-91f5-cc8cfd567341")
+		(property "Reference" "R26"
+			(at 294.64 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "0"
+			(at 294.64 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R26_R_0402_1005Metric"
+			(at 292.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1472180a-c142-5719-b357-97e6354441b8"))
+		(pin "2"
+			(uuid "76145063-9b75-5247-885a-5b6123dd718e"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R26")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 292.1 97.79)
+			(xy 292.1 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b13f94f3-3d49-5052-a2d5-dc2bc281d042"))
+	(global_label "LNA_PD"
+		(shape bidirectional)
+		(at 292.1 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "37d56e3d-5933-5032-9043-598bd87adbf7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 292.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(wire
+		(pts
+			(xy 292.1 105.41)
+			(xy 292.1 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b44c69ad-e17d-5492-af56-3a62b81e031c"))
+	(label "LNA_SD"
+		(at 292.1 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "57bf1721-15c0-5b38-a827-6ad90ac5ea4d"))
+	(symbol
+		(lib_id "Device:R")
+		(at 307.34 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f134201c-11ba-59ba-a45c-4d73f0ab6d17")
+		(property "Reference" "R27"
+			(at 309.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "100k"
+			(at 309.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" "BEACON_Routed:R27_R_0402_1005Metric"
+			(at 307.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Note" "LNA OFF at reset; firmware drives LNA_PD low to enable"
+			(at 307.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "dae338f2-f919-5138-83ff-bc4aaf81ac1e"))
+		(pin "2"
+			(uuid "99625ed1-bbfd-506a-ad7b-bbc4ab4589e6"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "R27")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 307.34 97.79)
+			(xy 307.34 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8c60a9e9-2cb1-5869-999b-7ece3f310d8f"))
+	(label "LNA_SD"
+		(at 307.34 95.25 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "c0d60b9d-2169-5111-931a-fea1dd5bf0d5"))
+	(wire
+		(pts
+			(xy 307.34 105.41)
+			(xy 307.34 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "20b45660-c1b9-5b52-bb3b-f0b830f6d56d"))
+	(global_label "3V3"
+		(shape bidirectional)
+		(at 307.34 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right))
+		(uuid "ebc83715-96a8-5c49-b246-2ffe2b46bdfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes))))
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 325.12 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "642bd5d2-f8c7-5723-a287-50624dd1df8e")
+		(property "Reference" "#FLG6"
+			(at 327.66 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Value" "PWR_FLAG"
+			(at 327.66 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(property "Footprint" ""
+			(at 325.12 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "0503b3ac-151c-5699-bd86-11c1d4dc976f"))
+		(instances
+			(project "BEACON_PhoneModule"
+				(path "/93628b6b-7c33-5f9d-9b5b-ebf929aebfc7/9e39a85c-8b13-58eb-936f-909acb01695e"
+					(reference "#FLG6")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 325.12 91.44)
+			(xy 325.12 93.98))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f3133b85-d723-5970-a861-803cfdf33cfa"))
+	(label "LNA_VCC"
+		(at 325.12 93.98 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify right bottom))
+		(uuid "430bce7c-64cd-50f6-9f7b-90b29a0f7b43"))
+	(sheet_instances
+		(path "/"
+			(page "1"))))
