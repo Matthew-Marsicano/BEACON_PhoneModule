@@ -36,6 +36,24 @@ def covered(net, layer, x, y):
                and all(z.HitTestFilledArea(layer, q, 0) for q in ring) for z in zones)
 
 
+REACH = FromMM(max(VIA_D / 2 + 0.15, VIA_H / 2 + 0.2))   # copper clearance and 0.2 mm drill-to-copper
+tracks = [t for t in board.GetTracks() if t.GetClass() != 'PCB_VIA']
+pads = [p for fp in board.GetFootprints() for p in fp.Pads()]
+outer_fills = [z for z in zones if not z.GetIsRuleArea() and z.GetNetname() != 'GND'
+               and (z.GetLayerSet().Contains(pcbnew.F_Cu) or z.GetLayerSet().Contains(pcbnew.B_Cu))]
+
+
+def clear_elsewhere(net, x, y):
+    """a through via here clears other-net copper on every layer it passes (pads, tracks incl. inner, power fills)"""
+    pt = pcbnew.VECTOR2I(int(x), int(y))
+    if any(p.GetNetname() != net and p.HitTest(pt, REACH) for p in pads):
+        return False
+    if any(t.GetNetname() != net and t.HitTest(pt, REACH) for t in tracks):
+        return False
+    return not any(z.GetNetname() != net and z.HitTestFilledArea(l, pt, REACH) for z in outer_fills
+                   for l in (pcbnew.F_Cu, pcbnew.B_Cu) if z.GetLayerSet().Contains(l))
+
+
 added = 0
 for u in drc['unconnected_items']:
     items = u['items']
@@ -53,7 +71,7 @@ for u in drc['unconnected_items']:
         step = FromMM(0.5)
         for x in range(bb.GetLeft(), bb.GetRight(), step):
             for y in range(bb.GetTop(), bb.GetBottom(), step):
-                if not (covered(net, l1, x, y) and covered(net, l2, x, y)):
+                if not (covered(net, l1, x, y) and covered(net, l2, x, y)) or not clear_elsewhere(net, x, y):
                     continue
                 pt = pcbnew.VECTOR2I(x, y)
                 if any(r.Outline().Contains(pt, -1, FromMM(VIA_D / 2)) for r in no_via):
@@ -93,7 +111,7 @@ for z in zones:
             spot = None
             for x in range(bb.GetLeft(), bb.GetRight(), FromMM(0.25)):
                 for y in range(bb.GetTop(), bb.GetBottom(), FromMM(0.25)):
-                    if isl.Contains(pcbnew.VECTOR2I(x, y)) and covered('GND', layer, x, y) and \
+                    if isl.Contains(pcbnew.VECTOR2I(x, y)) and covered('GND', layer, x, y) and clear_elsewhere('GND', x, y) and \
                             not any(r.Outline().Contains(pcbnew.VECTOR2I(x, y), -1, FromMM(VIA_D / 2)) for r in no_via) and \
                             not any(math.hypot(x - p.x, y - p.y) < FromMM(VIA_H / 2 + HOLE2HOLE) + d / 2 for p, d in holes):
                         spot = (x, y)

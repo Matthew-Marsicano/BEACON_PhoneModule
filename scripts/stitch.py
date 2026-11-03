@@ -37,7 +37,7 @@ for t in board.GetTracks():
     if t.GetNetname() == 'GND':
         continue
     if t.GetClass() == 'PCB_VIA':
-        obst.append(('c', mm(t.GetPosition()), ToMM(t.GetWidth()) / 2))
+        obst.append(('c', mm(t.GetPosition()), ToMM(t.GetWidth(pcbnew.F_Cu)) / 2))
     else:
         obst.append(('s', (mm(t.GetStart()), mm(t.GetEnd())), ToMM(t.GetWidth()) / 2))
 for fp in board.GetFootprints():
