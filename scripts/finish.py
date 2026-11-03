@@ -39,11 +39,16 @@ old_text = [item for item in board.GetDrawings()
             if item.GetClass() == 'PCB_TEXT' and item.GetLayer() in (pcbnew.F_SilkS, pcbnew.B_SilkS)]
 for item in old_text:   # keep the list alive: freeing removed SWIG wrappers corrupts later lookups
     board.Remove(item)
-label(board, 'BEACON Phone Module rev A', 27.5, 9.0, 1.2, pcbnew.B_SilkS)
-label(board, 'Northeastern Senior Capstone 2026', 27.5, 11.5, 0.9, pcbnew.B_SilkS)
-label(board, 'MAGSAFE SIDE - PHONE', 27.5, 14.0, 0.9, pcbnew.B_SilkS)
+# Board title and team on the front, in the free bands between the 3 mm stitching-via rows (the back is the logo).
+# Names as in the schematic title block.
+label(board, 'BEACON Phone Module rev A', 19.55, 24.1, 1.2)                               # above the patch
+label(board, 'HW: M. Marsicano, J. Oshinsky, N. McKillips, I. Hong', 20.75, 21.35, 0.8)
+label(board, 'FW: J. Faubus, J. Hensley', 36.55, 3.0, 0.8)                                 # top edge
+label(board, 'Advisor: Prof. Bahram Shafai', 39.25, 6.0, 0.8)
+label(board, 'Northeastern Senior Capstone 2026', 14.7, 53.85, 0.8)                       # below the patch
+label(board, 'MAGSAFE SIDE - PHONE', 40.5, 75.0, 0.8, pcbnew.B_SilkS)                     # back, clear of the logo
 label(board, 'TX', 49.5, 18.5, 1.0)
-label(board, 'USB-C', 27.5, 66.6, 0.8)
+label(board, 'USB-C', 31.4, 69.0, 0.8)                                                    # clear of R25/L6/C36
 # drill/place origin at the board's bottom-left corner: Gerbers, drill and the JLC CPL share it (positive X/Y)
 outline = pcbnew.SHAPE_POLY_SET()
 board.GetBoardPolygonOutlines(outline, True)
