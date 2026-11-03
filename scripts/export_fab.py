@@ -23,9 +23,10 @@ def run(*args):
 
 os.makedirs(GERB, exist_ok=True)
 layers = 'F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts'
+# Gerbers, drill and CPL all use the drill/place origin (board bottom-left, set by finish.py) so they line up
 run('pcb', 'export', 'gerbers', '--layers', layers, '--subtract-soldermask', '--use-drill-file-origin',
     '-o', GERB + os.sep, PCB)
-run('pcb', 'export', 'drill', '--format', 'excellon', '--excellon-separate-th', '--generate-map',
+run('pcb', 'export', 'drill', '--format', 'excellon', '--drill-origin', 'plot', '--excellon-separate-th', '--generate-map',
     '--map-format', 'gerberx2', '-o', GERB + os.sep, PCB)
 with zipfile.ZipFile(os.path.join(OUT, 'BEACON_PhoneModule_gerbers.zip'), 'w', zipfile.ZIP_DEFLATED) as z:
     for f in sorted(os.listdir(GERB)):
