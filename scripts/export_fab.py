@@ -1,10 +1,12 @@
-"""Fabrication outputs for JLCPCB: Gerbers + drill (zipped), BOM and CPL in JLC format, schematic PDF, 3D STEP.
+"""Fabrication outputs for JLCPCB: Gerbers + drill (zipped), BOM and CPL in JLC format, schematic PDF, 3D STEP,
+and fab/BEACON_PhoneModule_JLCPCB.zip with everything to upload plus the order sheet (scripts/jlc_bundle.py).
 
 Run:  D:/KiCAD/bin/python.exe -I scripts/export_fab.py
 """
 import csv
 import os
 import subprocess
+import sys
 import zipfile
 
 PRJ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,7 +32,8 @@ run('pcb', 'export', 'drill', '--format', 'excellon', '--drill-origin', 'plot', 
     '--map-format', 'gerberx2', '-o', GERB + os.sep, PCB)
 with zipfile.ZipFile(os.path.join(OUT, 'BEACON_PhoneModule_gerbers.zip'), 'w', zipfile.ZIP_DEFLATED) as z:
     for f in sorted(os.listdir(GERB)):
-        z.write(os.path.join(GERB, f), f)
+        if not f.endswith('-drl_map.gbr'):     # drill maps are drawings for people, JLC only needs the .drl files
+            z.write(os.path.join(GERB, f), f)
 
 # LCSC part numbers from the sourcing table (docs/bom_lcsc.csv), keyed by designator
 LCSC = {}
@@ -80,4 +83,5 @@ try:
     run('pcb', 'export', 'step', '--subst-models', '-o', os.path.join(OUT, 'BEACON_PhoneModule.step'), PCB)
 except SystemExit as e:
     print('STEP export skipped:', str(e)[:200])
+subprocess.run([sys.executable, '-I', os.path.join(PRJ, 'scripts', 'jlc_bundle.py')], check=True)
 print('fab outputs in', OUT)
