@@ -9,16 +9,22 @@ import zipfile
 PRJ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FAB = os.path.join(PRJ, 'fab')
 OUT = os.path.join(FAB, 'BEACON_PhoneModule_JLCPCB.zip')
-FILES = ['BEACON_PhoneModule_gerbers.zip', 'BEACON_PhoneModule_BOM_JLC.csv', 'BEACON_PhoneModule_CPL_JLC.csv']
+# source file in fab/ -> name inside the bundle (numbered in upload order)
+FILES = {'BEACON_PhoneModule_gerbers.zip': '1_UPLOAD_AS_GERBER_BEACON_PhoneModule_gerbers.zip',
+         'BEACON_PhoneModule_BOM_JLC.csv': '2_UPLOAD_AS_BOM_BEACON_PhoneModule_BOM_JLC.csv',
+         'BEACON_PhoneModule_CPL_JLC.csv': '3_UPLOAD_AS_CPL_BEACON_PhoneModule_CPL_JLC.csv'}
 
 ORDER = """BEACON Phone Module - JLCPCB order sheet
 =========================================
 
+UNZIP THIS PACKAGE FIRST. Do not upload the package zip itself to JLCPCB: the Gerbers are inside the
+file numbered 1, and JLC does not look inside nested zips (it reports "0 layers detected").
+
 Upload
 ------
-1. "Add Gerber file":           BEACON_PhoneModule_gerbers.zip   (upload this inner zip as it is, don't unzip)
-2. PCB Assembly -> BOM:         BEACON_PhoneModule_BOM_JLC.csv
-3. PCB Assembly -> CPL:         BEACON_PhoneModule_CPL_JLC.csv
+1. "Add Gerber file":           1_UPLOAD_AS_GERBER_BEACON_PhoneModule_gerbers.zip  (upload this zip as it is)
+2. PCB Assembly -> BOM:         2_UPLOAD_AS_BOM_BEACON_PhoneModule_BOM_JLC.csv
+3. PCB Assembly -> CPL:         3_UPLOAD_AS_CPL_BEACON_PhoneModule_CPL_JLC.csv
 
 PCB options
 -----------
@@ -53,7 +59,7 @@ missing = [f for f in FILES if not os.path.exists(os.path.join(FAB, f))]
 if missing:
     raise SystemExit('run export_fab.py first, missing: ' + ', '.join(missing))
 with zipfile.ZipFile(OUT, 'w', zipfile.ZIP_DEFLATED) as z:
-    for f in FILES:
-        z.write(os.path.join(FAB, f), f)
-    z.writestr('JLCPCB_ORDER.txt', ORDER.replace('\n', '\r\n'))
+    z.writestr('0_READ_ME_FIRST_JLCPCB_ORDER.txt', ORDER.replace('\n', '\r\n'))
+    for src, name in FILES.items():
+        z.write(os.path.join(FAB, src), name)
 print('JLCPCB bundle:', OUT)
