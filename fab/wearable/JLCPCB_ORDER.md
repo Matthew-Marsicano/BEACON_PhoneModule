@@ -28,7 +28,8 @@ board's bottom-left corner for Gerbers, drill and CPL.
 | Dimensions | 30 x 30 mm (detected from the Gerbers) |
 | Thickness | 0.8 mm |
 | Impedance control | Yes, stackup **JLC04081H-7628** (matches the Altium stackup, 0.77 mm) |
-| Min via hole | 0.15 mm (198 + 30 holes at 0.15 mm, JLC's 4-layer minimum) |
+| Via covering | **Epoxy filled & capped (via-in-pad, POFV): required.** 55 vias have their hole inside a pad: 8 nRF52840 (U5) ball pads (0.15 mm vias on AC13, AC15, AC19, AD14, AD18, B11, B13, K2), 16 thermal vias in the U5 exposed pad and 5 in the U1 (AEM30940) pad, 22 in the J3 U.FL ground pads, and GND vias in B1-2, C23-1, C29-1, R13-1. Tented vias would wick solder out of these joints |
+| Min via hole / diameter | 0.15 mm / 0.25 mm (228 holes at 0.15 mm, JLC's 4-layer minimum) |
 | Surface finish | **ENIG** (nRF52840 aQFN73) |
 | Outer copper | 1 oz |
 | Inner copper | 0.5 oz |

@@ -6,6 +6,7 @@ FXP70 flex antenna). It is powered over USB-C.
 
 **Ordering boards:** follow [`fab/JLCPCB_ORDER.md`](fab/JLCPCB_ORDER.md) (files to upload, board options, parts to check).
 The wearable tag's JLCPCB package (exported from its Altium project) is in [`fab/wearable/`](fab/wearable/JLCPCB_ORDER.md).
+To order both boards together, [`fab/panel/`](fab/panel/PANEL_ORDER.md) has a combined panel (one of each) with a merged BOM and CPL.
 
 ## Opening the project
 
