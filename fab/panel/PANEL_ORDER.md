@@ -60,6 +60,22 @@ After step 1, JLC should show **4 layers, 100 x 92.45 mm**. Designators carry a 
 | J1_W | Through-hole: THT assembly or hand solder |
 | Placement preview | Check pin 1 and rotation per the two boards' own order sheets (`fab/JLCPCB_ORDER.md`, `fab/wearable/JLCPCB_ORDER.md`) |
 
+## Option: fabricate the panel, assemble only the wearable
+
+The phone module comes back as a bare board (hand-assemble it later); JLC places only the wearable,
+both sides. Use these three files instead of the ones above:
+
+| Step on jlcpcb.com | File in `fab/panel/` |
+|---|---|
+| 1. Add Gerber file | `BEACON_Panel_gerbers_wearable_assembly.zip` |
+| 2. PCB Assembly: BOM | `BEACON_Panel_BOM_JLC_wearable_only.csv` (44 lines, 82 parts) |
+| 3. PCB Assembly: CPL | `BEACON_Panel_CPL_JLC_wearable_only.csv` (32 Top, 50 Bottom) |
+
+The Gerber zip is identical to `BEACON_Panel_gerbers.zip` except the paste layers, which keep only the
+wearable's pads, so the stencil prints no solder on the phone module. PCB options are unchanged;
+Assembly Side stays **Both Sides**. Regenerate with `scripts/wearable_only.py` (BOM/CPL) and
+`scripts/wearable_only_paste.py` (Gerbers).
+
 ## After delivery
 
 Snap each board out at the tabs and sand the nubs flat, especially on the wearable's edges.
