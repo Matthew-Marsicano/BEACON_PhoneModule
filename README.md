@@ -5,6 +5,7 @@ KiCad 10 project for the BEACON phone module: a MagSafe-mounted board with an nR
 FXP70 flex antenna). It is powered over USB-C.
 
 **Ordering boards:** follow [`fab/JLCPCB_ORDER.md`](fab/JLCPCB_ORDER.md) (files to upload, board options, parts to check).
+The wearable tag's JLCPCB package (exported from its Altium project) is in [`fab/wearable/`](fab/wearable/JLCPCB_ORDER.md).
 
 ## Opening the project
 
@@ -20,6 +21,7 @@ folder (`BEACON.kicad_sym`, `BEACON.pretty`, `BEACON_Routed.pretty`), so no libr
 | `scripts/` | Python scripts used to generate and post-process the board (run with KiCad's Python) |
 | `enclosure/` | OpenSCAD enclosure variants, STL and renders |
 | `fab/` | JLCPCB outputs: Gerber/drill zip, BOM, CPL, PDFs, STEP, the one-zip package and the order sheet |
+| `fab/wearable/` | Wearable tag JLCPCB outputs (Altium export): Gerber/drill zip, BOM, CPL, OutJob, order sheet |
 
 ## Board rules worth knowing
 
