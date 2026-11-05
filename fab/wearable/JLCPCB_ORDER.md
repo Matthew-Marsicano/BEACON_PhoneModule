@@ -2,8 +2,24 @@
 
 Fab outputs for the wearable tag. The design itself is the Altium project "Backscatter Radio Capstone - Wearable"
 (team Altium 365 repo); these files were exported with `BEACON_Wearable_JLCPCB.OutJob` from its commit `66d48ca`
-(2026-11-03, "Added silkscreen") plus the Top Solder mask fix below (PCB1.PcbDoc saved 2026-11-04, not yet
-committed to Altium 365).
+(2026-11-03, "Added silkscreen") plus the two 2026-11-04 changes below (PCB1.PcbDoc saved 2026-11-04 23:36, not
+yet committed to Altium 365). That board passes DRC with 0 violations (37 waived).
+
+### 2026-11-04: DRC cleanup and BEACON silkscreen
+
+- **Vias:** removed the two GND vias at (2.175, 14.7) and (3.675, 11.7) that sat inside the 5 mm pad of the
+  M2.5 mounting hole (short circuit to the netless pad, cut off from the GND pours). In the J3 U.FL via fence,
+  removed the four staggered 0.35/0.2 mm vias at (2.825, 2.65), (4.075, 2.625), (2.8, 5.6) and (4.1, 5.575),
+  which were 0.39-0.445 mm from their neighbours (hole-to-hole 0.254 mm and mask sliver 0.1 mm rules), and moved
+  (3.45, 2.65) to (3.47, 2.65). The fence is still continuous on both sides of the J3 trace; J3's ground pads now
+  have 18 vias instead of 22. Drill count 296 -> 290 holes.
+- **Top silkscreen:** "BEACON / Backscatter-Enabled Ambient / Cardiac Observation Node" along the top edge
+  (x 7.8 mm, y 26.4-29.4 mm), Arial Bold, 1.0 mm and 0.8 mm tall. Four vias sit under the lower two lines, so
+  JLC clips small notches out of those letters where the via is not covered by solder mask.
+- **Bottom silkscreen:** the free bottom-overlay artwork is removed on purpose; `PCB1.GBO` now holds only
+  component designators and outlines.
+- BOM and CPL are unchanged (same 82 placements; the fresh export differs only by 0.0001 mm rounding).
+- `fab/panel/` was built from the previous wearable export and has not been rebuilt with these files.
 
 ### 2026-11-04: Top Solder mask fix on the RF switch outputs
 
@@ -39,8 +55,8 @@ board's bottom-left corner for Gerbers, drill and CPL.
 | Dimensions | 30 x 30 mm (detected from the Gerbers) |
 | Thickness | 0.8 mm |
 | Impedance control | Yes, stackup **JLC04081H-7628** (matches the Altium stackup, 0.77 mm) |
-| Via covering | **Epoxy filled & capped (via-in-pad, POFV): required.** 55 vias have their hole inside a pad: 8 nRF52840 (U5) ball pads (0.15 mm vias on AC13, AC15, AC19, AD14, AD18, B11, B13, K2), 16 thermal vias in the U5 exposed pad and 5 in the U1 (AEM30940) pad, 22 in the J3 U.FL ground pads, and GND vias in B1-2, C23-1, C29-1, R13-1. Tented vias would wick solder out of these joints |
-| Min via hole / diameter | 0.15 mm / 0.25 mm (228 holes at 0.15 mm, JLC's 4-layer minimum) |
+| Via covering | **Epoxy filled & capped (via-in-pad, POFV): required.** 51 vias have their hole inside a pad: 8 nRF52840 (U5) ball pads (0.15 mm vias on AC13, AC15, AC19, AD14, AD18, B11, B13, K2), 16 thermal vias in the U5 exposed pad and 5 in the U1 (AEM30940) pad, 18 in the J3 U.FL ground pads, and GND vias in B1-2, C23-1, C29-1, R13-1. Tented vias would wick solder out of these joints |
+| Min via hole / diameter | 0.15 mm / 0.25 mm (226 holes at 0.15 mm, JLC's 4-layer minimum) |
 | Surface finish | **ENIG** (nRF52840 aQFN73) |
 | Outer copper | 1 oz |
 | Inner copper | 0.5 oz |
