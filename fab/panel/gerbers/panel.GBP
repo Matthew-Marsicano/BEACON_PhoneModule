@@ -21,7 +21,7 @@ G75
 1,1,0.125,0.2125,-0.1875,0*
 %
 %AMCALCM13*
-0 Fully substituted instance of ROUNDEDRECTD100 macro*
+0 Fully substituted instance of ROUNDEDRECTD87 macro*
 0 Original parameters: none*
 20,1,0.74,0,0.16875,0,-0.16875,0*
 20,1,0.6275,0,0.225,0,-0.225,0*
@@ -31,7 +31,7 @@ G75
 1,1,0.1125,-0.3138,-0.1688,0*
 %
 %AMCALCM15*
-0 Fully substituted instance of ROUNDEDRECTD102 macro*
+0 Fully substituted instance of ROUNDEDRECTD89 macro*
 0 Original parameters: none*
 20,1,0.5,0,-0.2125,0,0.2125,0*
 20,1,0.375,0,-0.275,0,0.275,0*
@@ -41,7 +41,7 @@ G75
 1,1,0.125,0.1875,0.2125,0*
 %
 %AMCALCM17*
-0 Fully substituted instance of ROUNDEDRECTD104 macro*
+0 Fully substituted instance of ROUNDEDRECTD91 macro*
 0 Original parameters: none*
 20,1,0.6,0,-0.235,0,0.235,0*
 20,1,0.45,0,-0.31,0,0.31,0*
@@ -51,7 +51,7 @@ G75
 1,1,0.15,0.225,0.235,0*
 %
 %AMCALCM21*
-0 Fully substituted instance of ROUNDEDRECTD108 macro*
+0 Fully substituted instance of ROUNDEDRECTD95 macro*
 0 Original parameters: none*
 20,1,0.6,0,0.20625,0,-0.20625,0*
 20,1,0.4625,0,0.275,0,-0.275,0*
@@ -61,7 +61,7 @@ G75
 1,1,0.1375,-0.2313,-0.2063,0*
 %
 %AMCALCM22*
-0 Fully substituted instance of ROUNDEDRECTD109 macro*
+0 Fully substituted instance of ROUNDEDRECTD96 macro*
 0 Original parameters: none*
 20,1,0.55,0,0.1875,0,-0.1875,0*
 20,1,0.425,0,0.25,0,-0.25,0*
@@ -71,7 +71,7 @@ G75
 1,1,0.125,-0.2125,-0.1875,0*
 %
 %AMCALCM27*
-0 Fully substituted instance of ROUNDEDRECTD115 macro*
+0 Fully substituted instance of ROUNDEDRECTD102 macro*
 0 Original parameters: none*
 20,1,0.76,0.24765,0,-0.24765,0,0*
 20,1,0.5949,0.3302,0,-0.3302,0,0*
@@ -81,7 +81,7 @@ G75
 1,1,0.1651,-0.2477,0.2975,0*
 %
 %AMCALCM28*
-0 Fully substituted instance of ROUNDEDRECTD116 macro*
+0 Fully substituted instance of ROUNDEDRECTD103 macro*
 0 Original parameters: none*
 20,1,0.76,0,-0.24765,0,0.24765,0*
 20,1,0.5949,0,-0.3302,0,0.3302,0*
@@ -91,7 +91,7 @@ G75
 1,1,0.1651,0.2975,0.2477,0*
 %
 %AMCALCM35*
-0 Fully substituted instance of ROUNDEDRECTD123 macro*
+0 Fully substituted instance of ROUNDEDRECTD110 macro*
 0 Original parameters: none*
 20,1,1.3,0.285,0,-0.285,0,0*
 20,1,1.11,0.38,0,-0.38,0,0*
@@ -101,7 +101,7 @@ G75
 1,1,0.19,-0.285,0.555,0*
 %
 %AMCALCM38*
-0 Fully substituted instance of ROUNDEDRECTD126 macro*
+0 Fully substituted instance of ROUNDEDRECTD113 macro*
 0 Original parameters: none*
 20,1,0.87,-0.35625,0,0.35625,0,0*
 20,1,0.6525,-0.465,0,0.465,0,0*

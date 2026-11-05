@@ -1,8 +1,19 @@
 # BEACON Wearable: JLCPCB order sheet
 
 Fab outputs for the wearable tag. The design itself is the Altium project "Backscatter Radio Capstone - Wearable"
-(team Altium 365 repo); these files were exported from its commit `66d48ca` (2026-11-03, "Added silkscreen")
-with `BEACON_Wearable_JLCPCB.OutJob`.
+(team Altium 365 repo); these files were exported with `BEACON_Wearable_JLCPCB.OutJob` from its commit `66d48ca`
+(2026-11-03, "Added silkscreen") plus the Top Solder mask fix below (PCB1.PcbDoc saved 2026-11-04, not yet
+committed to Altium 365).
+
+### 2026-11-04: Top Solder mask fix on the RF switch outputs
+
+The exposed-copper openings on the four 0.335 mm doglegs from the HMC190B switches to their series caps
+(NetC11_1, NetC13_1, NetC16_1, NetC17_1: U2-3/U2-6/U4-3/U4-6 to C11/C13/C16/C17) were stair-stepped
+rectangles, offset to one side of the trace. Each is now one region that follows the trace at +/-0.625 mm
+(the same 1.25 mm opening as the straight RF lines), with round joins at the bends, a 0.105 mm mask web to
+every other-net pad, via and trace, and the 0.2 mm web across the 0402 caps kept. Only `PCB1.GTS` changed
+geometrically (XOR 3.35 mm2, all inside x 18.8-22.3, y 1.0-15.0 mm); every other layer and both drill files
+are geometrically identical to the previous export.
 
 ## Files to upload
 
@@ -55,5 +66,9 @@ Then review the DFM report and the price, and place the order.
 - Copper pours run to the board edge on all four layers (no board-outline clearance rule in the design).
   JLC wants about 0.3 mm. Expect a DFM warning and exposed copper on the routed edge unless the pours
   are pulled back and the files re-exported.
+- Schematic and PCB designators disagree around the RF input: the schematic's R18 (0 ohm, RF_In to GND, fitted
+  in Prod) is `R19` on the PCB, and the PCB's `R18` is the schematic's R17 (VSEL to CTRL_SPDT). Because the BOM
+  and CPL use PCB designators, DNP `R19` leaves the RF_In shunt unplaced, which is what the RF path needs, but
+  the schematic says the opposite. Re-annotate / Update PCB in Altium before the next export.
 - The Mechanical 1 outline in the PcbDoc is missing its top straight edge. The Gerber outline (`PCB1.GM`) comes
   from the board shape instead and is closed.
