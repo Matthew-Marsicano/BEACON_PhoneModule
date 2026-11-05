@@ -6,7 +6,9 @@ one assembly setup and one shipment, and the 16 parts used on both boards are ch
 Extended-part fee each instead of two.
 
 Built at the Gerber level from each board's released fab files, so neither design changed:
-phone module `fab/gerbers` (KiCad) and wearable `fab/wearable/gerbers` (Altium, commit `66d48ca`).
+phone module `fab/gerbers` (KiCad) and wearable `fab/wearable/gerbers` (Altium, commit `66d48ca` plus the
+2026-11-04 Top Solder fix on the RF switch outputs, see `fab/wearable/JLCPCB_ORDER.md`). Rebuilt after that
+fix: only `panel.GTS` changed geometrically; drills are hole-for-hole identical.
 `scripts/build_panel.py` rebuilds the Gerbers and drills (needs `gerbonara` and `shapely`),
 `scripts/build_panel_bom.py` rebuilds the BOM and CPL.
 
